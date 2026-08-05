@@ -1,0 +1,30 @@
+using System.Text.Json.Serialization;
+
+namespace VimeoApi.Models;
+
+public record ChannelsVideosCreditsRequest
+{
+    /// <summary>
+    /// The email address of the credited person.
+    /// </summary>
+    [JsonPropertyName("email")]
+    public required string Email { get; init; }
+
+    /// <summary>
+    /// The name of the credited person.
+    /// </summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; init; }
+
+    /// <summary>
+    /// The role of the credited person.
+    /// </summary>
+    [JsonPropertyName("role")]
+    public required string Role { get; init; }
+
+    /// <summary>
+    /// The Vimeo URI of the credited person.
+    /// </summary>
+    [JsonPropertyName("user_uri")]
+    public required string UserUri { get; init; }
+}

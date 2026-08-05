@@ -1,0 +1,13 @@
+using System.Text.Json.Serialization;
+
+namespace VimeoApi.Models;
+
+public record OndemandPagesBackgroundsRequest
+{
+    /// <summary>
+    /// Whether this background image is the one that appears on the On Demand page.
+    /// </summary>
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+    [JsonPropertyName("active")]
+    public bool? Active { get; init; }
+}
