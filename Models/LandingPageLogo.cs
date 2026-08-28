@@ -1,8 +1,8 @@
 using System.Text.Json.Serialization;
-using VimeoApi.Core.Models;
-using VimeoApi.Models.Enums;
+using Vimeo.Core.Models;
+using Vimeo.Models.Enums;
 
-namespace VimeoApi.Models;
+namespace Vimeo.Models;
 
 /// <summary>
 /// The navbar logo configuration of the event landing page, or <c>null</c> when the event was never configured (default rendering).

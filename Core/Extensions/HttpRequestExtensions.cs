@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Net.Http.Headers;
-using VimeoApi.Core.Models;
+using Vimeo.Core.Models;
 
-namespace VimeoApi.Core.Extensions;
+namespace Vimeo.Core.Extensions;
 
 internal static class HttpRequestExtensions
 {

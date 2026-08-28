@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 
-namespace VimeoApi.Core;
+namespace Vimeo.Core;
 
 internal sealed class HttpStatusPolicy
 {

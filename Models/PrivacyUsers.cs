@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
-using VimeoApi.Core.Models;
+using Vimeo.Core.Models;
 
-namespace VimeoApi.Models;
+namespace Vimeo.Models;
 
 /// <summary>
 /// Information provided to channel moderators about which users they have specifically permitted to access this private channel. This data requires a bearer token with the <c>private</c> scope.

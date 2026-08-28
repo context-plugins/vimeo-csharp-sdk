@@ -1,9 +1,9 @@
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using VimeoApi.Core.Models;
+using Vimeo.Core.Models;
 
-namespace VimeoApi.Core.Response;
+namespace Vimeo.Core.Response;
 
 internal sealed class ErrorByteResponse : IResponse<ErrorByteContent>
 {

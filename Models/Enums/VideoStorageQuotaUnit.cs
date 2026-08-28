@@ -1,7 +1,7 @@
 using System.Text.Json.Serialization;
-using VimeoApi.Core.Enum;
+using Vimeo.Core.Enum;
 
-namespace VimeoApi.Models.Enums;
+namespace Vimeo.Models.Enums;
 
 /// <summary>
 /// The unit of the video storage for the user's periodic quota for the annual plan.

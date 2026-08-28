@@ -5,9 +5,9 @@ using System.Net.ServerSentEvents;
 using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Threading.Tasks;
-using VimeoApi.Core.Exceptions;
+using Vimeo.Core.Exceptions;
 
-namespace VimeoApi.Core.Response;
+namespace Vimeo.Core.Response;
 
 internal static class SseFrameReader
 {

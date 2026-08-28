@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
-using VimeoApi.Core.Models;
+using Vimeo.Core.Models;
 
-namespace VimeoApi.Core;
+namespace Vimeo.Core;
 
 internal sealed class UriFactory
 {

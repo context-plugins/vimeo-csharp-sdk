@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
-using VimeoApi.Core.Models;
+using Vimeo.Core.Models;
 
-namespace VimeoApi.Models;
+namespace Vimeo.Models;
 
 /// <summary>
 /// A collection of recommended channels for the authenticated user to follow. This data requires a bearer token with the <c>private</c> scope. This data requires a bearer token with the <c>private</c> scope.

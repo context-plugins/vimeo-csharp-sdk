@@ -1,7 +1,7 @@
 using System.Text.Json.Serialization;
-using VimeoApi.Core.Models;
+using Vimeo.Core.Models;
 
-namespace VimeoApi.Models;
+namespace Vimeo.Models;
 
 /// <summary>
 /// Information about the alignment of the call-to-action text on the showcase page.

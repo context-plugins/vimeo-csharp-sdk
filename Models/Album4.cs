@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
-using VimeoApi.Core.Models;
+using Vimeo.Core.Models;
 
-namespace VimeoApi.Models;
+namespace Vimeo.Models;
 
 /// <summary>
 /// Information about adding or removing a video from the showcase. This information is included only when the video is referenced by the URI of a showcase that's moderated by the user.

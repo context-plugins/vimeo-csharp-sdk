@@ -1,7 +1,7 @@
 using System.Text.Json.Serialization;
-using VimeoApi.Core.Models;
+using Vimeo.Core.Models;
 
-namespace VimeoApi.Models;
+namespace Vimeo.Models;
 
 /// <summary>
 /// An object of suggested fields to be used for this interaction.

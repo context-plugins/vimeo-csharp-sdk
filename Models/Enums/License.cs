@@ -1,7 +1,7 @@
 using System.Text.Json.Serialization;
-using VimeoApi.Core.Enum;
+using Vimeo.Core.Enum;
 
-namespace VimeoApi.Models.Enums;
+namespace Vimeo.Models.Enums;
 
 /// <summary>
 /// The <see href="http://creativecommons.org/licenses/">Creative Commons</see> license that the user has set to be the default.

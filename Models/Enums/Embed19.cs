@@ -1,7 +1,7 @@
 using System.Text.Json.Serialization;
-using VimeoApi.Core.Enum;
+using Vimeo.Core.Enum;
 
-namespace VimeoApi.Models.Enums;
+namespace Vimeo.Models.Enums;
 
 /// <summary>
 /// The video's embed setting. Specify the <c>whitelist</c> value to restrict embedding to a specific set of domains. For more information, see our <see href="https://developer.vimeo.com/api/guides/videos/interact#set-off-site-privacy">Interacting with Videos</see> guide.

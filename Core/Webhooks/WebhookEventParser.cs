@@ -1,6 +1,6 @@
 using System.Text.Json;
 
-namespace VimeoApi.Core.Webhooks;
+namespace Vimeo.Core.Webhooks;
 
 public abstract class WebhookEventParser<TEvent>
     where TEvent : class

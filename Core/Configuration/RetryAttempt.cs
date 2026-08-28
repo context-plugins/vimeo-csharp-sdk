@@ -1,7 +1,7 @@
 using System;
 using System.Net;
 
-namespace VimeoApi.Core.Configuration;
+namespace Vimeo.Core.Configuration;
 
 public sealed record RetryAttempt
 {

@@ -1,7 +1,7 @@
-using VimeoApi.Core.ErrorResponse;
-using VimeoApi.Core.Response;
+using Vimeo.Core.ErrorResponse;
+using Vimeo.Core.Response;
 
-namespace VimeoApi.Core.Models;
+namespace Vimeo.Core.Models;
 
 internal sealed class ApiResponse<TResponse, TError>
 {

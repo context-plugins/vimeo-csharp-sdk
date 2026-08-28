@@ -1,7 +1,7 @@
 using System.Text.Json.Serialization;
-using VimeoApi.Core.Enum;
+using Vimeo.Core.Enum;
 
-namespace VimeoApi.Models.Enums;
+namespace Vimeo.Models.Enums;
 
 /// <summary>
 /// The promotion access type, which is a purchase option that isn't available in the On Demand container. Use the <b>download</b> and <b>stream_period</b> parameters to define additional characteristics for the <c>vip</c> type.

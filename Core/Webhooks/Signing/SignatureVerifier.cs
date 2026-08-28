@@ -4,7 +4,7 @@ using System.Globalization;
 using System.Runtime.CompilerServices;
 using System.Text;
 
-namespace VimeoApi.Core.Webhooks.Signing;
+namespace Vimeo.Core.Webhooks.Signing;
 
 internal sealed class SignatureVerifier
 {

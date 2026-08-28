@@ -1,4 +1,4 @@
-namespace VimeoApi.Core.Authentication.OAuth2.ClientCredentials;
+namespace Vimeo.Core.Authentication.OAuth2.ClientCredentials;
 
 public sealed class OAuth2ClientCredentials
 {

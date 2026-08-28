@@ -1,9 +1,10 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
-using VimeoApi.Core.Models;
-using VimeoApi.Models.Enums;
+using Vimeo.Core.Models;
+using Vimeo.Models.AnyOf;
+using Vimeo.Models.Enums;
 
-namespace VimeoApi.Models;
+namespace Vimeo.Models;
 
 public record EmbedSettings
 {
@@ -107,7 +108,7 @@ public record EmbedSettings
     /// A collection of information about the embeddable player's end screen. The API returns an empty array instead of an object when no end screen is configured for the video.
     /// </summary>
     [JsonPropertyName("end_screen")]
-    public required EndScreen EndScreen { get; init; }
+    public required EndScreen3 EndScreen { get; init; }
 
     /// <summary>
     /// Whether the embedded player should display the event schedule.

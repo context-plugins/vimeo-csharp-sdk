@@ -1,7 +1,7 @@
 using System.Text.Json.Serialization;
-using VimeoApi.Core.Enum;
+using Vimeo.Core.Enum;
 
-namespace VimeoApi.Models.Enums;
+namespace Vimeo.Models.Enums;
 
 [JsonConverter(typeof(StringEnumConverter<Filter7>))]
 public sealed record Filter7 : StringEnum<Filter7>

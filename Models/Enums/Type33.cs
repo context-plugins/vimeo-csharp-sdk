@@ -1,7 +1,7 @@
 using System.Text.Json.Serialization;
-using VimeoApi.Core.Enum;
+using Vimeo.Core.Enum;
 
-namespace VimeoApi.Models.Enums;
+namespace Vimeo.Models.Enums;
 
 [JsonConverter(typeof(StringEnumConverter<Type33>))]
 public sealed record Type33 : StringEnum<Type33>

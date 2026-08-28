@@ -1,7 +1,7 @@
 using System;
 using System.Text.Json;
 
-namespace VimeoApi.Core.Webhooks;
+namespace Vimeo.Core.Webhooks;
 
 internal abstract record WebhookTypeSource
 {

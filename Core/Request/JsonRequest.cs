@@ -2,9 +2,9 @@ using System.Net.Http;
 using System.Net.Http.Json;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using VimeoApi.Core.Extensions;
+using Vimeo.Core.Extensions;
 
-namespace VimeoApi.Core.Request;
+namespace Vimeo.Core.Request;
 
 internal sealed class JsonRequest<TData>(TData data, JsonSerializerOptions options) : IRequest
 {

@@ -1,6 +1,6 @@
 # Reference
 
-> Source: [VimeoApiClient](VimeoApiClient.cs)
+> Source: [VimeoClient](VimeoClient.cs)
 
 ## ApiAppsWebhooks
 

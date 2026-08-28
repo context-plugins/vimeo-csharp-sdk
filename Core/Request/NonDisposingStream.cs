@@ -3,7 +3,7 @@ using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace VimeoApi.Core.Request;
+namespace Vimeo.Core.Request;
 
 internal sealed class NonDisposingStream : Stream
 {

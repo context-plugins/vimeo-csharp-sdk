@@ -1,8 +1,8 @@
-# Vimeo API
+# Vimeo
 
 [![Built with APIMatic][apimatic-badge]][apimatic-url] [![License: MIT][license-badge]][license-url]
 
-The Vimeo API SDK for .NET provides access to the Vimeo API REST APIs from .NET applications.
+The Vimeo SDK for .NET provides access to the Vimeo REST APIs from .NET applications.
 
 > [!TIP]
 > **Looking for a specific signature, model, enum, or error type?** This SDK ships a generated,
@@ -19,7 +19,7 @@ Build something great. Vimeo's API supports flexible, high-quality video integra
 Add the .NET SDK as a project reference into your solution:
 
 ```bash
-dotnet add reference <path-to-sdk>/VimeoApi.csproj
+dotnet add reference <path-to-sdk>/Vimeo.csproj
 ```
 
 ---
@@ -28,10 +28,10 @@ dotnet add reference <path-to-sdk>/VimeoApi.csproj
 
 ### Dependency Injection
 
-Register the client with `IServiceCollection` and resolve it from the container. The `HttpClient` is managed by `IHttpClientFactory`. Configure the client's behavior through [VimeoApiClientOptions](VimeoApiClientOptions.cs).
+Register the client with `IServiceCollection` and resolve it from the container. The `HttpClient` is managed by `IHttpClientFactory`. Configure the client's behavior through [VimeoClientOptions](VimeoClientOptions.cs).
 
 ```csharp
-services.AddVimeoApiClient(options =>
+services.AddVimeoClient(options =>
     {
         options.Bearer = "YOUR_BEARER_TOKEN";
         options.Oauth2ClientCredentials =
@@ -54,13 +54,13 @@ services.AddVimeoApiClient(options =>
 
 ### Direct Instantiation
 
-Create the client by passing an `HttpClient` you manage yourself. Configure the client's behavior through [VimeoApiClientOptions](VimeoApiClientOptions.cs).
+Create the client by passing an `HttpClient` you manage yourself. Configure the client's behavior through [VimeoClientOptions](VimeoClientOptions.cs).
 
 ```csharp
 var httpClient = new HttpClient();
 // TODO: configure more client options here
 var options =
-    new VimeoApiClientOptions
+    new VimeoClientOptions
     {
         Bearer = "YOUR_BEARER_TOKEN",
         Oauth2ClientCredentials = new OAuth2ClientCredentials
@@ -76,7 +76,7 @@ var options =
         },
         Environment = ServerEnvironment.Production,
     };
-var client = new VimeoApiClient(httpClient, options);
+var client = new VimeoClient(httpClient, options);
 ```
 
 ---
@@ -114,7 +114,7 @@ The map and the [API Reference](api-reference.md) answer different questions, an
 ## Best Practices
 
 > [!TIP]
-> Use a **single `VimeoApiClient` instance** for the lifetime of your application and
+> Use a **single `VimeoClient` instance** for the lifetime of your application and
 > reuse it across all requests. Creating a new instance per request might exhaust the
 > connection pool.
 

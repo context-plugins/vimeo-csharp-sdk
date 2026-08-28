@@ -2,9 +2,9 @@ using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Net;
 using System.Net.Http.Headers;
-using VimeoApi.Core.Exceptions;
+using Vimeo.Core.Exceptions;
 
-namespace VimeoApi.Core.Models;
+namespace Vimeo.Core.Models;
 
 /// <summary>
 ///     Represents either a successful response of type <typeparamref name="TResponse" />

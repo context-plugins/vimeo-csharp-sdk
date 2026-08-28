@@ -1,8 +1,8 @@
 using System.Text.Json.Serialization;
-using VimeoApi.Core.Models;
-using VimeoApi.Models.Enums;
+using Vimeo.Core.Models;
+using Vimeo.Models.Enums;
 
-namespace VimeoApi.Models;
+namespace Vimeo.Models;
 
 /// <summary>
 /// The context of the video's subscription, if the video is part of a subscription.

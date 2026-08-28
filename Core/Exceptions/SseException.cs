@@ -1,6 +1,6 @@
 using System;
 
-namespace VimeoApi.Core.Exceptions;
+namespace Vimeo.Core.Exceptions;
 
 public abstract class SseException : Exception
 {

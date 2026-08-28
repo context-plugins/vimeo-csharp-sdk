@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
-using VimeoApi.Core.Models;
+using Vimeo.Core.Models;
 
-namespace VimeoApi.Models;
+namespace Vimeo.Models;
 
 /// <summary>
 /// An action indicating that the authenticated user is an administrator of the showcase and may therefore add events. This data requires a bearer token with the <c>private</c> scope.

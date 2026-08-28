@@ -1,7 +1,7 @@
 using System;
 using System.Text;
 
-namespace VimeoApi.Core.Authentication.Basic;
+namespace Vimeo.Core.Authentication.Basic;
 
 public sealed class BasicAuthCredentials
 {

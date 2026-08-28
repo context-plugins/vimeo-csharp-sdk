@@ -1,14 +1,14 @@
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using VimeoApi.Core;
-using VimeoApi.Core.Authentication;
-using VimeoApi.Core.ErrorResponse;
-using VimeoApi.Core.Exceptions;
-using VimeoApi.Core.Request;
-using VimeoApi.Core.Response;
+using Vimeo.Core;
+using Vimeo.Core.Authentication;
+using Vimeo.Core.ErrorResponse;
+using Vimeo.Core.Exceptions;
+using Vimeo.Core.Request;
+using Vimeo.Core.Response;
 
-namespace VimeoApi.Api;
+namespace Vimeo.Api;
 
 /// <summary>
 /// These are the most common methods for working with the API tutorial.

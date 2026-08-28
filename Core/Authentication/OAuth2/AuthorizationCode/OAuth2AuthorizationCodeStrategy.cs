@@ -5,12 +5,12 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using VimeoApi.Core.ErrorResponse;
-using VimeoApi.Core.Models;
-using VimeoApi.Core.Request;
-using VimeoApi.Core.Response;
+using Vimeo.Core.ErrorResponse;
+using Vimeo.Core.Models;
+using Vimeo.Core.Request;
+using Vimeo.Core.Response;
 
-namespace VimeoApi.Core.Authentication.OAuth2.AuthorizationCode;
+namespace Vimeo.Core.Authentication.OAuth2.AuthorizationCode;
 
 internal sealed class OAuth2AuthorizationCodeStrategy
     : IOAuth2RefreshableTokenStrategy<OAuth2AuthorizationCodeCredentials>

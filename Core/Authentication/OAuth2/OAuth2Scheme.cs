@@ -4,7 +4,7 @@ using System.Net.Http.Headers;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace VimeoApi.Core.Authentication.OAuth2;
+namespace Vimeo.Core.Authentication.OAuth2;
 
 internal sealed class OAuth2Scheme<TCredentials> : IRevocableAuthScheme
 {

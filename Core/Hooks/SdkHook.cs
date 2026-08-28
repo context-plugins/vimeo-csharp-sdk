@@ -4,7 +4,7 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace VimeoApi.Core.Hooks;
+namespace Vimeo.Core.Hooks;
 
 public abstract class SdkHook
 {

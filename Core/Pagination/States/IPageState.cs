@@ -1,6 +1,6 @@
 using System.Net.Http.Headers;
 
-namespace VimeoApi.Core.Pagination.States;
+namespace Vimeo.Core.Pagination.States;
 
 internal interface IPageState<in TResponse, out TState>
 {

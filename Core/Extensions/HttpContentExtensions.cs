@@ -1,6 +1,6 @@
 using System.Net.Http;
 
-namespace VimeoApi.Core.Extensions;
+namespace Vimeo.Core.Extensions;
 
 internal static class HttpContentExtension
 {

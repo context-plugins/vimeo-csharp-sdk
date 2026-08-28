@@ -1,11 +1,11 @@
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using VimeoApi.Core.ErrorResponse;
-using VimeoApi.Core.Models;
-using VimeoApi.Models;
+using Vimeo.Core.ErrorResponse;
+using Vimeo.Core.Models;
+using Vimeo.Models;
 
-namespace VimeoApi.Errors;
+namespace Vimeo.Errors;
 
 public sealed class DeleteAnimatedThumbsetError : ApiError
 {

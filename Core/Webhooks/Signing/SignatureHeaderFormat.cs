@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace VimeoApi.Core.Webhooks.Signing;
+namespace Vimeo.Core.Webhooks.Signing;
 
 internal abstract record SignatureHeaderFormat
 {

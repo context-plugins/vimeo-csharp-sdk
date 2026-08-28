@@ -1,7 +1,7 @@
 using System;
 using System.Net.Http.Headers;
 
-namespace VimeoApi.Core.Models;
+namespace Vimeo.Core.Models;
 
 public sealed class ErrorByteContent
 {

@@ -1,8 +1,8 @@
 using System;
 using Microsoft.Extensions.Logging;
-using VimeoApi.Core.Configuration;
+using Vimeo.Core.Configuration;
 
-namespace VimeoApi.Core.Logging;
+namespace Vimeo.Core.Logging;
 
 internal static class LoggingEnvironment
 {

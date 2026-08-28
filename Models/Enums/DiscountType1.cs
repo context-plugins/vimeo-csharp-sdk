@@ -1,7 +1,7 @@
 using System.Text.Json.Serialization;
-using VimeoApi.Core.Enum;
+using Vimeo.Core.Enum;
 
-namespace VimeoApi.Models.Enums;
+namespace Vimeo.Models.Enums;
 
 /// <summary>
 /// The type of discount offered by the promotion code. When <b>access_type</b> is <c>vip</c>, the value of this parameter must be <c>free</c>.

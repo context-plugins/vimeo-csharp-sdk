@@ -4,7 +4,7 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace VimeoApi.Core.Authentication.ApiKey;
+namespace Vimeo.Core.Authentication.ApiKey;
 
 internal sealed class ApiKeyCookieScheme : IAuthScheme
 {

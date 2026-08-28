@@ -1,6 +1,6 @@
 using System.Diagnostics;
 
-namespace VimeoApi.Core.Models;
+namespace Vimeo.Core.Models;
 
 [DebuggerDisplay("{GetDebuggerDisplay(),nq}")]
 internal readonly record struct Optional<TValue>

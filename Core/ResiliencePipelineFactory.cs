@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 using Polly;
 using Polly.Retry;
 using Polly.Timeout;
-using VimeoApi.Core.Configuration;
-using VimeoApi.Core.Logging;
-using VimeoApi.Core.Request;
+using Vimeo.Core.Configuration;
+using Vimeo.Core.Logging;
+using Vimeo.Core.Request;
 
-namespace VimeoApi.Core;
+namespace Vimeo.Core;
 
 internal sealed class ResiliencePipelineFactory
 {

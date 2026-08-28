@@ -1,8 +1,8 @@
 using System.Text.Json.Serialization;
-using VimeoApi.Core.Models;
-using VimeoApi.Models.Enums;
+using Vimeo.Core.Models;
+using Vimeo.Models.Enums;
 
-namespace VimeoApi.Models;
+namespace Vimeo.Models;
 
 /// <summary>
 /// Information about the video's Vimeo Create editing session. This data requires a bearer token with the <c>private</c> scope.

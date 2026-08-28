@@ -1,17 +1,17 @@
 using System.Net.Http;
-using VimeoApi.Api;
-using VimeoApi.Core;
-using VimeoApi.Core.Logging;
-using VimeoApi.Core.Models;
+using Vimeo.Api;
+using Vimeo.Core;
+using Vimeo.Core.Logging;
+using Vimeo.Core.Models;
 
-namespace VimeoApi;
+namespace Vimeo;
 
 /// <summary>
 /// Build something great. Vimeo's API supports flexible, high-quality video integration with your custom apps.
 /// </summary>
-public sealed class VimeoApiClient
+public sealed class VimeoClient
 {
-    public VimeoApiClient(HttpClient httpClient, VimeoApiClientOptions options)
+    public VimeoClient(HttpClient httpClient, VimeoClientOptions options)
     {
         var server = new Server(options.Environment, options.Server);
         var queryParameterFactory = new QueryParameterFactory([]);
@@ -19,14 +19,14 @@ public sealed class VimeoApiClient
         var urlFactory = new UriFactory(queryParameterFactory, templateParamsFactory);
         var httpStatusPolicy = new HttpStatusPolicy([]);
         var headersFactory =
-            new HeadersFactory([new HeaderParam("User-Agent", "VimeoApiClient/3.4.9 CSharp"),
+            new HeadersFactory([new HeaderParam("User-Agent", "VimeoClient/3.4.9 CSharp"),
                     new HeaderParam("X-APIMatic-Lang", "CSharp"),
                     new HeaderParam("X-APIMatic-Package-Version", "3.4.9"),
                     new HeaderParam("X-APIMatic-Gen-Version", "4.0.0"),
                     new HeaderParam("X-APIMatic-OS", RuntimeEnvironment.Os),
                     new HeaderParam("X-APIMatic-Runtime", RuntimeEnvironment.Runtime)]);
         var resiliencePipelineFactory = new ResiliencePipelineFactory(options.Retry);
-        var httpLogger = new HttpLogger(options.Logging, "VimeoApiClient");
+        var httpLogger = new HttpLogger(options.Logging, "VimeoClient");
         var rawClient =
             new RawClient(httpClient,
                 urlFactory,

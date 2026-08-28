@@ -1,11 +1,11 @@
-using VimeoApi.Core;
-using VimeoApi.Core.Authentication;
-using VimeoApi.Core.Authentication.Bearer;
-using VimeoApi.Core.Authentication.OAuth2;
-using VimeoApi.Core.Authentication.OAuth2.AuthorizationCode;
-using VimeoApi.Core.Authentication.OAuth2.ClientCredentials;
+using Vimeo.Core;
+using Vimeo.Core.Authentication;
+using Vimeo.Core.Authentication.Bearer;
+using Vimeo.Core.Authentication.OAuth2;
+using Vimeo.Core.Authentication.OAuth2.AuthorizationCode;
+using Vimeo.Core.Authentication.OAuth2.ClientCredentials;
 
-namespace VimeoApi;
+namespace Vimeo;
 
 internal sealed class AuthSchemes
 {
@@ -13,7 +13,7 @@ internal sealed class AuthSchemes
     public IAuthScheme Oauth2ClientCredentials { get; }
     public IAuthScheme Oauth2AuthorizationCode { get; }
 
-    public AuthSchemes(VimeoApiClientOptions options, Server server, RawClient rawClient, UriFactory urlFactory)
+    public AuthSchemes(VimeoClientOptions options, Server server, RawClient rawClient, UriFactory urlFactory)
     {
         Bearer = BearerAuthScheme.Create(options.Bearer);
         Oauth2ClientCredentials =

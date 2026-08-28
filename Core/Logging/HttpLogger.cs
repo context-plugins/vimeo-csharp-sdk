@@ -8,9 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Abstractions;
-using VimeoApi.Core.Configuration;
+using Vimeo.Core.Configuration;
 
-namespace VimeoApi.Core.Logging;
+namespace Vimeo.Core.Logging;
 
 internal sealed class HttpLogger
 {

@@ -1,7 +1,7 @@
 using System.Text.Json.Serialization;
-using VimeoApi.Core.Enum;
+using Vimeo.Core.Enum;
 
-namespace VimeoApi.Models.Enums;
+namespace Vimeo.Models.Enums;
 
 /// <summary>
 /// The video's privacy setting. When this value is <c>users</c>, <c>application/json</c> is the only valid content type. Also, some privacy settings are unavailable to Vimeo Free members; for more information, see our <see href="https://vimeo.zendesk.com/hc/en-us/articles/224817847">Help Center</see>.

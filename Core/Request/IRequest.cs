@@ -1,6 +1,6 @@
 using System.Net.Http;
 
-namespace VimeoApi.Core.Request;
+namespace Vimeo.Core.Request;
 
 internal interface IRequest
 {

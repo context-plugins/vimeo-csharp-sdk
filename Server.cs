@@ -1,7 +1,7 @@
-using VimeoApi.Core.Models;
-using VimeoApi.Servers;
+using Vimeo.Core.Models;
+using Vimeo.Servers;
 
-namespace VimeoApi;
+namespace Vimeo;
 
 public class Server
 {

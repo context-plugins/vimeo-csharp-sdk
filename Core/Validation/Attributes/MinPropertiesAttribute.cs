@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.ComponentModel.DataAnnotations;
 
-namespace VimeoApi.Core.Validation.Attributes;
+namespace Vimeo.Core.Validation.Attributes;
 
 [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field)]
 public sealed class MinPropertiesAttribute : ValidationAttribute

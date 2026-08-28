@@ -1,7 +1,7 @@
 using System.Net.Http;
-using VimeoApi.Core.Extensions;
+using Vimeo.Core.Extensions;
 
-namespace VimeoApi.Core.Request;
+namespace Vimeo.Core.Request;
 
 internal sealed class EmptyBody : IRequest
 {

@@ -2,16 +2,16 @@ using System;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using VimeoApi.Core;
-using VimeoApi.Core.Authentication;
-using VimeoApi.Core.Exceptions;
-using VimeoApi.Core.Models;
-using VimeoApi.Core.Request;
-using VimeoApi.Core.Response;
-using VimeoApi.Errors;
-using VimeoApi.Models;
+using Vimeo.Core;
+using Vimeo.Core.Authentication;
+using Vimeo.Core.Exceptions;
+using Vimeo.Core.Models;
+using Vimeo.Core.Request;
+using Vimeo.Core.Response;
+using Vimeo.Errors;
+using Vimeo.Models;
 
-namespace VimeoApi.Api;
+namespace Vimeo.Api;
 
 /// <summary>
 /// Vimeo members with access to embed presets can include their own logo images in the embedded player. These custom logos can be part of an embed preset.

@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using Microsoft.Extensions.Logging;
-using VimeoApi.Core.Hooks;
+using Vimeo.Core.Hooks;
 
-namespace VimeoApi.Core;
+namespace Vimeo.Core;
 
 public sealed record RequestOptions
 {

@@ -2,7 +2,7 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace VimeoApi.Core.Response;
+namespace Vimeo.Core.Response;
 
 public sealed class VoidResponse : IResponse<VoidResponse>
 {

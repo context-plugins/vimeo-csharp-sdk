@@ -1,7 +1,7 @@
 using System;
 using System.Net.Http.Headers;
 
-namespace VimeoApi.Core.Pagination.States;
+namespace Vimeo.Core.Pagination.States;
 
 internal sealed record KeysetState<TResponse> : IPageState<TResponse, KeysetState<TResponse>>
 {

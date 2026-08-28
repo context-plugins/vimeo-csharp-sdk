@@ -1,10 +1,10 @@
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using VimeoApi.Core.ErrorResponse;
-using VimeoApi.Core.Models;
+using Vimeo.Core.ErrorResponse;
+using Vimeo.Core.Models;
 
-namespace VimeoApi.Errors;
+namespace Vimeo.Errors;
 
 public sealed class DownloadLmsPackageError : ApiError
 {

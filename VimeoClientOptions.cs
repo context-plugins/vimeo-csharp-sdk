@@ -1,14 +1,14 @@
 using System.Collections.Generic;
-using VimeoApi.Core.Authentication.OAuth2;
-using VimeoApi.Core.Authentication.OAuth2.AuthorizationCode;
-using VimeoApi.Core.Authentication.OAuth2.ClientCredentials;
-using VimeoApi.Core.Configuration;
-using VimeoApi.Core.Hooks;
-using VimeoApi.Servers;
+using Vimeo.Core.Authentication.OAuth2;
+using Vimeo.Core.Authentication.OAuth2.AuthorizationCode;
+using Vimeo.Core.Authentication.OAuth2.ClientCredentials;
+using Vimeo.Core.Configuration;
+using Vimeo.Core.Hooks;
+using Vimeo.Servers;
 
-namespace VimeoApi;
+namespace Vimeo;
 
-public class VimeoApiClientOptions
+public class VimeoClientOptions
 {
     public ServerEnvironment Environment { get; set; } = ServerEnvironment.Default();
     public RetryOptions Retry { get; set; } = RetryOptions.Default();

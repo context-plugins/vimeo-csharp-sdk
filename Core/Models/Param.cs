@@ -1,4 +1,4 @@
-namespace VimeoApi.Core.Models;
+namespace Vimeo.Core.Models;
 
 internal readonly record struct Param(
     string? Key,
