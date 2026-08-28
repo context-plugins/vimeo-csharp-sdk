@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using VimeoApi.Core.Models;
 
 namespace VimeoApi.Models;
 
@@ -20,4 +21,7 @@ public record Connections23
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
     [JsonPropertyName("shared_user")]
     public SharedUser? SharedUser { get; init; }
+
+    [JsonExtensionData]
+    public AdditionalProperties AdditionalProperties { get; init; } = [];
 }

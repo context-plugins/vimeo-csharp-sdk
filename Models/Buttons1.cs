@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using VimeoApi.Core.Models;
 
 namespace VimeoApi.Models;
 
@@ -31,8 +32,9 @@ public record Buttons1
     /// <summary>
     /// Whether the preset includes settings for the reaction button.
     /// </summary>
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
     [JsonPropertyName("reaction")]
-    public required bool? Reaction { get; init; }
+    public bool? Reaction { get; init; }
 
     /// <summary>
     /// Whether the preset includes settings for the share button.
@@ -51,4 +53,7 @@ public record Buttons1
     /// </summary>
     [JsonPropertyName("watchlater")]
     public required bool Watchlater { get; init; }
+
+    [JsonExtensionData]
+    public AdditionalProperties AdditionalProperties { get; init; } = [];
 }

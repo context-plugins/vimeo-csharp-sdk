@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using VimeoApi.Core.Models;
 
 namespace VimeoApi.Models;
 
@@ -24,4 +25,7 @@ public record Connections24
     /// </summary>
     [JsonPropertyName("personal_team_folder")]
     public required PersonalTeamFolder PersonalTeamFolder { get; init; }
+
+    [JsonExtensionData]
+    public AdditionalProperties AdditionalProperties { get; init; } = [];
 }

@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using VimeoApi.Core.Models;
 
 namespace VimeoApi.Models;
 
@@ -41,4 +42,7 @@ public record UploadAttempt
     /// </summary>
     [JsonPropertyName("user")]
     public required User User { get; init; }
+
+    [JsonExtensionData]
+    public AdditionalProperties AdditionalProperties { get; init; } = [];
 }

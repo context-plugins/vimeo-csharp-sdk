@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using VimeoApi.Core.Models;
 using VimeoApi.Models.Enums;
 
 namespace VimeoApi.Models;
@@ -66,4 +67,7 @@ public record Card1
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
     [JsonPropertyName("last_four_digits")]
     public string? LastFourDigits { get; init; }
+
+    [JsonExtensionData]
+    public AdditionalProperties AdditionalProperties { get; init; } = [];
 }

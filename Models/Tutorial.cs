@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using VimeoApi.Core.Models;
 
 namespace VimeoApi.Models;
 
@@ -21,4 +22,7 @@ public record Tutorial
     /// </summary>
     [JsonPropertyName("token_is_authenticated")]
     public required bool TokenIsAuthenticated { get; init; }
+
+    [JsonExtensionData]
+    public AdditionalProperties AdditionalProperties { get; init; } = [];
 }

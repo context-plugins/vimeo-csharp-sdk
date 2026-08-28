@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using VimeoApi.Core.Models;
 using VimeoApi.Models.Enums;
 
 namespace VimeoApi.Models;
@@ -23,4 +24,7 @@ public record StreamPrivacy2
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
     [JsonPropertyName("view")]
     public View9? View { get; init; }
+
+    [JsonExtensionData]
+    public AdditionalProperties AdditionalProperties { get; init; } = [];
 }

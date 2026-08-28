@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using VimeoApi.Core.Models;
 
 namespace VimeoApi.Models;
 
@@ -18,4 +19,7 @@ public record Metadata11
     /// </summary>
     [JsonPropertyName("interactions")]
     public required Interactions7? Interactions { get; init; }
+
+    [JsonExtensionData]
+    public AdditionalProperties AdditionalProperties { get; init; } = [];
 }

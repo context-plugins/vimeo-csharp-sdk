@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
+using VimeoApi.Core.Models;
 
 namespace VimeoApi.Models;
 
@@ -10,4 +11,7 @@ public record OndemandPagesRegionsRequest1
     /// </summary>
     [JsonPropertyName("countries")]
     public required IReadOnlyList<string> Countries { get; init; }
+
+    [JsonExtensionData]
+    public AdditionalProperties AdditionalProperties { get; init; } = [];
 }

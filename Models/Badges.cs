@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using VimeoApi.Core.Models;
 
 namespace VimeoApi.Models;
 
@@ -79,4 +80,7 @@ public record Badges
     /// </summary>
     [JsonPropertyName("weekend_challenge")]
     public required bool WeekendChallenge { get; init; }
+
+    [JsonExtensionData]
+    public AdditionalProperties AdditionalProperties { get; init; } = [];
 }

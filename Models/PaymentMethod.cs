@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using VimeoApi.Core.Models;
 using VimeoApi.Models.Enums;
 
 namespace VimeoApi.Models;
@@ -63,4 +64,7 @@ public record PaymentMethod
     /// </summary>
     [JsonPropertyName("updated_at")]
     public required string UpdatedAt { get; init; }
+
+    [JsonExtensionData]
+    public AdditionalProperties AdditionalProperties { get; init; } = [];
 }

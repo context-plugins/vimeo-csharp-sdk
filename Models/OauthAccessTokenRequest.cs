@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using VimeoApi.Core.Models;
 using VimeoApi.Models.Enums;
 
 namespace VimeoApi.Models;
@@ -26,4 +27,7 @@ public record OauthAccessTokenRequest
     /// </summary>
     [JsonPropertyName("redirect_uri")]
     public required string RedirectUri { get; init; }
+
+    [JsonExtensionData]
+    public AdditionalProperties AdditionalProperties { get; init; } = [];
 }

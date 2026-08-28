@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using VimeoApi.Core.Models;
 
 namespace VimeoApi.Models;
 
@@ -18,4 +19,7 @@ public record Live1
     /// </summary>
     [JsonPropertyName("stream_start_time")]
     public required string? StreamStartTime { get; init; }
+
+    [JsonExtensionData]
+    public AdditionalProperties AdditionalProperties { get; init; } = [];
 }

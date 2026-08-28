@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
+using VimeoApi.Core.Models;
 
 namespace VimeoApi.Models;
 
@@ -16,4 +17,7 @@ public record EventAudioTracks
     /// </summary>
     [JsonPropertyName("primary_audio_track")]
     public required string PrimaryAudioTrack { get; init; }
+
+    [JsonExtensionData]
+    public AdditionalProperties AdditionalProperties { get; init; } = [];
 }

@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using VimeoApi.Core.Models;
 
 namespace VimeoApi.Models;
 
@@ -39,4 +40,7 @@ public record LayoutConfig
     /// </summary>
     [JsonPropertyName("show_grid_video_titles")]
     public required ShowGridVideoTitles ShowGridVideoTitles { get; init; }
+
+    [JsonExtensionData]
+    public AdditionalProperties AdditionalProperties { get; init; } = [];
 }

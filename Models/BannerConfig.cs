@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using VimeoApi.Core.Models;
 
 namespace VimeoApi.Models;
 
@@ -39,4 +40,7 @@ public record BannerConfig
     /// </summary>
     [JsonPropertyName("show_start_watching_button")]
     public required ShowStartWatchingButton ShowStartWatchingButton { get; init; }
+
+    [JsonExtensionData]
+    public AdditionalProperties AdditionalProperties { get; init; } = [];
 }

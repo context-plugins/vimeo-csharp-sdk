@@ -28,7 +28,13 @@ public sealed class VimeoApiClient
         var resiliencePipelineFactory = new ResiliencePipelineFactory(options.Retry);
         var httpLogger = new HttpLogger(options.Logging, "VimeoApiClient");
         var rawClient =
-            new RawClient(httpClient, urlFactory, httpStatusPolicy, headersFactory, resiliencePipelineFactory, httpLogger);
+            new RawClient(httpClient,
+                urlFactory,
+                httpStatusPolicy,
+                headersFactory,
+                resiliencePipelineFactory,
+                httpLogger,
+                options.Hooks);
         var auth = new AuthSchemes(options, server, rawClient, urlFactory);
         ApiAppsWebhooks = new ApiAppsWebhooks(rawClient, server, auth);
         ApiInformationEssentials = new ApiInformationEssentials(rawClient, server, auth);

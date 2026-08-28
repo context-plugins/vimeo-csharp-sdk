@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using VimeoApi.Core.Models;
 
 namespace VimeoApi.Models;
 
@@ -34,8 +35,9 @@ public record Buttons
     /// <summary>
     /// Whether the button for reactions appears in the embeddable player.
     /// </summary>
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
     [JsonPropertyName("reaction")]
-    public required bool Reaction { get; init; }
+    public bool? Reaction { get; init; }
 
     /// <summary>
     /// Whether the button for scaling appears in the embeddable player.
@@ -54,4 +56,7 @@ public record Buttons
     /// </summary>
     [JsonPropertyName("watchlater")]
     public required bool Watchlater { get; init; }
+
+    [JsonExtensionData]
+    public AdditionalProperties AdditionalProperties { get; init; } = [];
 }

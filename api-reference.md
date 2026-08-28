@@ -37,7 +37,7 @@ catch (SdkException<AddWebhookError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type AddWebhookError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -103,9 +103,9 @@ try
 }
 catch (SdkException<DeleteWebhookError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteWebhookError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -174,7 +174,7 @@ catch (SdkException<GetWebhookError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetWebhookError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -310,7 +310,7 @@ catch (SdkException<UpdateWebhookError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type UpdateWebhookError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -440,7 +440,7 @@ catch (SdkException<ClientAuthError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type ClientAuthError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -510,9 +510,9 @@ try
 }
 catch (SdkException<ConvertAccessTokenError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetAuthError(out var error))
     {
-        // TODO: Handle 'error' of type ConvertAccessTokenError
+        // TODO: Handle 'error' of type AuthError
     }
 }
 ```
@@ -581,9 +581,9 @@ try
 }
 catch (SdkException<DeleteTokenError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteTokenError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -637,9 +637,9 @@ try
 }
 catch (SdkException<VerifyTokenError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type VerifyTokenError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -697,9 +697,9 @@ try
 }
 catch (SdkException<ExchangeAuthCodeError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetAuthError(out var error))
     {
-        // TODO: Handle 'error' of type ExchangeAuthCodeError
+        // TODO: Handle 'error' of type AuthError
     }
 }
 ```
@@ -769,9 +769,9 @@ try
 }
 catch (SdkException<GetCategoryChannelsError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetCategoryChannelsError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -914,9 +914,9 @@ try
 }
 catch (SdkException<GetCategoryError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetCategoryError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -986,9 +986,9 @@ try
 }
 catch (SdkException<GetCategoryGroupsError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetCategoryGroupsError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -1194,7 +1194,7 @@ catch (SdkException<GetCategorySubscriptionsError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetCategorySubscriptionsError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -1266,7 +1266,7 @@ catch (SdkException<GetCategorySubscriptionsAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetCategorySubscriptionsAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -1597,9 +1597,9 @@ try
 }
 catch (SdkException<CheckCategoryForVideoError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type CheckCategoryForVideoError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -1673,9 +1673,9 @@ try
 }
 catch (SdkException<GetCategoryVideosError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetCategoryVideosError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -1748,9 +1748,9 @@ try
 }
 catch (SdkException<GetVideoCategoriesError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetVideoCategoriesError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -1818,9 +1818,9 @@ try
 }
 catch (SdkException<SuggestVideoCategoryError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type SuggestVideoCategoryError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -1892,7 +1892,7 @@ catch (SdkException<AddChannelCategoriesError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type AddChannelCategoriesError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -1960,7 +1960,7 @@ catch (SdkException<CategorizeChannelError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type CategorizeChannelError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -2028,7 +2028,7 @@ catch (SdkException<DeleteChannelCategoryError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteChannelCategoryError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -2095,9 +2095,9 @@ try
 }
 catch (SdkException<GetChannelCategoriesError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetChannelCategoriesError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -2167,9 +2167,9 @@ try
 }
 catch (SdkException<CreateChannelError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type CreateChannelError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -2234,9 +2234,9 @@ try
 }
 catch (SdkException<DeleteChannelError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteChannelError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -2302,9 +2302,9 @@ try
 }
 catch (SdkException<EditChannelError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type EditChannelError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -2445,7 +2445,7 @@ catch (SdkException<GetChannelSubscriptionsError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetChannelSubscriptionsError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -2524,7 +2524,7 @@ catch (SdkException<GetChannelSubscriptionsAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetChannelSubscriptionsAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -2595,9 +2595,9 @@ try
 }
 catch (SdkException<GetChannelsError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetChannelsError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -2671,9 +2671,9 @@ try
 }
 catch (SdkException<AddChannelModeratorError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type AddChannelModeratorError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -2741,7 +2741,7 @@ catch (SdkException<AddChannelModeratorsError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type AddChannelModeratorsError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -2947,9 +2947,9 @@ try
 }
 catch (SdkException<RemoveChannelModeratorError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type RemoveChannelModeratorError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -3015,9 +3015,9 @@ try
 }
 catch (SdkException<RemoveChannelModeratorsError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type RemoveChannelModeratorsError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -3086,7 +3086,7 @@ catch (SdkException<ReplaceChannelModeratorsError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type ReplaceChannelModeratorsError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -3158,7 +3158,7 @@ catch (SdkException<DeleteChannelPrivacyUserError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteChannelPrivacyUserError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -3230,7 +3230,7 @@ catch (SdkException<GetChannelPrivacyUsersError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetChannelPrivacyUsersError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -3300,7 +3300,7 @@ catch (SdkException<SetChannelPrivacyUserError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type SetChannelPrivacyUserError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -3369,7 +3369,7 @@ catch (SdkException<SetChannelPrivacyUsersError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type SetChannelPrivacyUsersError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -3439,9 +3439,9 @@ try
 }
 catch (SdkException<CheckIfUserSubscribedToChannelError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type CheckIfUserSubscribedToChannelError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -3507,9 +3507,9 @@ try
 }
 catch (SdkException<CheckIfUserSubscribedToChannelAlt1Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type CheckIfUserSubscribedToChannelAlt1Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -3581,9 +3581,9 @@ try
 }
 catch (SdkException<GetChannelSubscribersError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetChannelSubscribersError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -3654,9 +3654,9 @@ try
 }
 catch (SdkException<SubscribeToChannelError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type SubscribeToChannelError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -3722,9 +3722,9 @@ try
 }
 catch (SdkException<SubscribeToChannelAlt1Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type SubscribeToChannelAlt1Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -3789,9 +3789,9 @@ try
 }
 catch (SdkException<UnsubscribeFromChannelError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type UnsubscribeFromChannelError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -3857,9 +3857,9 @@ try
 }
 catch (SdkException<UnsubscribeFromChannelAlt1Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type UnsubscribeFromChannelAlt1Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -3928,9 +3928,9 @@ try
 }
 catch (SdkException<AddChannelTagError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type AddChannelTagError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -3997,9 +3997,9 @@ try
 }
 catch (SdkException<AddTagsToChannelError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type AddTagsToChannelError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -4065,9 +4065,9 @@ try
 }
 catch (SdkException<CheckIfChannelHasTagError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type CheckIfChannelHasTagError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -4133,9 +4133,9 @@ try
 }
 catch (SdkException<DeleteTagFromChannelError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteTagFromChannelError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -4202,9 +4202,9 @@ try
 }
 catch (SdkException<GetChannelTagsError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetChannelTagsError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -4273,9 +4273,9 @@ try
 }
 catch (SdkException<AddVideoToChannelError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type AddVideoToChannelError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -4341,9 +4341,9 @@ try
 }
 catch (SdkException<AddVideosToChannelError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type AddVideosToChannelError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -4409,9 +4409,9 @@ try
 }
 catch (SdkException<DeleteVideoFromChannelError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteVideoFromChannelError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -4478,9 +4478,9 @@ try
 }
 catch (SdkException<GetAvailableVideoChannelsError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetAvailableVideoChannelsError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -4546,9 +4546,9 @@ try
 }
 catch (SdkException<GetChannelVideoError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetChannelVideoError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -4624,9 +4624,9 @@ try
 }
 catch (SdkException<GetChannelVideosError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetChannelVideosError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -4700,9 +4700,9 @@ try
 }
 catch (SdkException<RemoveVideosFromChannelError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type RemoveVideosFromChannelError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -4773,9 +4773,9 @@ try
 }
 catch (SdkException<CreateCustomLogoError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type CreateCustomLogoError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -4841,9 +4841,9 @@ try
 }
 catch (SdkException<CreateCustomLogoAlt1Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type CreateCustomLogoAlt1Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -4896,9 +4896,9 @@ try
 }
 catch (SdkException<DeleteCustomLogoError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteCustomLogoError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -4964,9 +4964,9 @@ try
 }
 catch (SdkException<DeleteCustomLogoAlt1Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteCustomLogoAlt1Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -5032,9 +5032,9 @@ try
 }
 catch (SdkException<GetCustomLogoError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetCustomLogoError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -5101,9 +5101,9 @@ try
 }
 catch (SdkException<GetCustomLogoAlt1Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetCustomLogoAlt1Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -5169,9 +5169,9 @@ try
 }
 catch (SdkException<GetCustomLogosError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetCustomLogosError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -5240,9 +5240,9 @@ try
 }
 catch (SdkException<GetCustomLogosAlt1Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetCustomLogosAlt1Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -5444,9 +5444,9 @@ try
 }
 catch (SdkException<DeleteEmbedPresetError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteEmbedPresetError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -5512,9 +5512,9 @@ try
 }
 catch (SdkException<DeleteEmbedPresetAlt1Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteEmbedPresetAlt1Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -5580,9 +5580,9 @@ try
 }
 catch (SdkException<EditEmbedPresetError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type EditEmbedPresetError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -5650,9 +5650,9 @@ try
 }
 catch (SdkException<EditEmbedPresetAlt1Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type EditEmbedPresetAlt1Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -5986,9 +5986,9 @@ try
 }
 catch (SdkException<DeleteFolderEmbedPresetError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteFolderEmbedPresetError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -6060,9 +6060,9 @@ try
 }
 catch (SdkException<CreateVideoCustomLogoError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type CreateVideoCustomLogoError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -6128,9 +6128,9 @@ try
 }
 catch (SdkException<GetVideoCustomLogoError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetVideoCustomLogoError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -6265,9 +6265,9 @@ try
 }
 catch (SdkException<DeleteVideoEmbedPresetError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteVideoEmbedPresetError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -6468,9 +6468,9 @@ try
 }
 catch (SdkException<GetVideoEmbedPresetError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetVideoEmbedPresetError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -6543,7 +6543,7 @@ catch (SdkException<CreateProjectError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type CreateProjectError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -6612,7 +6612,7 @@ catch (SdkException<CreateProjectAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type CreateProjectAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -6679,7 +6679,7 @@ catch (SdkException<DeleteProjectError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteProjectError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -6748,7 +6748,7 @@ catch (SdkException<DeleteProjectAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteProjectAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -6817,7 +6817,7 @@ catch (SdkException<EditProjectError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type EditProjectError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -6887,7 +6887,7 @@ catch (SdkException<EditProjectAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type EditProjectAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -6956,7 +6956,7 @@ catch (SdkException<GetPrivateToMeFolderError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetPrivateToMeFolderError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -7024,7 +7024,7 @@ catch (SdkException<GetProjectError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetProjectError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -7093,7 +7093,7 @@ catch (SdkException<GetProjectAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetProjectAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -7161,7 +7161,7 @@ catch (SdkException<GetProjectsError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetProjectsError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -7234,7 +7234,7 @@ catch (SdkException<GetProjectsAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetProjectsAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -7309,7 +7309,7 @@ catch (SdkException<DeleteFolderItemsAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteFolderItemsAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -7531,7 +7531,7 @@ catch (SdkException<AddVideoToProjectError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type AddVideoToProjectError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -7600,7 +7600,7 @@ catch (SdkException<AddVideoToProjectAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type AddVideoToProjectAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -7668,7 +7668,7 @@ catch (SdkException<AddVideosToProjectError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type AddVideosToProjectError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -7737,7 +7737,7 @@ catch (SdkException<AddVideosToProjectAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type AddVideosToProjectAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -7817,7 +7817,7 @@ catch (SdkException<GetProjectVideosError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetProjectVideosError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -7906,7 +7906,7 @@ catch (SdkException<GetProjectVideosAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetProjectVideosAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -7983,7 +7983,7 @@ catch (SdkException<RemoveVideoFromProjectError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type RemoveVideoFromProjectError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -8052,7 +8052,7 @@ catch (SdkException<RemoveVideoFromProjectAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type RemoveVideoFromProjectAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -8120,7 +8120,7 @@ catch (SdkException<RemoveVideosFromProjectError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type RemoveVideosFromProjectError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -8189,7 +8189,7 @@ catch (SdkException<RemoveVideosFromProjectAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type RemoveVideosFromProjectAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -8260,9 +8260,9 @@ try
 }
 catch (SdkException<CreateGroupError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type CreateGroupError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -8327,9 +8327,9 @@ try
 }
 catch (SdkException<DeleteGroupError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteGroupError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -8397,7 +8397,7 @@ catch (SdkException<GetGroupError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetGroupError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -8465,7 +8465,7 @@ catch (SdkException<GetGroupsError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetGroupsError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -8539,9 +8539,9 @@ try
 }
 catch (SdkException<JoinGroupError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type JoinGroupError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -8607,9 +8607,9 @@ try
 }
 catch (SdkException<JoinGroupAlt1Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type JoinGroupAlt1Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -8674,9 +8674,9 @@ try
 }
 catch (SdkException<LeaveGroupError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type LeaveGroupError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -8742,9 +8742,9 @@ try
 }
 catch (SdkException<LeaveGroupAlt1Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type LeaveGroupAlt1Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -8813,9 +8813,9 @@ try
 }
 catch (SdkException<CheckIfUserJoinedGroupError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type CheckIfUserJoinedGroupError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -8881,9 +8881,9 @@ try
 }
 catch (SdkException<CheckIfUserJoinedGroupAlt1Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type CheckIfUserJoinedGroupAlt1Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -8949,9 +8949,9 @@ try
 }
 catch (SdkException<GetGroupMembersError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetGroupMembersError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -9025,7 +9025,7 @@ catch (SdkException<GetUserGroupsError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetUserGroupsError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -9099,7 +9099,7 @@ catch (SdkException<GetUserGroupsAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetUserGroupsAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -9174,9 +9174,9 @@ try
 }
 catch (SdkException<AddVideoToGroupError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type AddVideoToGroupError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -9242,9 +9242,9 @@ try
 }
 catch (SdkException<DeleteVideoFromGroupError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteVideoFromGroupError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -9313,7 +9313,7 @@ catch (SdkException<GetAvailableVideoGroupsError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetAvailableVideoGroupsError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -9379,9 +9379,9 @@ try
 }
 catch (SdkException<GetGroupVideoError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetGroupVideoError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -9455,9 +9455,9 @@ try
 }
 catch (SdkException<GetGroupVideosError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetGroupVideosError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -9533,9 +9533,9 @@ try
 }
 catch (SdkException<CheckIfUserLikedVideoError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type CheckIfUserLikedVideoError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -9601,9 +9601,9 @@ try
 }
 catch (SdkException<CheckIfUserLikedVideoAlt1Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type CheckIfUserLikedVideoAlt1Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -9671,7 +9671,7 @@ catch (SdkException<GetLikesError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetLikesError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -9745,7 +9745,7 @@ catch (SdkException<GetLikesAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetLikesAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -9957,7 +9957,7 @@ catch (SdkException<GetVodLikesError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetVodLikesError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -10027,9 +10027,9 @@ try
 }
 catch (SdkException<LikeVideoError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type LikeVideoError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -10095,9 +10095,9 @@ try
 }
 catch (SdkException<LikeVideoAlt1Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type LikeVideoAlt1Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -10162,9 +10162,9 @@ try
 }
 catch (SdkException<UnlikeVideoError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type UnlikeVideoError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -10230,9 +10230,9 @@ try
 }
 catch (SdkException<UnlikeVideoAlt1Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type UnlikeVideoAlt1Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -10306,7 +10306,7 @@ catch (SdkException<ExportVpaasViewerAnalyticsError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type ExportVpaasViewerAnalyticsError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -10378,7 +10378,7 @@ catch (SdkException<GetEventAudioTracksError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetEventAudioTracksError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -10446,7 +10446,7 @@ catch (SdkException<UpdateEventAudioTracksError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type UpdateEventAudioTracksError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -10519,7 +10519,7 @@ catch (SdkException<GetLiveEventWhitelistError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetLiveEventWhitelistError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -10588,7 +10588,7 @@ catch (SdkException<GetLiveEventWhitelistAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetLiveEventWhitelistAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -10656,7 +10656,7 @@ catch (SdkException<GetLiveEventWhitelistAlt2Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetLiveEventWhitelistAlt2Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -10723,7 +10723,7 @@ catch (SdkException<SetLiveEventWhitelistError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type SetLiveEventWhitelistError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -10792,7 +10792,7 @@ catch (SdkException<SetLiveEventWhitelistAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type SetLiveEventWhitelistAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -10860,7 +10860,7 @@ catch (SdkException<SetLiveEventWhitelistAlt2Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type SetLiveEventWhitelistAlt2Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -10933,7 +10933,7 @@ catch (SdkException<CreateLiveEventError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type CreateLiveEventError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -11002,7 +11002,7 @@ catch (SdkException<CreateLiveEventAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type CreateLiveEventAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -11070,7 +11070,7 @@ catch (SdkException<CreateLiveEventAlt2Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type CreateLiveEventAlt2Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -11137,7 +11137,7 @@ catch (SdkException<DeleteLiveEventError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteLiveEventError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -11205,7 +11205,7 @@ catch (SdkException<DeleteLiveEventAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteLiveEventAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -11272,7 +11272,7 @@ catch (SdkException<DeleteLiveEventAlt2Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteLiveEventAlt2Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -11339,7 +11339,7 @@ catch (SdkException<DeleteLiveEventsError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteLiveEventsError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -11407,7 +11407,7 @@ catch (SdkException<DeleteLiveEventsAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteLiveEventsAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -11474,7 +11474,7 @@ catch (SdkException<DeleteLiveEventsAlt2Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteLiveEventsAlt2Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -11542,7 +11542,7 @@ catch (SdkException<GetLiveEventError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetLiveEventError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -11612,7 +11612,7 @@ catch (SdkException<GetLiveEventAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetLiveEventAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -11681,7 +11681,7 @@ catch (SdkException<GetLiveEventAlt2Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetLiveEventAlt2Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -12043,7 +12043,7 @@ catch (SdkException<UpdateLiveEventError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type UpdateLiveEventError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -12113,7 +12113,7 @@ catch (SdkException<UpdateLiveEventAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type UpdateLiveEventAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -12182,7 +12182,7 @@ catch (SdkException<UpdateLiveEventAlt2Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type UpdateLiveEventAlt2Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -12254,7 +12254,7 @@ catch (SdkException<GetLiveEventM3U8PlaybackError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetLiveEventM3U8PlaybackError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -12325,7 +12325,7 @@ catch (SdkException<GetLiveEventM3U8PlaybackAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetLiveEventM3U8PlaybackAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -12400,7 +12400,7 @@ catch (SdkException<ActivateLiveEventError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type ActivateLiveEventError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -12470,7 +12470,7 @@ catch (SdkException<ActivateLiveEventAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type ActivateLiveEventAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -12539,7 +12539,7 @@ catch (SdkException<ActivateLiveEventAlt2Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type ActivateLiveEventAlt2Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -12612,7 +12612,7 @@ catch (SdkException<EditLiveEventAutoCcError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type EditLiveEventAutoCcError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -12682,7 +12682,7 @@ catch (SdkException<EditLiveEventAutoCcAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type EditLiveEventAutoCcAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -12751,7 +12751,7 @@ catch (SdkException<EditLiveEventAutoCcAlt2Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type EditLiveEventAutoCcAlt2Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -12824,7 +12824,7 @@ catch (SdkException<CreateLiveEventDestinationError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type CreateLiveEventDestinationError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -12893,7 +12893,7 @@ catch (SdkException<CreateLiveEventDestinationAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type CreateLiveEventDestinationAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -12963,7 +12963,7 @@ catch (SdkException<CreateOttDestinationError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type CreateOttDestinationError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -13031,7 +13031,7 @@ catch (SdkException<DeleteLiveEventDestinationError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteLiveEventDestinationError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -13098,7 +13098,7 @@ catch (SdkException<DeleteOttDestinationError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteOttDestinationError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -13167,7 +13167,7 @@ catch (SdkException<GetAvailableDestinationsError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetAvailableDestinationsError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -13234,7 +13234,7 @@ catch (SdkException<GetAvailableDestinationsAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetAvailableDestinationsAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -13290,7 +13290,7 @@ catch (SdkException<GetLiveEventDestinationError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetLiveEventDestinationError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -13358,7 +13358,7 @@ catch (SdkException<GetLiveEventDestinationsError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetLiveEventDestinationsError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -13426,7 +13426,7 @@ catch (SdkException<GetLiveEventDestinationsAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetLiveEventDestinationsAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -13495,7 +13495,7 @@ catch (SdkException<GetOttDestinationsError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetOttDestinationsError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -13564,7 +13564,7 @@ catch (SdkException<UpdateLiveEventDestinationError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type UpdateLiveEventDestinationError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -13637,7 +13637,7 @@ catch (SdkException<EndLiveEventError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type EndLiveEventError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -13707,7 +13707,7 @@ catch (SdkException<EndLiveEventAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type EndLiveEventAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -13776,7 +13776,7 @@ catch (SdkException<EndLiveEventAlt2Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type EndLiveEventAlt2Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -13849,7 +13849,7 @@ catch (SdkException<ToggleRleLowLatencyError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type ToggleRleLowLatencyError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -13919,7 +13919,7 @@ catch (SdkException<ToggleRleLowLatencyAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type ToggleRleLowLatencyAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -13988,7 +13988,7 @@ catch (SdkException<ToggleRleLowLatencyAlt2Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type ToggleRleLowLatencyAlt2Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -14196,7 +14196,7 @@ catch (SdkException<CreateLiveEventThumbnailError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type CreateLiveEventThumbnailError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -14266,7 +14266,7 @@ catch (SdkException<CreateLiveEventThumbnailAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type CreateLiveEventThumbnailAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -14335,7 +14335,7 @@ catch (SdkException<CreateLiveEventThumbnailAlt2Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type CreateLiveEventThumbnailAlt2Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -14403,7 +14403,7 @@ catch (SdkException<DeleteLiveEventThumbnailError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteLiveEventThumbnailError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -14472,7 +14472,7 @@ catch (SdkException<DeleteLiveEventThumbnailAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteLiveEventThumbnailAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -14540,7 +14540,7 @@ catch (SdkException<DeleteLiveEventThumbnailAlt2Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteLiveEventThumbnailAlt2Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -14609,7 +14609,7 @@ catch (SdkException<EditLiveEventThumbnailError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type EditLiveEventThumbnailError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -14680,7 +14680,7 @@ catch (SdkException<EditLiveEventThumbnailAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type EditLiveEventThumbnailAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -14750,7 +14750,7 @@ catch (SdkException<EditLiveEventThumbnailAlt2Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type EditLiveEventThumbnailAlt2Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -14820,7 +14820,7 @@ catch (SdkException<GetLiveEventThumbnailError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetLiveEventThumbnailError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -14890,7 +14890,7 @@ catch (SdkException<GetLiveEventThumbnailAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetLiveEventThumbnailAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -14959,7 +14959,7 @@ catch (SdkException<GetLiveEventThumbnailAlt2Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetLiveEventThumbnailAlt2Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -15028,7 +15028,7 @@ catch (SdkException<GetLiveEventThumbnailsError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetLiveEventThumbnailsError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -15097,7 +15097,7 @@ catch (SdkException<GetLiveEventThumbnailsAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetLiveEventThumbnailsAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -15165,7 +15165,7 @@ catch (SdkException<GetLiveEventThumbnailsAlt2Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetLiveEventThumbnailsAlt2Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -15236,7 +15236,7 @@ catch (SdkException<AddVideosToLiveEventError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type AddVideosToLiveEventError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -15305,7 +15305,7 @@ catch (SdkException<AddVideosToLiveEventAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type AddVideosToLiveEventAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -15373,7 +15373,7 @@ catch (SdkException<AddVideosToLiveEventAlt2Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type AddVideosToLiveEventAlt2Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -15442,7 +15442,7 @@ catch (SdkException<GetLiveEventVideoError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetLiveEventVideoError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -15512,7 +15512,7 @@ catch (SdkException<GetLiveEventVideoAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetLiveEventVideoAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -15581,7 +15581,7 @@ catch (SdkException<GetLiveEventVideoAlt2Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetLiveEventVideoAlt2Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -15659,7 +15659,7 @@ catch (SdkException<GetLiveEventVideosError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetLiveEventVideosError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -15744,7 +15744,7 @@ catch (SdkException<GetLiveEventVideosAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetLiveEventVideosAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -15828,7 +15828,7 @@ catch (SdkException<GetLiveEventVideosAlt2Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetLiveEventVideosAlt2Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -15903,7 +15903,7 @@ catch (SdkException<RemoveVideosFromLiveEventError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type RemoveVideosFromLiveEventError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -15972,7 +15972,7 @@ catch (SdkException<RemoveVideosFromLiveEventAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type RemoveVideosFromLiveEventAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -16040,7 +16040,7 @@ catch (SdkException<RemoveVideosFromLiveEventAlt2Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type RemoveVideosFromLiveEventAlt2Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -16113,7 +16113,7 @@ catch (SdkException<AddComposerVideoGraphicItemError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type AddComposerVideoGraphicItemError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -16181,7 +16181,7 @@ catch (SdkException<DeleteComposerVideoGraphicItemError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteComposerVideoGraphicItemError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -16250,7 +16250,7 @@ catch (SdkException<GetComposerVideoGraphicItemsError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetComposerVideoGraphicItemsError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -16322,7 +16322,7 @@ catch (SdkException<AttachGraphicItemToSceneError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type AttachGraphicItemToSceneError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -16392,7 +16392,7 @@ catch (SdkException<CreateComposerSceneError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type CreateComposerSceneError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -16461,7 +16461,7 @@ catch (SdkException<GetComposerScenesError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetComposerScenesError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -16529,7 +16529,7 @@ catch (SdkException<ResetComposerScenesError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type ResetComposerScenesError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -16597,7 +16597,7 @@ catch (SdkException<UpdateComposerSceneError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type UpdateComposerSceneError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -16668,9 +16668,9 @@ try
 }
 catch (SdkException<CreateVodBackgroundError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type CreateVodBackgroundError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -16735,9 +16735,9 @@ try
 }
 catch (SdkException<DeleteVodBackgroundError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteVodBackgroundError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -16804,9 +16804,9 @@ try
 }
 catch (SdkException<EditVodBackgroundError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type EditVodBackgroundError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -16874,9 +16874,9 @@ try
 }
 catch (SdkException<GetVodBackgroundError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetVodBackgroundError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -16943,9 +16943,9 @@ try
 }
 catch (SdkException<GetVodBackgroundsError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetVodBackgroundsError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -17147,9 +17147,9 @@ try
 }
 catch (SdkException<DeleteVodDraftError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteVodDraftError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -17215,9 +17215,9 @@ try
 }
 catch (SdkException<EditVodError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type EditVodError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -17284,9 +17284,9 @@ try
 }
 catch (SdkException<GetUserVodsError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetUserVodsError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -17357,9 +17357,9 @@ try
 }
 catch (SdkException<GetUserVodsAlt1Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetUserVodsAlt1Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -17429,9 +17429,9 @@ try
 }
 catch (SdkException<GetVodError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetVodError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -17501,9 +17501,9 @@ try
 }
 catch (SdkException<AddVodGenreError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type AddVodGenreError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -17569,9 +17569,9 @@ try
 }
 catch (SdkException<DeleteVodGenreError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteVodGenreError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -17638,9 +17638,9 @@ try
 }
 catch (SdkException<GetGenreVodError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetGenreVodError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -17709,7 +17709,7 @@ catch (SdkException<GetGenreVodsError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetGenreVodsError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -17781,9 +17781,9 @@ try
 }
 catch (SdkException<GetVodGenreError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetVodGenreError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -17849,9 +17849,9 @@ try
 }
 catch (SdkException<GetVodGenreByOndemandIdError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetVodGenreByOndemandIdError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -17920,7 +17920,7 @@ catch (SdkException<GetVodGenresError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetVodGenresError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -17974,9 +17974,9 @@ try
 }
 catch (SdkException<GetVodGenresByOndemandIdError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetVodGenresByOndemandIdError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -18046,9 +18046,9 @@ try
 }
 catch (SdkException<AddVodPosterError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type AddVodPosterError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -18247,9 +18247,9 @@ try
 }
 catch (SdkException<GetVodPostersError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetVodPostersError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -18321,9 +18321,9 @@ try
 }
 catch (SdkException<CreateVodPromotionError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type CreateVodPromotionError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -18389,9 +18389,9 @@ try
 }
 catch (SdkException<DeleteVodPromotionError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteVodPromotionError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -18458,9 +18458,9 @@ try
 }
 catch (SdkException<GetVodPromotionError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetVodPromotionError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -18527,9 +18527,9 @@ try
 }
 catch (SdkException<GetVodPromotionCodesError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetVodPromotionCodesError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -18598,9 +18598,9 @@ try
 }
 catch (SdkException<GetVodPromotionsError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetVodPromotionsError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -18673,9 +18673,9 @@ try
 }
 catch (SdkException<CheckIfVodWasPurchasedAlt1Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type CheckIfVodWasPurchasedAlt1Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -18746,9 +18746,9 @@ try
 }
 catch (SdkException<GetVodPurchasesError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetVodPurchasesError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -18819,9 +18819,9 @@ try
 }
 catch (SdkException<GetVodPurchasesAlt1Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetVodPurchasesAlt1Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -18895,9 +18895,9 @@ try
 }
 catch (SdkException<AddVodRegionError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type AddVodRegionError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -18963,9 +18963,9 @@ try
 }
 catch (SdkException<DeleteVodRegionError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteVodRegionError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -19032,9 +19032,9 @@ try
 }
 catch (SdkException<DeleteVodRegionsError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteVodRegionsError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -19101,9 +19101,9 @@ try
 }
 catch (SdkException<GetRegionError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetRegionError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -19222,9 +19222,9 @@ try
 }
 catch (SdkException<GetVodRegionError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetVodRegionError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -19291,9 +19291,9 @@ try
 }
 catch (SdkException<GetVodRegionsError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetVodRegionsError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -19359,9 +19359,9 @@ try
 }
 catch (SdkException<SetVodRegionsError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type SetVodRegionsError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -19432,9 +19432,9 @@ try
 }
 catch (SdkException<GetVodSeasonError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetVodSeasonError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -19571,9 +19571,9 @@ try
 }
 catch (SdkException<GetVodSeasonsError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetVodSeasonsError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -19648,9 +19648,9 @@ try
 }
 catch (SdkException<AddVideoToVodError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type AddVideoToVodError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -19717,9 +19717,9 @@ try
 }
 catch (SdkException<DeleteVideoFromVodError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteVideoFromVodError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -19927,7 +19927,7 @@ catch (SdkException<DeletePaymentMethodError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type DeletePaymentMethodError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -19995,7 +19995,7 @@ catch (SdkException<GetPaymentMethodInfoError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetPaymentMethodInfoError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -20128,7 +20128,7 @@ catch (SdkException<ListPaymentMethodsError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type ListPaymentMethodsError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -20474,9 +20474,9 @@ try
 }
 catch (SdkException<AddVideoToPortfolioError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type AddVideoToPortfolioError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -20543,9 +20543,9 @@ try
 }
 catch (SdkException<AddVideoToPortfolioAlt1Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type AddVideoToPortfolioAlt1Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -20611,9 +20611,9 @@ try
 }
 catch (SdkException<DeleteVideoFromPortfolioError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteVideoFromPortfolioError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -20680,9 +20680,9 @@ try
 }
 catch (SdkException<DeleteVideoFromPortfolioAlt1Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteVideoFromPortfolioAlt1Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -21056,7 +21056,7 @@ catch (SdkException<FederatedSearchUserItemsError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type FederatedSearchUserItemsError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -21146,7 +21146,7 @@ catch (SdkException<FederatedSearchUserItemsAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type FederatedSearchUserItemsAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -21228,9 +21228,9 @@ try
 }
 catch (SdkException<CreateShowcaseLogoError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type CreateShowcaseLogoError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -21296,9 +21296,9 @@ try
 }
 catch (SdkException<DeleteShowcaseLogoError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteShowcaseLogoError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -21366,9 +21366,9 @@ try
 }
 catch (SdkException<GetShowcaseLogoError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetShowcaseLogoError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -21436,9 +21436,9 @@ try
 }
 catch (SdkException<GetShowcaseLogosError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetShowcaseLogosError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -21509,9 +21509,9 @@ try
 }
 catch (SdkException<ReplaceShowcaseLogoError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type ReplaceShowcaseLogoError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -21586,9 +21586,9 @@ try
 }
 catch (SdkException<CreateShowcaseCustomThumbError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type CreateShowcaseCustomThumbError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -21654,9 +21654,9 @@ try
 }
 catch (SdkException<DeleteShowcaseCustomThumbnailError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteShowcaseCustomThumbnailError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -21726,9 +21726,9 @@ try
 }
 catch (SdkException<GetShowcaseCustomThumbnailError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetShowcaseCustomThumbnailError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -21801,7 +21801,7 @@ catch (SdkException<GetShowcaseCustomThumbsError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetShowcaseCustomThumbsError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -21875,9 +21875,9 @@ try
 }
 catch (SdkException<ReplaceShowcaseCustomThumbError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type ReplaceShowcaseCustomThumbError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -21953,7 +21953,7 @@ catch (SdkException<AddFolderToShowcasesError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type AddFolderToShowcasesError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -22021,9 +22021,9 @@ try
 }
 catch (SdkException<CopyShowcaseError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type CopyShowcaseError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -22091,9 +22091,9 @@ try
 }
 catch (SdkException<CopyShowcaseAlt2Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type CopyShowcaseAlt2Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -22160,9 +22160,9 @@ try
 }
 catch (SdkException<CreateShowcaseError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type CreateShowcaseError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -22229,9 +22229,9 @@ try
 }
 catch (SdkException<CreateShowcaseAlt1Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type CreateShowcaseAlt1Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -22296,9 +22296,9 @@ try
 }
 catch (SdkException<DeleteShowcaseError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteShowcaseError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -22364,9 +22364,9 @@ try
 }
 catch (SdkException<DeleteShowcaseAlt2Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteShowcaseAlt2Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -22432,9 +22432,9 @@ try
 }
 catch (SdkException<EditShowcaseError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type EditShowcaseError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -22502,9 +22502,9 @@ try
 }
 catch (SdkException<EditShowcaseAlt2Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type EditShowcaseAlt2Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -22571,9 +22571,9 @@ try
 }
 catch (SdkException<GetShowcaseError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetShowcaseError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -22640,9 +22640,9 @@ try
 }
 catch (SdkException<GetShowcaseAlt2Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetShowcaseAlt2Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -22714,9 +22714,9 @@ try
 }
 catch (SdkException<GetShowcasesError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetShowcasesError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -22793,9 +22793,9 @@ try
 }
 catch (SdkException<GetShowcasesAlt1Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetShowcasesAlt1Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -22937,9 +22937,9 @@ try
 }
 catch (SdkException<AddVideoToShowcaseError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type AddVideoToShowcaseError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -23006,9 +23006,9 @@ try
 }
 catch (SdkException<AddVideoToShowcaseAlt2Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type AddVideoToShowcaseAlt2Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -23082,7 +23082,7 @@ catch (SdkException<GetAvailableShowcaseVideosError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetAvailableShowcaseVideosError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -23160,7 +23160,7 @@ catch (SdkException<GetAvailableVideoShowcasesError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetAvailableVideoShowcasesError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -23231,9 +23231,9 @@ try
 }
 catch (SdkException<GetShowcaseVideoError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetShowcaseVideoError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -23302,9 +23302,9 @@ try
 }
 catch (SdkException<GetShowcaseVideoAlt2Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetShowcaseVideoAlt2Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -23383,9 +23383,9 @@ try
 }
 catch (SdkException<GetShowcaseVideosError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetShowcaseVideosError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -23472,9 +23472,9 @@ try
 }
 catch (SdkException<GetShowcaseVideosAlt2Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetShowcaseVideosAlt2Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -23549,9 +23549,9 @@ try
 }
 catch (SdkException<RemoveVideoFromShowcaseError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type RemoveVideoFromShowcaseError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -23618,9 +23618,9 @@ try
 }
 catch (SdkException<RemoveVideoFromShowcaseAlt2Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type RemoveVideoFromShowcaseAlt2Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -23686,9 +23686,9 @@ try
 }
 catch (SdkException<ReplaceVideosInShowcaseError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type ReplaceVideosInShowcaseError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -23755,9 +23755,9 @@ try
 }
 catch (SdkException<ReplaceVideosInShowcaseAlt2Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type ReplaceVideosInShowcaseAlt2Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -23826,7 +23826,7 @@ catch (SdkException<SetVideoAsShowcaseFeaturedError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type SetVideoAsShowcaseFeaturedError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -23896,7 +23896,7 @@ catch (SdkException<SetVideoAsShowcaseFeaturedAlt2Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type SetVideoAsShowcaseFeaturedAlt2Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -23965,7 +23965,7 @@ catch (SdkException<SetVideoAsShowcaseThumbnailError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type SetVideoAsShowcaseThumbnailError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -24036,7 +24036,7 @@ catch (SdkException<SetVideoAsShowcaseThumbnailAlt2Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type SetVideoAsShowcaseThumbnailAlt2Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -24261,7 +24261,7 @@ catch (SdkException<BackfillTeamCustomMetadataError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type BackfillTeamCustomMetadataError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -24338,7 +24338,7 @@ catch (SdkException<GetTeamCustomMetadataIncompleteVideosError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetTeamCustomMetadataIncompleteVideosError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -24416,9 +24416,9 @@ try
 }
 catch (SdkException<GetTeamCustomMetadataSettingsError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetTeamCustomMetadataSettingsError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -24509,7 +24509,7 @@ catch (SdkException<UpdateCustomMetadataFieldOptionsError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type UpdateCustomMetadataFieldOptionsError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -24594,7 +24594,7 @@ catch (SdkException<UpsertCustomMetadataSettingsError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type UpsertCustomMetadataSettingsError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -25116,7 +25116,7 @@ catch (SdkException<EditUserError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type EditUserError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -25185,7 +25185,7 @@ catch (SdkException<EditUserAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type EditUserAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -25375,7 +25375,7 @@ catch (SdkException<GetFeedError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetFeedError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -25447,7 +25447,7 @@ catch (SdkException<GetFeedAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetFeedAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -25519,9 +25519,9 @@ try
 }
 catch (SdkException<CheckIfUserIsFollowingError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type CheckIfUserIsFollowingError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -25587,9 +25587,9 @@ try
 }
 catch (SdkException<CheckIfUserIsFollowingAlt1Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type CheckIfUserIsFollowingAlt1Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -25654,9 +25654,9 @@ try
 }
 catch (SdkException<FollowUserError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type FollowUserError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -25722,9 +25722,9 @@ try
 }
 catch (SdkException<FollowUserAlt1Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type FollowUserAlt1Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -25802,7 +25802,7 @@ catch (SdkException<FollowUsersError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type FollowUsersError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -25881,7 +25881,7 @@ catch (SdkException<FollowUsersAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type FollowUsersAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -26365,9 +26365,9 @@ try
 }
 catch (SdkException<DownloadLmsPackageError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetNoContent(out var error))
     {
-        // TODO: Handle 'error' of type DownloadLmsPackageError
+        // TODO: Handle 'error' of type RawError
     }
 }
 ```
@@ -27097,7 +27097,7 @@ catch (SdkException<SearchUsersError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type SearchUsersError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -27287,9 +27287,9 @@ try
 }
 catch (SdkException<GetWatchHistoryError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetWatchHistoryError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -27364,7 +27364,7 @@ catch (SdkException<AskAiQuestionError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type AskAiQuestionError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -27449,7 +27449,7 @@ catch (SdkException<EditAiTexttrackError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type EditAiTexttrackError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -27520,7 +27520,7 @@ catch (SdkException<GetAiLanguagesError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetAiLanguagesError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -27589,7 +27589,7 @@ catch (SdkException<GetAiMetadataError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetAiMetadataError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -27662,7 +27662,7 @@ catch (SdkException<GetAiQuestionsError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetAiQuestionsError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -27736,7 +27736,7 @@ catch (SdkException<GetAiTranscribeStatusError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetAiTranscribeStatusError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -27807,7 +27807,7 @@ catch (SdkException<GetAiTranslateDubbingStatusError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetAiTranslateDubbingStatusError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -27879,7 +27879,7 @@ catch (SdkException<GetAiTranslateSubtitlesStatusError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetAiTranslateSubtitlesStatusError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -27954,7 +27954,7 @@ catch (SdkException<StartAiTranscribeError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type StartAiTranscribeError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -28031,7 +28031,7 @@ catch (SdkException<StartAiTranslateDubbingError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type StartAiTranslateDubbingError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -28104,7 +28104,7 @@ catch (SdkException<StartAiTranslateSubtitlesError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type StartAiTranslateSubtitlesError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -28177,7 +28177,7 @@ catch (SdkException<CreateAnimatedThumbsetError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type CreateAnimatedThumbsetError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -28245,7 +28245,7 @@ catch (SdkException<DeleteAnimatedThumbsetError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteAnimatedThumbsetError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -28314,7 +28314,7 @@ catch (SdkException<GetAllAnimatedThumbsetError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetAllAnimatedThumbsetError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -28384,7 +28384,7 @@ catch (SdkException<GetAnimatedThumbsetError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetAnimatedThumbsetError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -28453,7 +28453,7 @@ catch (SdkException<GetAnimatedThumbsetStatusError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetAnimatedThumbsetStatusError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -28524,9 +28524,9 @@ try
 }
 catch (SdkException<CreateChapterError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type CreateChapterError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -28593,9 +28593,9 @@ try
 }
 catch (SdkException<CreateChapterThumbnailOrUploadLinkError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type CreateChapterThumbnailOrUploadLinkError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -28663,9 +28663,9 @@ try
 }
 catch (SdkException<CreateUnsavedChapterThumbnailOrUploadLinkError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type CreateUnsavedChapterThumbnailOrUploadLinkError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -28731,9 +28731,9 @@ try
 }
 catch (SdkException<DeleteChapterError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteChapterError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -28802,9 +28802,9 @@ try
 }
 catch (SdkException<DeleteChapterThumbnailError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteChapterThumbnailError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -28874,7 +28874,7 @@ catch (SdkException<EditChapterError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type EditChapterError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -28942,9 +28942,9 @@ try
 }
 catch (SdkException<GetChapterError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetChapterError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -29011,9 +29011,9 @@ try
 }
 catch (SdkException<GetChapterThumbnailError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetChapterThumbnailError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -29081,9 +29081,9 @@ try
 }
 catch (SdkException<GetChapterThumbnailsError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetChapterThumbnailsError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -29150,9 +29150,9 @@ try
 }
 catch (SdkException<GetChaptersError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetChaptersError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -29220,9 +29220,9 @@ try
 }
 catch (SdkException<GetUnsavedChapterThumbnailError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetUnsavedChapterThumbnailError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -29289,9 +29289,9 @@ try
 }
 catch (SdkException<SetChapterThumbnailActiveError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type SetChapterThumbnailActiveError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -29491,9 +29491,9 @@ try
 }
 catch (SdkException<AddVideoCreditError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type AddVideoCreditError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -29560,9 +29560,9 @@ try
 }
 catch (SdkException<AddVideoCreditAlt1Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type AddVideoCreditAlt1Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -29699,9 +29699,9 @@ try
 }
 catch (SdkException<DeleteVideoCreditError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteVideoCreditError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -29768,9 +29768,9 @@ try
 }
 catch (SdkException<EditVideoCreditError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type EditVideoCreditError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -29838,9 +29838,9 @@ try
 }
 catch (SdkException<GetVideoCreditError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetVideoCreditError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -30057,9 +30057,9 @@ try
 }
 catch (SdkException<AddVideoPrivacyDomainError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type AddVideoPrivacyDomainError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -30125,9 +30125,9 @@ try
 }
 catch (SdkException<DeleteVideoPrivacyDomainError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteVideoPrivacyDomainError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -30194,9 +30194,9 @@ try
 }
 catch (SdkException<GetVideoPrivacyDomainsError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetVideoPrivacyDomainsError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -30270,9 +30270,9 @@ try
 }
 catch (SdkException<CheckIfUserOwnsVideoError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type CheckIfUserOwnsVideoError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -30339,9 +30339,9 @@ try
 }
 catch (SdkException<CheckIfUserOwnsVideoAlt1Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type CheckIfUserOwnsVideoAlt1Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -30408,9 +30408,9 @@ try
 }
 catch (SdkException<CopyVideoError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type CopyVideoError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -30479,9 +30479,9 @@ try
 }
 catch (SdkException<CopyVideoAlt2Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type CopyVideoAlt2Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -30547,9 +30547,9 @@ try
 }
 catch (SdkException<DeleteVideoError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteVideoError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -30619,7 +30619,7 @@ catch (SdkException<DeleteVideosError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteVideosError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -30690,7 +30690,7 @@ catch (SdkException<DeleteVideosAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteVideosAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -30757,9 +30757,9 @@ try
 }
 catch (SdkException<EditVideoError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type EditVideoError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -30835,7 +30835,7 @@ catch (SdkException<GetAppearancesError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetAppearancesError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -30916,7 +30916,7 @@ catch (SdkException<GetAppearancesAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetAppearancesAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -30988,9 +30988,9 @@ try
 }
 catch (SdkException<GetVideoError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetVideoError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -31254,7 +31254,7 @@ catch (SdkException<SearchVideosError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type SearchVideosError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -31347,7 +31347,7 @@ catch (SdkException<UpdateVideoCustomMetadataError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type UpdateVideoCustomMetadataError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -31687,7 +31687,7 @@ catch (SdkException<GetOneTimeEventM3U8PlaybackError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetOneTimeEventM3U8PlaybackError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -31755,7 +31755,7 @@ catch (SdkException<GetOneTimeEventM3U8PlaybackAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetOneTimeEventM3U8PlaybackAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -31827,7 +31827,7 @@ catch (SdkException<GetVideoReportingReasonsError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetVideoReportingReasonsError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -31887,7 +31887,7 @@ catch (SdkException<ClipTrimError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type ClipTrimError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -31958,9 +31958,9 @@ try
 }
 catch (SdkException<GetRelatedVideosError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetRelatedVideosError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -32035,7 +32035,7 @@ catch (SdkException<AddOrRemoveMultipleAlbumsError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type AddOrRemoveMultipleAlbumsError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -32104,7 +32104,7 @@ catch (SdkException<GetVideoAlbumsError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetVideoAlbumsError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -32176,9 +32176,9 @@ try
 }
 catch (SdkException<AddVideoTagError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type AddVideoTagError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -32245,9 +32245,9 @@ try
 }
 catch (SdkException<AddVideoTagsError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type AddVideoTagsError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -32315,9 +32315,9 @@ try
 }
 catch (SdkException<CheckVideoForTagError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type CheckVideoForTagError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -32383,9 +32383,9 @@ try
 }
 catch (SdkException<DeleteVideoTagError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteVideoTagError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -32519,9 +32519,9 @@ try
 }
 catch (SdkException<GetVideosWithTagError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetVideosWithTagError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -32595,9 +32595,9 @@ try
 }
 catch (SdkException<CreateTextTrackError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type CreateTextTrackError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -32664,9 +32664,9 @@ try
 }
 catch (SdkException<CreateTextTrackAlt1Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type CreateTextTrackAlt1Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -32735,7 +32735,7 @@ catch (SdkException<DeleteTextTrackError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteTextTrackError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -32802,9 +32802,9 @@ try
 }
 catch (SdkException<EditTextTrackError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type EditTextTrackError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -32874,7 +32874,7 @@ catch (SdkException<GetTextTrackError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetTextTrackError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -32941,9 +32941,9 @@ try
 }
 catch (SdkException<GetTextTracksError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetTextTracksError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -33011,9 +33011,9 @@ try
 }
 catch (SdkException<GetTextTracksAlt1Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetTextTracksAlt1Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -33082,9 +33082,9 @@ try
 }
 catch (SdkException<GetTextTracksAlt2Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetTextTracksAlt2Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -33153,9 +33153,9 @@ try
 }
 catch (SdkException<GetTextTracksAlt3Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetTextTracksAlt3Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -33700,7 +33700,7 @@ catch (SdkException<GetTranscriptError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetTranscriptError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -33769,7 +33769,7 @@ catch (SdkException<GetTranscriptMetadataError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetTranscriptMetadataError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -33840,9 +33840,9 @@ try
 }
 catch (SdkException<AddVideoPrivacyUserError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type AddVideoPrivacyUserError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -34039,9 +34039,9 @@ try
 }
 catch (SdkException<DeleteVideoPrivacyUserError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteVideoPrivacyUserError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -34108,9 +34108,9 @@ try
 }
 catch (SdkException<GetVideoPrivacyUsersError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetVideoPrivacyUsersError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -34178,9 +34178,9 @@ try
 }
 catch (SdkException<GetVideoPrivacyUsersAlt1Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetVideoPrivacyUsersAlt1Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -34254,7 +34254,7 @@ catch (SdkException<CompleteStreamingUploadError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type CompleteStreamingUploadError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -34391,7 +34391,7 @@ catch (SdkException<UploadVideoError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type UploadVideoError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -34460,7 +34460,7 @@ catch (SdkException<UploadVideoAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type UploadVideoAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -34530,9 +34530,9 @@ try
 }
 catch (SdkException<CreateAudioTrackError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type CreateAudioTrackError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -34602,7 +34602,7 @@ catch (SdkException<CreateVideoVersionError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type CreateVideoVersionError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -34668,9 +34668,9 @@ try
 }
 catch (SdkException<DeleteAudioTrackError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteAudioTrackError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -34737,9 +34737,9 @@ try
 }
 catch (SdkException<DeleteVideoVersionError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteVideoVersionError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -34806,9 +34806,9 @@ try
 }
 catch (SdkException<EditAudioTrackError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type EditAudioTrackError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -34879,7 +34879,7 @@ catch (SdkException<EditVideoVersionError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type EditVideoVersionError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -34947,9 +34947,9 @@ try
 }
 catch (SdkException<GetAudioTrackError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetAudioTrackError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -35017,9 +35017,9 @@ try
 }
 catch (SdkException<GetAudioTracksError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetAudioTracksError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -35217,9 +35217,9 @@ try
 }
 catch (SdkException<GetVideoVersionError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetVideoVersionError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -35288,7 +35288,7 @@ catch (SdkException<GetVideoVersionsError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetVideoVersionsError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -35358,7 +35358,7 @@ catch (SdkException<GetVideoVersionsAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type GetVideoVersionsAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -35433,7 +35433,7 @@ catch (SdkException<CreateCommentError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type CreateCommentError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -35502,7 +35502,7 @@ catch (SdkException<CreateCommentAlt1Error> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type CreateCommentAlt1Error
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -35572,7 +35572,7 @@ catch (SdkException<CreateCommentReplyError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type CreateCommentReplyError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -35641,7 +35641,7 @@ catch (SdkException<DeleteCommentError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type DeleteCommentError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -35710,7 +35710,7 @@ catch (SdkException<EditCommentError> ex)
 {
     if (ex.Error.TryGetError(out var error))
     {
-        // TODO: Handle 'error' of type EditCommentError
+        // TODO: Handle 'error' of type Error
     }
 }
 ```
@@ -35778,9 +35778,9 @@ try
 }
 catch (SdkException<GetCommentError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetCommentError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -35847,9 +35847,9 @@ try
 }
 catch (SdkException<GetCommentRepliesError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type GetCommentRepliesError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -36188,9 +36188,9 @@ try
 }
 catch (SdkException<CheckWatchLaterQueueError> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type CheckWatchLaterQueueError
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```
@@ -36257,9 +36257,9 @@ try
 }
 catch (SdkException<CheckWatchLaterQueueAlt1Error> ex)
 {
-    if (ex.Error.TryGetError(out var error))
+    if (ex.Error.TryGetLegacyError(out var error))
     {
-        // TODO: Handle 'error' of type CheckWatchLaterQueueAlt1Error
+        // TODO: Handle 'error' of type LegacyError
     }
 }
 ```

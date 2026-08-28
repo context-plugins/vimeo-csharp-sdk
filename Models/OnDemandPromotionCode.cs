@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using VimeoApi.Core.Models;
 
 namespace VimeoApi.Models;
 
@@ -27,4 +28,7 @@ public record OnDemandPromotionCode
     /// </summary>
     [JsonPropertyName("uses")]
     public required double Uses { get; init; }
+
+    [JsonExtensionData]
+    public AdditionalProperties AdditionalProperties { get; init; } = [];
 }

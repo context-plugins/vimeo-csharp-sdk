@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
+using VimeoApi.Core.Models;
 
 namespace VimeoApi.Models;
 
@@ -76,4 +77,7 @@ public record EventAutomatedClosedCaptions
     /// </summary>
     [JsonPropertyName("event_id")]
     public required double EventId { get; init; }
+
+    [JsonExtensionData]
+    public AdditionalProperties AdditionalProperties { get; init; } = [];
 }

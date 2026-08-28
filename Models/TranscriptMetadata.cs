@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using VimeoApi.Core.Models;
 
 namespace VimeoApi.Models;
 
@@ -75,4 +76,7 @@ public record TranscriptMetadata
     /// </summary>
     [JsonPropertyName("word_count")]
     public required double WordCount { get; init; }
+
+    [JsonExtensionData]
+    public AdditionalProperties AdditionalProperties { get; init; } = [];
 }

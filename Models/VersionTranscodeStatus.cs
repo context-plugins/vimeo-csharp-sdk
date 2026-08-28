@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using VimeoApi.Core.Models;
 
 namespace VimeoApi.Models;
 
@@ -21,4 +22,7 @@ public record VersionTranscodeStatus
     /// </summary>
     [JsonPropertyName("is_playable")]
     public required bool IsPlayable { get; init; }
+
+    [JsonExtensionData]
+    public AdditionalProperties AdditionalProperties { get; init; } = [];
 }

@@ -5,7 +5,7 @@ using VimeoApi.Core.ErrorResponse;
 
 namespace VimeoApi.Core.Response;
 
-public sealed class RawErrorBodyResponse : IResponse<RawError>
+internal sealed class RawErrorBodyResponse : IResponse<RawError>
 {
     public static RawErrorBodyResponse Instance { get; } = new();
 

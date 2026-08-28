@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using VimeoApi.Core.Models;
 using VimeoApi.Models.Enums;
 
 namespace VimeoApi.Models;
@@ -57,4 +58,7 @@ public record EventSessionStatus
     /// </summary>
     [JsonPropertyName("stream_mode")]
     public required StreamMode StreamMode { get; init; }
+
+    [JsonExtensionData]
+    public AdditionalProperties AdditionalProperties { get; init; } = [];
 }

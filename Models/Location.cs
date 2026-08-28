@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using VimeoApi.Core.Models;
 
 namespace VimeoApi.Models;
 
@@ -63,4 +64,7 @@ public record Location
     /// </summary>
     [JsonPropertyName("sub_locality")]
     public required string? SubLocality { get; init; }
+
+    [JsonExtensionData]
+    public AdditionalProperties AdditionalProperties { get; init; } = [];
 }

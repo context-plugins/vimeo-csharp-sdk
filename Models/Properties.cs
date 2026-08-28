@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using VimeoApi.Core.Models;
 
 namespace VimeoApi.Models;
 
@@ -24,4 +25,7 @@ public record Properties
     /// </summary>
     [JsonPropertyName("upgrade_to_role")]
     public required UpgradeToRole UpgradeToRole { get; init; }
+
+    [JsonExtensionData]
+    public AdditionalProperties AdditionalProperties { get; init; } = [];
 }

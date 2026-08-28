@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using VimeoApi.Core.Models;
 using VimeoApi.Models.Enums;
 
 namespace VimeoApi.Models;
@@ -90,4 +91,7 @@ public record Videos4
     /// </summary>
     [JsonPropertyName("sharing_link_default_expiry_days")]
     public required double SharingLinkDefaultExpiryDays { get; init; }
+
+    [JsonExtensionData]
+    public AdditionalProperties AdditionalProperties { get; init; } = [];
 }

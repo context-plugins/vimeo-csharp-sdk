@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
+using VimeoApi.Core.Models;
 
 namespace VimeoApi.Models;
 
@@ -10,4 +11,7 @@ public record VideosCategoriesRequest
     /// </summary>
     [JsonPropertyName("category")]
     public required IReadOnlyList<string> Category { get; init; }
+
+    [JsonExtensionData]
+    public AdditionalProperties AdditionalProperties { get; init; } = [];
 }

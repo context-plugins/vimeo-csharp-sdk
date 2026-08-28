@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using VimeoApi.Core.Models;
 
 namespace VimeoApi.Models;
 
@@ -104,14 +105,16 @@ public record Connections3
     /// <summary>
     /// Information about the upload folder for Microsoft Teams recordings.
     /// </summary>
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
     [JsonPropertyName("ms_teams_team_folder_id")]
-    public required MsTeamsTeamFolderId? MsTeamsTeamFolderId { get; init; }
+    public MsTeamsTeamFolderId? MsTeamsTeamFolderId { get; init; }
 
     /// <summary>
     /// Information about the Microsoft Teams tenant token ID.
     /// </summary>
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
     [JsonPropertyName("ms_teams_tenant_token_id")]
-    public required string? MsTeamsTenantTokenId { get; init; }
+    public string? MsTeamsTenantTokenId { get; init; }
 
     /// <summary>
     /// Information about the authenticated user's portraits.
@@ -128,8 +131,9 @@ public record Connections3
     /// <summary>
     /// Information about the authenticated user's projects.
     /// </summary>
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
     [JsonPropertyName("projects")]
-    public required Projects Projects { get; init; }
+    public Projects? Projects { get; init; }
 
     /// <summary>
     /// A collection of recommended channels for the authenticated user to follow. This data requires a bearer token with the <c>private</c> scope. This data requires a bearer token with the <c>private</c> scope.
@@ -176,4 +180,7 @@ public record Connections3
     /// </summary>
     [JsonPropertyName("watchlater")]
     public required Watchlater Watchlater { get; init; }
+
+    [JsonExtensionData]
+    public AdditionalProperties AdditionalProperties { get; init; } = [];
 }

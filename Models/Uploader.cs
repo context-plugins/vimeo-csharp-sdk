@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using VimeoApi.Core.Models;
 
 namespace VimeoApi.Models;
 
@@ -24,4 +25,7 @@ public record Uploader
     /// </summary>
     [JsonPropertyName("pictures")]
     public required Picture Pictures { get; init; }
+
+    [JsonExtensionData]
+    public AdditionalProperties AdditionalProperties { get; init; } = [];
 }

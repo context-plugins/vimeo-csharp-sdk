@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using VimeoApi.Core.Models;
 
 namespace VimeoApi.Models;
 
@@ -147,4 +148,7 @@ public record VideoPageSettings
     /// </summary>
     [JsonPropertyName("watch_later")]
     public required bool WatchLater { get; init; }
+
+    [JsonExtensionData]
+    public AdditionalProperties AdditionalProperties { get; init; } = [];
 }

@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using VimeoApi.Core.Models;
 
 namespace VimeoApi.Models;
 
@@ -51,4 +52,7 @@ public record ComposerGraphics
     /// </summary>
     [JsonPropertyName("videoThumbFullSize")]
     public required string VideoThumbFullSize { get; init; }
+
+    [JsonExtensionData]
+    public AdditionalProperties AdditionalProperties { get; init; } = [];
 }

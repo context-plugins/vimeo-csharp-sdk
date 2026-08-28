@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using VimeoApi.Core.Models;
 
 namespace VimeoApi.Models;
 
@@ -83,4 +84,7 @@ public record Metadata4
     /// </summary>
     [JsonPropertyName("is_zoom_upload")]
     public required bool IsZoomUpload { get; init; }
+
+    [JsonExtensionData]
+    public AdditionalProperties AdditionalProperties { get; init; } = [];
 }

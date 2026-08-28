@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using VimeoApi.Core.Models;
 
 namespace VimeoApi.Models;
 
@@ -228,4 +229,7 @@ public record Interactions3
     /// </summary>
     [JsonPropertyName("watchlater")]
     public required Watchlater1 Watchlater { get; init; }
+
+    [JsonExtensionData]
+    public AdditionalProperties AdditionalProperties { get; init; } = [];
 }

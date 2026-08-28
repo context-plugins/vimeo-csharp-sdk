@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using VimeoApi.Core.Models;
 
 namespace VimeoApi.Models;
 
@@ -36,4 +37,7 @@ public record Promotion
     /// </summary>
     [JsonPropertyName("uri")]
     public required Uri1 Uri { get; init; }
+
+    [JsonExtensionData]
+    public AdditionalProperties AdditionalProperties { get; init; } = [];
 }

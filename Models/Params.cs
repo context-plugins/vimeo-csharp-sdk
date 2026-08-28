@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using VimeoApi.Core.Models;
 using VimeoApi.Models.Enums;
 
 namespace VimeoApi.Models;
@@ -79,4 +80,7 @@ public record Params
     /// </summary>
     [JsonPropertyName("video_storage_quota_unit")]
     public required VideoStorageQuotaUnit VideoStorageQuotaUnit { get; init; }
+
+    [JsonExtensionData]
+    public AdditionalProperties AdditionalProperties { get; init; } = [];
 }

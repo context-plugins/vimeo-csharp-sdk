@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
+using VimeoApi.Core.Models;
 
 namespace VimeoApi.Models;
 
@@ -13,4 +14,7 @@ public record TeamPermissions1
     /// </summary>
     [JsonPropertyName("options")]
     public required IReadOnlyList<string> Options { get; init; }
+
+    [JsonExtensionData]
+    public AdditionalProperties AdditionalProperties { get; init; } = [];
 }

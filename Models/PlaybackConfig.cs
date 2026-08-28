@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using VimeoApi.Core.Models;
 
 namespace VimeoApi.Models;
 
@@ -111,4 +112,7 @@ public record PlaybackConfig
     /// </summary>
     [JsonPropertyName("show_playback_views")]
     public required ShowPlaybackViews ShowPlaybackViews { get; init; }
+
+    [JsonExtensionData]
+    public AdditionalProperties AdditionalProperties { get; init; } = [];
 }

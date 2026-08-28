@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using VimeoApi.Core.Models;
 
 namespace VimeoApi.Models;
 
@@ -69,4 +70,7 @@ public record ShowcaseConfig
     /// </summary>
     [JsonPropertyName("text_cta_alignment")]
     public required TextCtaAlignment TextCtaAlignment { get; init; }
+
+    [JsonExtensionData]
+    public AdditionalProperties AdditionalProperties { get; init; } = [];
 }

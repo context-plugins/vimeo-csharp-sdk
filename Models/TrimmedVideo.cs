@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using VimeoApi.Core.Models;
 
 namespace VimeoApi.Models;
 
@@ -66,4 +67,7 @@ public record TrimmedVideo
     /// </summary>
     [JsonPropertyName("version_quality")]
     public required string VersionQuality { get; init; }
+
+    [JsonExtensionData]
+    public AdditionalProperties AdditionalProperties { get; init; } = [];
 }
