@@ -1,7 +1,7 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Enum;
+using VimeoApi.Core.Enum;
 
-namespace Vimeo.Models.Enums;
+namespace VimeoApi.Models.Enums;
 
 /// <summary>
 /// The approach by which to upload the version.

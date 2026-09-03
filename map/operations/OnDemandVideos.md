@@ -8,6 +8,7 @@ Accessor: `client.OnDemandVideos` · Source: `Api/OnDemandVideos.cs` · 4 operat
 
 ### AddVideoToVod
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `AddVideoToVod(double ondemandId, double videoId, OndemandPagesVideosRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `OnDemandVideo`
 - **Error**: `SdkException<AddVideoToVodError>` — **Case A (typed)**
@@ -22,6 +23,7 @@ Accessor: `client.OnDemandVideos` · Source: `Api/OnDemandVideos.cs` · 4 operat
 
 ### DeleteVideoFromVod
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteVideoFromVod(double ondemandId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteVideoFromVodError>` — **Case A (typed)**
@@ -34,6 +36,7 @@ Accessor: `client.OnDemandVideos` · Source: `Api/OnDemandVideos.cs` · 4 operat
 
 ### GetVodVideo
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVodVideo(double ondemandId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Video`
 - **Error**: `SdkException<RawError>` — **Case B**
@@ -44,6 +47,7 @@ Accessor: `client.OnDemandVideos` · Source: `Api/OnDemandVideos.cs` · 4 operat
 
 ### GetVodVideos
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVodVideos(double ondemandId, Direction? direction, Filter29? filter, double? page, double? perPage, Sort45? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 5 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `filter` ← `filter`, `page` ← `page`, `per_page` ← `perPage`, `sort` ← `sort`

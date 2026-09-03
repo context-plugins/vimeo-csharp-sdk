@@ -8,6 +8,7 @@ Accessor: `client.VideosLanguages` · Source: `Api/VideosLanguages.cs` · 1 oper
 
 ### GetLanguages
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetLanguages(Filter7? filter, double? page, double? perPage, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `filter` — nullable, no default → **must pass explicitly**
   - `page` — nullable, no default → **must pass explicitly**

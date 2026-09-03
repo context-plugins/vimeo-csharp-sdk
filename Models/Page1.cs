@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
+using VimeoApi.Core.Models;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 /// <summary>
 /// Information about how the authenticated user can interact with the connection to the video's On Demand page.

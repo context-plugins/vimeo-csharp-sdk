@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
-using Vimeo.Models.AnyOf;
-using Vimeo.Models.Enums;
+using VimeoApi.Core.Models;
+using VimeoApi.Models.AnyOf;
+using VimeoApi.Models.Enums;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 public record EmbedSettings
 {

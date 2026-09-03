@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
-using Vimeo.Models.Enums;
+using VimeoApi.Core.Models;
+using VimeoApi.Models.Enums;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 public record Subscription
 {
@@ -96,7 +96,7 @@ public record Subscription
     /// </para>
     /// </summary>
     [JsonPropertyName("status")]
-    public required Status19 Status { get; init; }
+    public required Status16 Status { get; init; }
 
     /// <summary>
     /// The number of the subscription.

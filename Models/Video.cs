@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
-using Vimeo.Models.Enums;
+using VimeoApi.Core.Models;
+using VimeoApi.Models.Enums;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 public record Video
 {
@@ -444,7 +444,7 @@ public record Video
     /// </para>
     /// </summary>
     [JsonPropertyName("status")]
-    public required Status5 Status { get; init; }
+    public required Status4 Status { get; init; }
 
     /// <summary>
     /// An array of all tags assigned to the video.

@@ -8,6 +8,7 @@ Accessor: `client.LiveEventActivation` · Source: `Api/LiveEventActivation.cs` �
 
 ### ActivateLiveEvent
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `ActivateLiveEvent(double liveEventId, double userId, UsersLiveEventsActivateRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `Video`
@@ -23,6 +24,7 @@ Accessor: `client.LiveEventActivation` · Source: `Api/LiveEventActivation.cs` �
 
 ### ActivateLiveEventAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `ActivateLiveEventAlt1(double liveEventId, LiveEventsActivateRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `Video`
@@ -38,6 +40,7 @@ Accessor: `client.LiveEventActivation` · Source: `Api/LiveEventActivation.cs` �
 
 ### ActivateLiveEventAlt2
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `ActivateLiveEventAlt2(double liveEventId, MeLiveEventsActivateRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `Video`

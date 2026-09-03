@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
+using VimeoApi.Core.Models;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 /// <summary>
 /// Information about adding or removing a video from the showcase. This data requires a bearer token with the <c>private</c> scope.

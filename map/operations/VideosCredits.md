@@ -8,6 +8,7 @@ Accessor: `client.VideosCredits` · Source: `Api/VideosCredits.cs` · 8 operatio
 
 ### AddVideoCredit
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `AddVideoCredit(double videoId, VideosCreditsRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Credit`
 - **Error**: `SdkException<AddVideoCreditError>` — **Case A (typed)**
@@ -22,6 +23,7 @@ Accessor: `client.VideosCredits` · Source: `Api/VideosCredits.cs` · 8 operatio
 
 ### AddVideoCreditAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `AddVideoCreditAlt1(double channelId, double videoId, ChannelsVideosCreditsRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Credit`
 - **Error**: `SdkException<AddVideoCreditAlt1Error>` — **Case A (typed)**
@@ -36,6 +38,7 @@ Accessor: `client.VideosCredits` · Source: `Api/VideosCredits.cs` · 8 operatio
 
 ### AvailableUsers
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `AvailableUsers(double videoId, Direction? direction, double? page, double? perPage, string? query, Sort8? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 5 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `sort` ← `sort`
@@ -50,6 +53,7 @@ Accessor: `client.VideosCredits` · Source: `Api/VideosCredits.cs` · 8 operatio
 
 ### DeleteVideoCredit
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteVideoCredit(double creditId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteVideoCreditError>` — **Case A (typed)**
@@ -62,6 +66,7 @@ Accessor: `client.VideosCredits` · Source: `Api/VideosCredits.cs` · 8 operatio
 
 ### EditVideoCredit
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `EditVideoCredit(double creditId, double videoId, VideosCreditsRequest1? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `Credit`
@@ -77,6 +82,7 @@ Accessor: `client.VideosCredits` · Source: `Api/VideosCredits.cs` · 8 operatio
 
 ### GetVideoCredit
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVideoCredit(double creditId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Credit`
 - **Error**: `SdkException<GetVideoCreditError>` — **Case A (typed)**
@@ -90,6 +96,7 @@ Accessor: `client.VideosCredits` · Source: `Api/VideosCredits.cs` · 8 operatio
 
 ### GetVideoCredits
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVideoCredits(double videoId, Direction? direction, double? page, double? perPage, string? query, Sort8? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 5 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `sort` ← `sort`
@@ -104,6 +111,7 @@ Accessor: `client.VideosCredits` · Source: `Api/VideosCredits.cs` · 8 operatio
 
 ### GetVideoCreditsAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVideoCreditsAlt1(double channelId, double videoId, Direction? direction, double? page, double? perPage, string? query, Sort8? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 5 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `sort` ← `sort`

@@ -1,13 +1,14 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Enum;
+using VimeoApi.Core.Enum;
 
-namespace Vimeo.Models.Enums;
+namespace VimeoApi.Models.Enums;
 
 /// <summary>
-/// The status of the live video's RTMP link.
+/// The status of the event.
 /// <para>
 /// Option descriptions:
-///  * <c>streaming</c> - The stream is open and receiving content.
+///  * <c>ended</c> - The user ended the event.
+///  * <c>started</c> - The user started the event.
 /// </para>
 /// </summary>
 [JsonConverter(typeof(StringEnumConverter<Status11>))]
@@ -17,7 +18,9 @@ public sealed record Status11 : StringEnum<Status11>
     {
     }
 
-    public static readonly Status11 Streaming = new("streaming");
+    public static readonly Status11 Ended = new("ended");
+
+    public static readonly Status11 Started = new("started");
 
     public static Status11 FromValue(string value) => FromValueCore(value);
 }

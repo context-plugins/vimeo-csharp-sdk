@@ -1,15 +1,16 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Enum;
+using VimeoApi.Core.Enum;
 
-namespace Vimeo.Models.Enums;
+namespace VimeoApi.Models.Enums;
 
 /// <summary>
-/// The transcode status of the audio track.
+/// The availability of the animated thumbnail.
 /// <para>
 /// Option descriptions:
-///  * <c>complete</c> - Transcoding is complete. The audio track is available.
-///  * <c>error</c> - There was a transcoding error. The audio track isn't available.
-///  * <c>in_progress</c> - Transcoding is in progress. The audio track isn't available yet.
+///  * <c>cancelled</c> - The animated thumbnail's creation has been cancelled.
+///  * <c>completed</c> - The animated thumbnail has been created.
+///  * <c>failed</c> - The animated thumbnail's creation has failed.
+///  * <c>started</c> - The animated thumbnail's creation has started.
 /// </para>
 /// </summary>
 [JsonConverter(typeof(StringEnumConverter<Status9>))]
@@ -19,11 +20,13 @@ public sealed record Status9 : StringEnum<Status9>
     {
     }
 
-    public static readonly Status9 Complete = new("complete");
+    public static readonly Status9 Cancelled = new("cancelled");
 
-    public static readonly Status9 Error = new("error");
+    public static readonly Status9 Completed = new("completed");
 
-    public static readonly Status9 InProgress = new("in_progress");
+    public static readonly Status9 Failed = new("failed");
+
+    public static readonly Status9 Started = new("started");
 
     public static Status9 FromValue(string value) => FromValueCore(value);
 }

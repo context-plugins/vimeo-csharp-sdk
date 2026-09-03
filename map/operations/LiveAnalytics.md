@@ -8,6 +8,7 @@ Accessor: `client.LiveAnalytics` · Source: `Api/LiveAnalytics.cs` · 1 operatio
 
 ### ExportVpaasViewerAnalytics
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `ExportVpaasViewerAnalytics(double liveEventId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<ExportVpaasViewerAnalyticsError>` — **Case A (typed)**

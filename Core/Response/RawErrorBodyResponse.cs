@@ -1,9 +1,9 @@
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using Vimeo.Core.ErrorResponse;
+using VimeoApi.Core.ErrorResponse;
 
-namespace Vimeo.Core.Response;
+namespace VimeoApi.Core.Response;
 
 internal sealed class RawErrorBodyResponse : IResponse<RawError>
 {

@@ -1,7 +1,7 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
+using VimeoApi.Core.Models;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 /// <summary>
 /// The list of resource URIs related to the authenticated user.

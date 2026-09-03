@@ -8,6 +8,7 @@ Accessor: `client.ApiInformationEssentials` · Source: `Api/ApiInformationEssent
 
 ### GetEndpoints
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetEndpoints(RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<RawError>` — **Case B**

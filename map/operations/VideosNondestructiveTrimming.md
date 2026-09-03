@@ -8,6 +8,7 @@ Accessor: `client.VideosNondestructiveTrimming` · Source: `Api/VideosNondestruc
 
 ### ClipTrim
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `ClipTrim(double videoId, VideosTrimRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `TrimmedVideo`

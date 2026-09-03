@@ -3,7 +3,7 @@ using System.Net.Http.Headers;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Vimeo.Core.Authentication.Bearer;
+namespace VimeoApi.Core.Authentication.Bearer;
 
 internal sealed class BearerAuthScheme : IAuthScheme
 {

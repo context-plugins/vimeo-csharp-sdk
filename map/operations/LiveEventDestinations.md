@@ -8,6 +8,7 @@ Accessor: `client.LiveEventDestinations` · Source: `Api/LiveEventDestinations.c
 
 ### CreateLiveEventDestination
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateLiveEventDestination(double liveEventId, MeLiveEventsDestinationsRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `EventDestination`
 - **Error**: `SdkException<CreateLiveEventDestinationError>` — **Case A (typed)**
@@ -22,6 +23,7 @@ Accessor: `client.LiveEventDestinations` · Source: `Api/LiveEventDestinations.c
 
 ### CreateLiveEventDestinationAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateLiveEventDestinationAlt1(double liveEventId, double userId, UsersLiveEventsDestinationsRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `EventDestination`
 - **Error**: `SdkException<CreateLiveEventDestinationAlt1Error>` — **Case A (typed)**
@@ -36,6 +38,7 @@ Accessor: `client.LiveEventDestinations` · Source: `Api/LiveEventDestinations.c
 
 ### CreateOttDestination
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateOttDestination(double liveEventId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `OttDestination`
 - **Error**: `SdkException<CreateOttDestinationError>` — **Case A (typed)**
@@ -49,6 +52,7 @@ Accessor: `client.LiveEventDestinations` · Source: `Api/LiveEventDestinations.c
 
 ### DeleteLiveEventDestination
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteLiveEventDestination(double destinationId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteLiveEventDestinationError>` — **Case A (typed)**
@@ -61,6 +65,7 @@ Accessor: `client.LiveEventDestinations` · Source: `Api/LiveEventDestinations.c
 
 ### DeleteOttDestination
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteOttDestination(double liveEventId, double userId, string destinationId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteOttDestinationError>` — **Case A (typed)**
@@ -73,6 +78,7 @@ Accessor: `client.LiveEventDestinations` · Source: `Api/LiveEventDestinations.c
 
 ### GetAvailableDestinations
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetAvailableDestinations(double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<GetAvailableDestinationsError>` — **Case A (typed)**
@@ -85,6 +91,7 @@ Accessor: `client.LiveEventDestinations` · Source: `Api/LiveEventDestinations.c
 
 ### GetAvailableDestinationsAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetAvailableDestinationsAlt1(RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<GetAvailableDestinationsAlt1Error>` — **Case A (typed)**
@@ -97,6 +104,7 @@ Accessor: `client.LiveEventDestinations` · Source: `Api/LiveEventDestinations.c
 
 ### GetLiveEventDestination
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetLiveEventDestination(double destinationId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `EventDestination`
 - **Error**: `SdkException<GetLiveEventDestinationError>` — **Case A (typed)**
@@ -110,6 +118,7 @@ Accessor: `client.LiveEventDestinations` · Source: `Api/LiveEventDestinations.c
 
 ### GetLiveEventDestinations
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetLiveEventDestinations(double liveEventId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `EventDestinationConnection`
 - **Error**: `SdkException<GetLiveEventDestinationsError>` — **Case A (typed)**
@@ -123,6 +132,7 @@ Accessor: `client.LiveEventDestinations` · Source: `Api/LiveEventDestinations.c
 
 ### GetLiveEventDestinationsAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetLiveEventDestinationsAlt1(double liveEventId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `EventDestinationConnection`
 - **Error**: `SdkException<GetLiveEventDestinationsAlt1Error>` — **Case A (typed)**
@@ -136,6 +146,7 @@ Accessor: `client.LiveEventDestinations` · Source: `Api/LiveEventDestinations.c
 
 ### GetOttDestinations
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetOttDestinations(double liveEventId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `OttDestinationConnection`
 - **Error**: `SdkException<GetOttDestinationsError>` — **Case A (typed)**
@@ -149,6 +160,7 @@ Accessor: `client.LiveEventDestinations` · Source: `Api/LiveEventDestinations.c
 
 ### UpdateLiveEventDestination
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `UpdateLiveEventDestination(double destinationId, DestinationRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `EventDestination`

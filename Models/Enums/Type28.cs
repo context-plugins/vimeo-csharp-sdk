@@ -1,14 +1,15 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Enum;
+using VimeoApi.Core.Enum;
 
-namespace Vimeo.Models.Enums;
+namespace VimeoApi.Models.Enums;
 
 /// <summary>
-/// The type of text track.
+/// Which logo to show in the landing page navbar.
 /// <para>
 /// Option descriptions:
-///  * <c>captions</c> - The text track is for captions.
-///  * <c>subtitles</c> - The text track is for subtitles.
+///  * <c>custom</c> - A custom brand-kit logo (see <c>uri</c>).
+///  * <c>none</c> - No logo is shown.
+///  * <c>vimeo</c> - The Vimeo logo.
 /// </para>
 /// </summary>
 [JsonConverter(typeof(StringEnumConverter<Type28>))]
@@ -18,9 +19,11 @@ public sealed record Type28 : StringEnum<Type28>
     {
     }
 
-    public static readonly Type28 Captions = new("captions");
+    public static readonly Type28 Custom = new("custom");
 
-    public static readonly Type28 Subtitles = new("subtitles");
+    public static readonly Type28 None = new("none");
+
+    public static readonly Type28 Vimeo = new("vimeo");
 
     public static Type28 FromValue(string value) => FromValueCore(value);
 }

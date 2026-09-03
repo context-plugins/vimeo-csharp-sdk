@@ -3,15 +3,15 @@ using System.Net.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace Vimeo;
+namespace VimeoApi;
 
 public static class ServiceCollectionExtensions
 {
     extension(IServiceCollection services)
     {
-        public IServiceCollection AddVimeoClient(Action<VimeoClientOptions>? configure = null)
+        public IServiceCollection AddVimeoApiClient(Action<VimeoApiClientOptions>? configure = null)
         {
-            var options = new VimeoClientOptions();
+            var options = new VimeoApiClientOptions();
             configure?.Invoke(options);
             services.AddHttpClient();
             services.AddSingleton(sp =>
@@ -23,7 +23,7 @@ public static class ServiceCollectionExtensions
                         };
                     var httpClientFactory = sp.GetRequiredService<IHttpClientFactory>();
                     var httpClient = httpClientFactory.CreateClient();
-                    return new VimeoClient(httpClient, options);
+                    return new VimeoApiClient(httpClient, options);
                 });
             return services;
         }

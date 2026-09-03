@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Vimeo.Core.Exceptions;
+namespace VimeoApi.Core.Exceptions;
 
 public sealed class AuthSchemeException : Exception
 {

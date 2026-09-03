@@ -1,5 +1,5 @@
 using System.Collections.Generic;
 
-namespace Vimeo.Core.Authentication.OAuth2;
+namespace VimeoApi.Core.Authentication.OAuth2;
 
 internal delegate IReadOnlyList<T> CredentialParamsFactory<out T>(string clientId, string? clientSecret);

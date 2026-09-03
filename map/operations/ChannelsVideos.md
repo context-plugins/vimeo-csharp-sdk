@@ -8,6 +8,7 @@ Accessor: `client.ChannelsVideos` · Source: `Api/ChannelsVideos.cs` · 7 operat
 
 ### AddVideoToChannel
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `AddVideoToChannel(double channelId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<AddVideoToChannelError>` — **Case A (typed)**
@@ -20,6 +21,7 @@ Accessor: `client.ChannelsVideos` · Source: `Api/ChannelsVideos.cs` · 7 operat
 
 ### AddVideosToChannel
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `AddVideosToChannel(double channelId, ChannelsVideosRequest1 body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<AddVideosToChannelError>` — **Case A (typed)**
@@ -33,6 +35,7 @@ Accessor: `client.ChannelsVideos` · Source: `Api/ChannelsVideos.cs` · 7 operat
 
 ### DeleteVideoFromChannel
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteVideoFromChannel(double channelId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteVideoFromChannelError>` — **Case A (typed)**
@@ -45,6 +48,7 @@ Accessor: `client.ChannelsVideos` · Source: `Api/ChannelsVideos.cs` · 7 operat
 
 ### GetAvailableVideoChannels
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetAvailableVideoChannels(double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `ChannelConnection`
 - **Error**: `SdkException<GetAvailableVideoChannelsError>` — **Case A (typed)**
@@ -58,6 +62,7 @@ Accessor: `client.ChannelsVideos` · Source: `Api/ChannelsVideos.cs` · 7 operat
 
 ### GetChannelVideo
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetChannelVideo(double channelId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Video`
 - **Error**: `SdkException<GetChannelVideoError>` — **Case A (typed)**
@@ -71,6 +76,7 @@ Accessor: `client.ChannelsVideos` · Source: `Api/ChannelsVideos.cs` · 7 operat
 
 ### GetChannelVideos
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetChannelVideos(double channelId, string? containingUri, Direction? direction, Filter3? filter, bool? filterEmbeddable, double? page, double? perPage, string? query, string? sizes, Sort10? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 9 params (`containingUri` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `containing_uri` ← `containingUri`, `direction` ← `direction`, `filter` ← `filter`, `filter_embeddable` ← `filterEmbeddable`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `sizes` ← `sizes`, `sort` ← `sort`
@@ -89,6 +95,7 @@ Accessor: `client.ChannelsVideos` · Source: `Api/ChannelsVideos.cs` · 7 operat
 
 ### RemoveVideosFromChannel
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `RemoveVideosFromChannel(double channelId, ChannelsVideosRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<RemoveVideosFromChannelError>` — **Case A (typed)**

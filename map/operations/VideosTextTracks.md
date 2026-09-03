@@ -8,6 +8,7 @@ Accessor: `client.VideosTextTracks` · Source: `Api/VideosTextTracks.cs` · 9 op
 
 ### CreateTextTrack
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateTextTrack(double videoId, VideosTexttracksRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `TextTrack`
 - **Error**: `SdkException<CreateTextTrackError>` — **Case A (typed)**
@@ -22,6 +23,7 @@ Accessor: `client.VideosTextTracks` · Source: `Api/VideosTextTracks.cs` · 9 op
 
 ### CreateTextTrackAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateTextTrackAlt1(double channelId, double videoId, ChannelsVideosTexttracksRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `TextTrack`
 - **Error**: `SdkException<CreateTextTrackAlt1Error>` — **Case A (typed)**
@@ -36,6 +38,7 @@ Accessor: `client.VideosTextTracks` · Source: `Api/VideosTextTracks.cs` · 9 op
 
 ### DeleteTextTrack
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteTextTrack(double texttrackId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteTextTrackError>` — **Case A (typed)**
@@ -49,6 +52,7 @@ Accessor: `client.VideosTextTracks` · Source: `Api/VideosTextTracks.cs` · 9 op
 
 ### EditTextTrack
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `EditTextTrack(double texttrackId, double videoId, VideosTexttracksRequest1? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `TextTrack`
@@ -64,6 +68,7 @@ Accessor: `client.VideosTextTracks` · Source: `Api/VideosTextTracks.cs` · 9 op
 
 ### GetTextTrack
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetTextTrack(double texttrackId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `TextTrack`
 - **Error**: `SdkException<GetTextTrackError>` — **Case A (typed)**
@@ -78,6 +83,7 @@ Accessor: `client.VideosTextTracks` · Source: `Api/VideosTextTracks.cs` · 9 op
 
 ### GetTextTracks
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetTextTracks(double videoId, double? page, double? perPage, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `page` — nullable, no default → **must pass explicitly**
   - `perPage` — nullable, no default → **must pass explicitly**
@@ -94,6 +100,7 @@ Accessor: `client.VideosTextTracks` · Source: `Api/VideosTextTracks.cs` · 9 op
 
 ### GetTextTracksAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetTextTracksAlt1(double videoId, string versionId, double? page, double? perPage, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `page` — nullable, no default → **must pass explicitly**
   - `perPage` — nullable, no default → **must pass explicitly**
@@ -110,6 +117,7 @@ Accessor: `client.VideosTextTracks` · Source: `Api/VideosTextTracks.cs` · 9 op
 
 ### GetTextTracksAlt2
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetTextTracksAlt2(double channelId, double videoId, double? page, double? perPage, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `page` — nullable, no default → **must pass explicitly**
   - `perPage` — nullable, no default → **must pass explicitly**
@@ -126,6 +134,7 @@ Accessor: `client.VideosTextTracks` · Source: `Api/VideosTextTracks.cs` · 9 op
 
 ### GetTextTracksAlt3
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetTextTracksAlt3(double albumId, double videoId, double? page, double? perPage, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `page` — nullable, no default → **must pass explicitly**
   - `perPage` — nullable, no default → **must pass explicitly**

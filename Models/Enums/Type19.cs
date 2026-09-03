@@ -1,17 +1,15 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Enum;
+using VimeoApi.Core.Enum;
 
-namespace Vimeo.Models.Enums;
+namespace VimeoApi.Models.Enums;
 
 /// <summary>
-/// The type of the simulcast destination.
+/// The type of video.
 /// <para>
 /// Option descriptions:
-///  * <c>channel</c> - The destination is a YouTube channel.
-///  * <c>custom</c> - The destination is custom.
-///  * <c>organization</c> - The destination is a LinkedIn organization.
-///  * <c>page</c> - The destination is a Facebook page.
-///  * <c>profile</c> - The destination is a Facebook or LinkedIn profile.
+///  * <c>extra</c> - The video is an extra feature.
+///  * <c>main</c> - The video is a main feature.
+///  * <c>trailer</c> - The video is a trailer.
 /// </para>
 /// </summary>
 [JsonConverter(typeof(StringEnumConverter<Type19>))]
@@ -21,15 +19,11 @@ public sealed record Type19 : StringEnum<Type19>
     {
     }
 
-    public static readonly Type19 Channel = new("channel");
+    public static readonly Type19 Extra = new("extra");
 
-    public static readonly Type19 Custom = new("custom");
+    public static readonly Type19 Main = new("main");
 
-    public static readonly Type19 Organization = new("organization");
-
-    public static readonly Type19 Page = new("page");
-
-    public static readonly Type19 Profile = new("profile");
+    public static readonly Type19 Trailer = new("trailer");
 
     public static Type19 FromValue(string value) => FromValueCore(value);
 }

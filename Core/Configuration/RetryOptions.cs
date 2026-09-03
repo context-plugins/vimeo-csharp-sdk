@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
 
-namespace Vimeo.Core.Configuration;
+namespace VimeoApi.Core.Configuration;
 
 public record RetryOptions
 {

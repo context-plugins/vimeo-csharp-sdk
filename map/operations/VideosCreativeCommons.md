@@ -8,6 +8,7 @@ Accessor: `client.VideosCreativeCommons` · Source: `Api/VideosCreativeCommons.c
 
 ### GetCcLicenses
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetCcLicenses(double? page, double? perPage, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `page` — nullable, no default → **must pass explicitly**
   - `perPage` — nullable, no default → **must pass explicitly**

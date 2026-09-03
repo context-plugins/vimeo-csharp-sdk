@@ -2,9 +2,9 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading;
 using System.Threading.Tasks;
-using Vimeo.Core.Models;
+using VimeoApi.Core.Models;
 
-namespace Vimeo.Core.Response;
+namespace VimeoApi.Core.Response;
 
 internal sealed class BinaryResponse : IResponse<BinaryContent>
 {

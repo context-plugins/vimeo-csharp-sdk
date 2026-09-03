@@ -1,8 +1,8 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
-using Vimeo.Models.Enums;
+using VimeoApi.Core.Models;
+using VimeoApi.Models.Enums;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 public record SentimentWidget1
 {
@@ -44,7 +44,7 @@ public record SentimentWidget1
     /// </summary>
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
     [JsonPropertyName("type")]
-    public Type54? Type { get; init; }
+    public Type50? Type { get; init; }
 
     [JsonExtensionData]
     public AdditionalProperties AdditionalProperties { get; init; } = [];

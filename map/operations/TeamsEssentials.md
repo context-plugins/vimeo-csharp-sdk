@@ -8,6 +8,7 @@ Accessor: `client.TeamsEssentials` · Source: `Api/TeamsEssentials.cs` · 5 oper
 
 ### BackfillTeamCustomMetadata
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `BackfillTeamCustomMetadata(double userId, TeamsCustomMetadataBackfillRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<BackfillTeamCustomMetadataError>` — **Case A (typed)**
@@ -22,6 +23,7 @@ Accessor: `client.TeamsEssentials` · Source: `Api/TeamsEssentials.cs` · 5 oper
 
 ### GetTeamCustomMetadataIncompleteVideos
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetTeamCustomMetadataIncompleteVideos(double userId, double? page, double? perPage, Sort48? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `page` — nullable, no default → **must pass explicitly**
   - `perPage` — nullable, no default → **must pass explicitly**
@@ -40,6 +42,7 @@ Accessor: `client.TeamsEssentials` · Source: `Api/TeamsEssentials.cs` · 5 oper
 
 ### GetTeamCustomMetadataSettings
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetTeamCustomMetadataSettings(double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `CustomMetadataSettingsConnection`
 - **Error**: `SdkException<GetTeamCustomMetadataSettingsError>` — **Case A (typed)**
@@ -54,6 +57,7 @@ Accessor: `client.TeamsEssentials` · Source: `Api/TeamsEssentials.cs` · 5 oper
 
 ### UpdateCustomMetadataFieldOptions
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `UpdateCustomMetadataFieldOptions(double userId, TeamsCustomMetadataOptionsRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `CustomMetadataSettings`
 - **Error**: `SdkException<UpdateCustomMetadataFieldOptionsError>` — **Case A (typed)**
@@ -69,6 +73,7 @@ Accessor: `client.TeamsEssentials` · Source: `Api/TeamsEssentials.cs` · 5 oper
 
 ### UpsertCustomMetadataSettings
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `UpsertCustomMetadataSettings(double userId, TeamsCustomMetadataRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `IReadOnlyList<CustomMetadataSettings>`

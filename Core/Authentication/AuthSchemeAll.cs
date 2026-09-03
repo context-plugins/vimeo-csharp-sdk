@@ -5,7 +5,7 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Vimeo.Core.Authentication;
+namespace VimeoApi.Core.Authentication;
 
 /// <summary>
 /// Represents a set of schemes that must all apply (AND logic).

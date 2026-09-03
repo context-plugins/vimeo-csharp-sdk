@@ -1,4 +1,4 @@
-namespace Vimeo.Core.Validation;
+namespace VimeoApi.Core.Validation;
 
 public enum FormatKind
 {

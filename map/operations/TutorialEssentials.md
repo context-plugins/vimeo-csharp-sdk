@@ -8,6 +8,7 @@ Accessor: `client.TutorialEssentials` · Source: `Api/TutorialEssentials.cs` · 
 
 ### DeveloperTutorial
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeveloperTutorial(RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<RawError>` — **Case B**

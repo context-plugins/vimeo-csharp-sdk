@@ -2,7 +2,7 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Vimeo.Core;
+namespace VimeoApi.Core;
 
 internal sealed class AsyncLock
 {

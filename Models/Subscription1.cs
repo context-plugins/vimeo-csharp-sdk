@@ -1,7 +1,7 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
+using VimeoApi.Core.Models;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 /// <summary>
 /// Information about subscribing to the On Demand page, if subscription is enabled.

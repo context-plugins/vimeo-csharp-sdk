@@ -8,6 +8,7 @@ Accessor: `client.AuthenticationExtrasEssentials` · Source: `Api/Authentication
 
 ### DeleteToken
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteToken(RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteTokenError>` — **Case A (typed)**
@@ -20,6 +21,7 @@ Accessor: `client.AuthenticationExtrasEssentials` · Source: `Api/Authentication
 
 ### VerifyToken
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `VerifyToken(RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Auth`
 - **Error**: `SdkException<VerifyTokenError>` — **Case A (typed)**

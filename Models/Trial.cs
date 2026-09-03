@@ -1,8 +1,7 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
-using Vimeo.Models.Enums;
+using VimeoApi.Core.Models;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 /// <summary>
 /// Information about the authenticated user's trial.
@@ -29,7 +28,7 @@ public record Trial
     /// </para>
     /// </summary>
     [JsonPropertyName("status")]
-    public required Status1? Status { get; init; }
+    public string Status { get; } = "free_trial";
 
     [JsonExtensionData]
     public AdditionalProperties AdditionalProperties { get; init; } = [];

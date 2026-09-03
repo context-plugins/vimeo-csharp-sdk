@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
-using Vimeo.Core.Models;
+using VimeoApi.Core.Models;
 
-namespace Vimeo.Core.Request;
+namespace VimeoApi.Core.Request;
 
 internal sealed class FormUrlEncodedRequest : IRequest
 {

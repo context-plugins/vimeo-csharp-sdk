@@ -8,6 +8,7 @@ Accessor: `client.OnDemandEssentials` · Source: `Api/OnDemandEssentials.cs` · 
 
 ### CreateVod
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateVod(double userId, UsersOndemandPagesRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `OnDemandPage`
 - **Error**: `SdkException<RawError>` — **Case B**
@@ -19,6 +20,7 @@ Accessor: `client.OnDemandEssentials` · Source: `Api/OnDemandEssentials.cs` · 
 
 ### CreateVodAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateVodAlt1(MeOndemandPagesRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `OnDemandPage`
 - **Error**: `SdkException<RawError>` — **Case B**
@@ -30,6 +32,7 @@ Accessor: `client.OnDemandEssentials` · Source: `Api/OnDemandEssentials.cs` · 
 
 ### DeleteVodDraft
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteVodDraft(double ondemandId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteVodDraftError>` — **Case A (typed)**
@@ -42,6 +45,7 @@ Accessor: `client.OnDemandEssentials` · Source: `Api/OnDemandEssentials.cs` · 
 
 ### EditVod
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `EditVod(double ondemandId, OndemandPagesRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `OnDemandPage`
@@ -57,6 +61,7 @@ Accessor: `client.OnDemandEssentials` · Source: `Api/OnDemandEssentials.cs` · 
 
 ### GetUserVods
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetUserVods(double userId, Direction? direction, Filter18? filter, double? page, double? perPage, Sort32? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 5 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `filter` ← `filter`, `page` ← `page`, `per_page` ← `perPage`, `sort` ← `sort`
@@ -75,6 +80,7 @@ Accessor: `client.OnDemandEssentials` · Source: `Api/OnDemandEssentials.cs` · 
 
 ### GetUserVodsAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetUserVodsAlt1(Direction? direction, Filter18? filter, double? page, double? perPage, Sort32? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 5 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `filter` ← `filter`, `page` ← `page`, `per_page` ← `perPage`, `sort` ← `sort`
@@ -93,6 +99,7 @@ Accessor: `client.OnDemandEssentials` · Source: `Api/OnDemandEssentials.cs` · 
 
 ### GetVod
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVod(double ondemandId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `OnDemandPage`
 - **Error**: `SdkException<GetVodError>` — **Case A (typed)**

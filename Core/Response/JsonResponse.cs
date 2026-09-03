@@ -3,9 +3,9 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Threading;
 using System.Threading.Tasks;
-using Vimeo.Core.Extensions;
+using VimeoApi.Core.Extensions;
 
-namespace Vimeo.Core.Response;
+namespace VimeoApi.Core.Response;
 
 internal sealed class JsonResponse<TResponse> : IResponse<TResponse>
 {

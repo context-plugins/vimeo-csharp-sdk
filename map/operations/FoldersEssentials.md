@@ -8,6 +8,7 @@ Accessor: `client.FoldersEssentials` · Source: `Api/FoldersEssentials.cs` · 11
 
 ### CreateProject
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateProject(double userId, UsersProjectsRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Project`
 - **Error**: `SdkException<CreateProjectError>` — **Case A (typed)**
@@ -22,6 +23,7 @@ Accessor: `client.FoldersEssentials` · Source: `Api/FoldersEssentials.cs` · 11
 
 ### CreateProjectAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateProjectAlt1(MeProjectsRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Project`
 - **Error**: `SdkException<CreateProjectAlt1Error>` — **Case A (typed)**
@@ -36,6 +38,7 @@ Accessor: `client.FoldersEssentials` · Source: `Api/FoldersEssentials.cs` · 11
 
 ### DeleteProject
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteProject(double projectId, double userId, UsersProjectsRequest1? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `void` (Task)
@@ -50,6 +53,7 @@ Accessor: `client.FoldersEssentials` · Source: `Api/FoldersEssentials.cs` · 11
 
 ### DeleteProjectAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteProjectAlt1(double projectId, MeProjectsRequest1? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `void` (Task)
@@ -64,6 +68,7 @@ Accessor: `client.FoldersEssentials` · Source: `Api/FoldersEssentials.cs` · 11
 
 ### EditProject
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `EditProject(double projectId, double userId, UsersProjectsRequest2 body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Project`
 - **Error**: `SdkException<EditProjectError>` — **Case A (typed)**
@@ -78,6 +83,7 @@ Accessor: `client.FoldersEssentials` · Source: `Api/FoldersEssentials.cs` · 11
 
 ### EditProjectAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `EditProjectAlt1(double projectId, MeProjectsRequest2 body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Project`
 - **Error**: `SdkException<EditProjectAlt1Error>` — **Case A (typed)**
@@ -92,6 +98,7 @@ Accessor: `client.FoldersEssentials` · Source: `Api/FoldersEssentials.cs` · 11
 
 ### GetPrivateToMeFolder
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetPrivateToMeFolder(double ownerId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Project`
 - **Error**: `SdkException<GetPrivateToMeFolderError>` — **Case A (typed)**
@@ -105,6 +112,7 @@ Accessor: `client.FoldersEssentials` · Source: `Api/FoldersEssentials.cs` · 11
 
 ### GetProject
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetProject(double projectId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Project`
 - **Error**: `SdkException<GetProjectError>` — **Case A (typed)**
@@ -118,6 +126,7 @@ Accessor: `client.FoldersEssentials` · Source: `Api/FoldersEssentials.cs` · 11
 
 ### GetProjectAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetProjectAlt1(double projectId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Project`
 - **Error**: `SdkException<GetProjectAlt1Error>` — **Case A (typed)**
@@ -131,6 +140,7 @@ Accessor: `client.FoldersEssentials` · Source: `Api/FoldersEssentials.cs` · 11
 
 ### GetProjects
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetProjects(double userId, Direction? direction, double? page, double? perPage, string? query, Sort36? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 5 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `sort` ← `sort`
@@ -148,6 +158,7 @@ Accessor: `client.FoldersEssentials` · Source: `Api/FoldersEssentials.cs` · 11
 
 ### GetProjectsAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetProjectsAlt1(Direction? direction, double? page, double? perPage, string? query, Sort36? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 5 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `sort` ← `sort`

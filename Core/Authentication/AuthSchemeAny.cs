@@ -4,9 +4,9 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using Vimeo.Core.Exceptions;
+using VimeoApi.Core.Exceptions;
 
-namespace Vimeo.Core.Authentication;
+namespace VimeoApi.Core.Authentication;
 
 /// <summary>
 /// Represents multiple alternative schemes (OR logic).

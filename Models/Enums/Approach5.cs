@@ -1,7 +1,7 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Enum;
+using VimeoApi.Core.Enum;
 
-namespace Vimeo.Models.Enums;
+namespace VimeoApi.Models.Enums;
 
 /// <summary>
 /// The type of upload approach. For more information about upload approaches, refer to <see href="https://developer.vimeo.com/api/upload/videos#understanding-upload-approaches">Working with Video Uploads</see>.

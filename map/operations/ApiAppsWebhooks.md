@@ -8,6 +8,7 @@ Accessor: `client.ApiAppsWebhooks` · Source: `Api/ApiAppsWebhooks.cs` · 5 oper
 
 ### AddWebhook
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `AddWebhook(double appId, AppsWebhooksRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `ApiAppWebhook`
@@ -23,6 +24,7 @@ Accessor: `client.ApiAppsWebhooks` · Source: `Api/ApiAppsWebhooks.cs` · 5 oper
 
 ### DeleteWebhook
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteWebhook(double appId, double webhookId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteWebhookError>` — **Case A (typed)**
@@ -35,6 +37,7 @@ Accessor: `client.ApiAppsWebhooks` · Source: `Api/ApiAppsWebhooks.cs` · 5 oper
 
 ### GetWebhook
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetWebhook(double appId, double webhookId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `ApiAppWebhook`
 - **Error**: `SdkException<GetWebhookError>` — **Case A (typed)**
@@ -48,6 +51,7 @@ Accessor: `client.ApiAppsWebhooks` · Source: `Api/ApiAppsWebhooks.cs` · 5 oper
 
 ### GetWebhooks
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetWebhooks(double appId, double? page, double? perPage, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `page` — nullable, no default → **must pass explicitly**
   - `perPage` — nullable, no default → **must pass explicitly**
@@ -61,6 +65,7 @@ Accessor: `client.ApiAppsWebhooks` · Source: `Api/ApiAppsWebhooks.cs` · 5 oper
 
 ### UpdateWebhook
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `UpdateWebhook(double appId, double webhookId, AppsWebhooksRequest1? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `ApiAppWebhook`

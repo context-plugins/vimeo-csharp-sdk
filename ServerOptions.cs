@@ -1,6 +1,6 @@
-using Vimeo.Servers;
+using VimeoApi.Servers;
 
-namespace Vimeo;
+namespace VimeoApi;
 
 public class ServerOptions
 {

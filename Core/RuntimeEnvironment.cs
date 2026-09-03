@@ -1,6 +1,6 @@
 using System.Runtime.InteropServices;
 
-namespace Vimeo.Core;
+namespace VimeoApi.Core;
 
 internal static class RuntimeEnvironment
 {

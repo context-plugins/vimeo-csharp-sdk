@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
-using Vimeo.Models.Enums;
+using VimeoApi.Core.Models;
+using VimeoApi.Models.Enums;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 public record TeamMembership
 {
@@ -136,7 +136,7 @@ public record TeamMembership
     /// </para>
     /// </summary>
     [JsonPropertyName("status")]
-    public required Status21 Status { get; init; }
+    public required Status18 Status { get; init; }
 
     /// <summary>
     /// The URI of the team membership resource.

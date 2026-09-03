@@ -1,8 +1,8 @@
 using System;
 using System.Text.Json.Serialization;
-using Vimeo.Core.Enum;
+using VimeoApi.Core.Enum;
 
-namespace Vimeo.Servers;
+namespace VimeoApi.Servers;
 
 [JsonConverter(typeof(StringEnumConverter<ServerEnvironment>))]
 public record ServerEnvironment : StringEnum<ServerEnvironment>

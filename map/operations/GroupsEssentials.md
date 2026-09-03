@@ -8,6 +8,7 @@ Accessor: `client.GroupsEssentials` · Source: `Api/GroupsEssentials.cs` · 4 op
 
 ### CreateGroup
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateGroup(GroupsRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Group`
 - **Error**: `SdkException<CreateGroupError>` — **Case A (typed)**
@@ -23,6 +24,7 @@ Accessor: `client.GroupsEssentials` · Source: `Api/GroupsEssentials.cs` · 4 op
 
 ### DeleteGroup
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteGroup(double groupId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteGroupError>` — **Case A (typed)**
@@ -36,6 +38,7 @@ Accessor: `client.GroupsEssentials` · Source: `Api/GroupsEssentials.cs` · 4 op
 
 ### GetGroup
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetGroup(double groupId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Group`
 - **Error**: `SdkException<GetGroupError>` — **Case A (typed)**
@@ -49,6 +52,7 @@ Accessor: `client.GroupsEssentials` · Source: `Api/GroupsEssentials.cs` · 4 op
 
 ### GetGroups
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetGroups(Direction? direction, Filter1? filter, double? page, double? perPage, string? query, Sort13? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 6 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `filter` ← `filter`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `sort` ← `sort`

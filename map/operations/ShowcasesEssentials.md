@@ -8,6 +8,7 @@ Accessor: `client.ShowcasesEssentials` · Source: `Api/ShowcasesEssentials.cs` �
 
 ### AddFolderToShowcases
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `AddFolderToShowcases(double userId, string albumUris, double folderId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Query params (wire ← C#)**: `album_uris` ← `albumUris`, `folder_id` ← `folderId`
 - **Returns**: `void` (Task)
@@ -21,6 +22,7 @@ Accessor: `client.ShowcasesEssentials` · Source: `Api/ShowcasesEssentials.cs` �
 
 ### CopyShowcase
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CopyShowcase(double albumId, double userId, UsersAlbumsCopyRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `Album`
@@ -36,6 +38,7 @@ Accessor: `client.ShowcasesEssentials` · Source: `Api/ShowcasesEssentials.cs` �
 
 ### CopyShowcaseAlt2
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CopyShowcaseAlt2(double albumId, MeAlbumsCopyRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `Album`
@@ -51,6 +54,7 @@ Accessor: `client.ShowcasesEssentials` · Source: `Api/ShowcasesEssentials.cs` �
 
 ### CreateShowcase
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateShowcase(double userId, UsersAlbumsRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Album`
 - **Error**: `SdkException<CreateShowcaseError>` — **Case A (typed)**
@@ -65,6 +69,7 @@ Accessor: `client.ShowcasesEssentials` · Source: `Api/ShowcasesEssentials.cs` �
 
 ### CreateShowcaseAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateShowcaseAlt1(MeAlbumsRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Album`
 - **Error**: `SdkException<CreateShowcaseAlt1Error>` — **Case A (typed)**
@@ -79,6 +84,7 @@ Accessor: `client.ShowcasesEssentials` · Source: `Api/ShowcasesEssentials.cs` �
 
 ### DeleteShowcase
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteShowcase(double albumId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteShowcaseError>` — **Case A (typed)**
@@ -91,6 +97,7 @@ Accessor: `client.ShowcasesEssentials` · Source: `Api/ShowcasesEssentials.cs` �
 
 ### DeleteShowcaseAlt2
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteShowcaseAlt2(double albumId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteShowcaseAlt2Error>` — **Case A (typed)**
@@ -103,6 +110,7 @@ Accessor: `client.ShowcasesEssentials` · Source: `Api/ShowcasesEssentials.cs` �
 
 ### EditShowcase
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `EditShowcase(double albumId, double userId, UsersAlbumsRequest1? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `Album`
@@ -118,6 +126,7 @@ Accessor: `client.ShowcasesEssentials` · Source: `Api/ShowcasesEssentials.cs` �
 
 ### EditShowcaseAlt2
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `EditShowcaseAlt2(double albumId, MeAlbumsRequest1? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `Album`
@@ -133,6 +142,7 @@ Accessor: `client.ShowcasesEssentials` · Source: `Api/ShowcasesEssentials.cs` �
 
 ### GetShowcase
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetShowcase(double albumId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Album`
 - **Error**: `SdkException<GetShowcaseError>` — **Case A (typed)**
@@ -146,6 +156,7 @@ Accessor: `client.ShowcasesEssentials` · Source: `Api/ShowcasesEssentials.cs` �
 
 ### GetShowcaseAlt2
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetShowcaseAlt2(double albumId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Album`
 - **Error**: `SdkException<GetShowcaseAlt2Error>` — **Case A (typed)**
@@ -159,6 +170,7 @@ Accessor: `client.ShowcasesEssentials` · Source: `Api/ShowcasesEssentials.cs` �
 
 ### GetShowcases
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetShowcases(double userId, Direction? direction, string? filterPrivacy, double? page, double? perPage, string? query, Sort18? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 6 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `filter_privacy` ← `filterPrivacy`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `sort` ← `sort`
@@ -176,6 +188,7 @@ Accessor: `client.ShowcasesEssentials` · Source: `Api/ShowcasesEssentials.cs` �
 
 ### GetShowcasesAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetShowcasesAlt1(Direction? direction, string? filterPrivacy, double? page, double? perPage, string? query, Sort18? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 6 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `filter_privacy` ← `filterPrivacy`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `sort` ← `sort`
@@ -193,6 +206,7 @@ Accessor: `client.ShowcasesEssentials` · Source: `Api/ShowcasesEssentials.cs` �
 
 ### UpdateShowcases
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `UpdateShowcases(double userId, string albumItemUris, string albumUris, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Query params (wire ← C#)**: `album_item_uris` ← `albumItemUris`, `album_uris` ← `albumUris`
 - **Returns**: `void` (Task)

@@ -1,19 +1,8 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Enum;
+using VimeoApi.Core.Enum;
 
-namespace Vimeo.Models.Enums;
+namespace VimeoApi.Models.Enums;
 
-/// <summary>
-/// The type of text track.
-/// <para>
-/// Option descriptions:
-///  * <c>captions</c> - The text track is the captions type.
-///  * <c>chapters</c> - The text track is the chapters type.
-///  * <c>descriptions</c> - The text track is the descriptions type.
-///  * <c>metadata</c> - The text track is the metadata type.
-///  * <c>subtitles</c> - The text track is the subtitles type.
-/// </para>
-/// </summary>
 [JsonConverter(typeof(StringEnumConverter<Type29>))]
 public sealed record Type29 : StringEnum<Type29>
 {
@@ -21,15 +10,29 @@ public sealed record Type29 : StringEnum<Type29>
     {
     }
 
-    public static readonly Type29 Captions = new("captions");
+    public static readonly Type29 Appears = new("appears");
 
-    public static readonly Type29 Chapters = new("chapters");
+    public static readonly Type29 CategoryFeatured = new("category_featured");
 
-    public static readonly Type29 Descriptions = new("descriptions");
+    public static readonly Type29 Channel = new("channel");
 
-    public static readonly Type29 Metadata = new("metadata");
+    public static readonly Type29 FacebookFeed = new("facebook_feed");
 
-    public static readonly Type29 Subtitles = new("subtitles");
+    public static readonly Type29 Following = new("following");
+
+    public static readonly Type29 Group = new("group");
+
+    public static readonly Type29 Likes = new("likes");
+
+    public static readonly Type29 OndemandPublish = new("ondemand_publish");
+
+    public static readonly Type29 Share = new("share");
+
+    public static readonly Type29 TaggedWith = new("tagged_with");
+
+    public static readonly Type29 TwitterTimeline = new("twitter_timeline");
+
+    public static readonly Type29 Uploads = new("uploads");
 
     public static Type29 FromValue(string value) => FromValueCore(value);
 }

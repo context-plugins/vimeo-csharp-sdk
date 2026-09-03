@@ -1,4 +1,4 @@
-namespace Vimeo.Core.Models;
+namespace VimeoApi.Core.Models;
 
 internal enum SerializationFormat
 {

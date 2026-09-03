@@ -8,6 +8,7 @@ Accessor: `client.OnDemandPromotions` · Source: `Api/OnDemandPromotions.cs` · 
 
 ### CreateVodPromotion
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateVodPromotion(double ondemandId, OndemandPagesPromotionsRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `OnDemandPromotion`
 - **Error**: `SdkException<CreateVodPromotionError>` — **Case A (typed)**
@@ -22,6 +23,7 @@ Accessor: `client.OnDemandPromotions` · Source: `Api/OnDemandPromotions.cs` · 
 
 ### DeleteVodPromotion
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteVodPromotion(double ondemandId, double promotionId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteVodPromotionError>` — **Case A (typed)**
@@ -34,6 +36,7 @@ Accessor: `client.OnDemandPromotions` · Source: `Api/OnDemandPromotions.cs` · 
 
 ### GetVodPromotion
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVodPromotion(double ondemandId, double promotionId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `OnDemandPromotion`
 - **Error**: `SdkException<GetVodPromotionError>` — **Case A (typed)**
@@ -47,6 +50,7 @@ Accessor: `client.OnDemandPromotions` · Source: `Api/OnDemandPromotions.cs` · 
 
 ### GetVodPromotionCodes
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVodPromotionCodes(double ondemandId, double promotionId, double? page, double? perPage, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `page` — nullable, no default → **must pass explicitly**
   - `perPage` — nullable, no default → **must pass explicitly**
@@ -63,6 +67,7 @@ Accessor: `client.OnDemandPromotions` · Source: `Api/OnDemandPromotions.cs` · 
 
 ### GetVodPromotions
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVodPromotions(double ondemandId, Filter26 filter, double? page, double? perPage, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `page` — nullable, no default → **must pass explicitly**
   - `perPage` — nullable, no default → **must pass explicitly**

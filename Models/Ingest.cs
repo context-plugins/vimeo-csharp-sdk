@@ -1,8 +1,8 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
-using Vimeo.Models.Enums;
+using VimeoApi.Core.Models;
+using VimeoApi.Models.Enums;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 /// <summary>
 /// The ingest of the video.
@@ -98,7 +98,7 @@ public record Ingest
     /// </para>
     /// </summary>
     [JsonPropertyName("status")]
-    public required Status14? Status { get; init; }
+    public required Status12? Status { get; init; }
 
     /// <summary>
     /// The reason why the stream ended. If the stream hasn't ended, this field is empty.

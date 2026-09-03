@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
+using VimeoApi.Core.Models;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 /// <summary>
 /// A collection of recommended users for the authenticated user to follow. This data requires a bearer token with the <c>private</c> scope. This data requires a bearer token with the <c>private</c> scope.

@@ -8,6 +8,7 @@ Accessor: `client.VideosChapters` · Source: `Api/VideosChapters.cs` · 12 opera
 
 ### CreateChapter
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateChapter(double videoId, VideosChaptersRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `Chapter`
@@ -23,6 +24,7 @@ Accessor: `client.VideosChapters` · Source: `Api/VideosChapters.cs` · 12 opera
 
 ### CreateChapterThumbnailOrUploadLink
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateChapterThumbnailOrUploadLink(double chapterId, double videoId, VideosChaptersPicturesRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `Picture`
@@ -38,6 +40,7 @@ Accessor: `client.VideosChapters` · Source: `Api/VideosChapters.cs` · 12 opera
 
 ### CreateUnsavedChapterThumbnailOrUploadLink
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateUnsavedChapterThumbnailOrUploadLink(double videoId, VideosChaptersTemporaryPicturesRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `Picture`
@@ -53,6 +56,7 @@ Accessor: `client.VideosChapters` · Source: `Api/VideosChapters.cs` · 12 opera
 
 ### DeleteChapter
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteChapter(double chapterId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteChapterError>` — **Case A (typed)**
@@ -65,6 +69,7 @@ Accessor: `client.VideosChapters` · Source: `Api/VideosChapters.cs` · 12 opera
 
 ### DeleteChapterThumbnail
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteChapterThumbnail(double chapterId, string uid, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteChapterThumbnailError>` — **Case A (typed)**
@@ -77,6 +82,7 @@ Accessor: `client.VideosChapters` · Source: `Api/VideosChapters.cs` · 12 opera
 
 ### EditChapter
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `EditChapter(double chapterId, double videoId, VideosChaptersRequest1? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `Chapter`
@@ -93,6 +99,7 @@ Accessor: `client.VideosChapters` · Source: `Api/VideosChapters.cs` · 12 opera
 
 ### GetChapter
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetChapter(double chapterId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Chapter`
 - **Error**: `SdkException<GetChapterError>` — **Case A (typed)**
@@ -106,6 +113,7 @@ Accessor: `client.VideosChapters` · Source: `Api/VideosChapters.cs` · 12 opera
 
 ### GetChapterThumbnail
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetChapterThumbnail(double chapterId, double videoId, string uid, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Picture`
 - **Error**: `SdkException<GetChapterThumbnailError>` — **Case A (typed)**
@@ -119,6 +127,7 @@ Accessor: `client.VideosChapters` · Source: `Api/VideosChapters.cs` · 12 opera
 
 ### GetChapterThumbnails
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetChapterThumbnails(double chapterId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Picture`
 - **Error**: `SdkException<GetChapterThumbnailsError>` — **Case A (typed)**
@@ -132,6 +141,7 @@ Accessor: `client.VideosChapters` · Source: `Api/VideosChapters.cs` · 12 opera
 
 ### GetChapters
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetChapters(double videoId, double? page, double? perPage, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `page` — nullable, no default → **must pass explicitly**
   - `perPage` — nullable, no default → **must pass explicitly**
@@ -148,6 +158,7 @@ Accessor: `client.VideosChapters` · Source: `Api/VideosChapters.cs` · 12 opera
 
 ### GetUnsavedChapterThumbnail
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetUnsavedChapterThumbnail(double videoId, string uid, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Picture`
 - **Error**: `SdkException<GetUnsavedChapterThumbnailError>` — **Case A (typed)**
@@ -161,6 +172,7 @@ Accessor: `client.VideosChapters` · Source: `Api/VideosChapters.cs` · 12 opera
 
 ### SetChapterThumbnailActive
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `SetChapterThumbnailActive(double chapterId, double videoId, string uid, VideosChaptersPicturesUidRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `Picture`

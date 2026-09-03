@@ -1,14 +1,14 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Enum;
+using VimeoApi.Core.Enum;
 
-namespace Vimeo.Models.Enums;
+namespace VimeoApi.Models.Enums;
 
 /// <summary>
-/// The type of the On Demand page.
+/// The type of the promotion. When <b>access_type</b> is <c>vip</c>, the value for this parameter must be <c>batch</c>.
 /// <para>
 /// Option descriptions:
-///  * <c>film</c> - The On Demand page is a film.
-///  * <c>series</c> - The On Demand page is a series.
+///  * <c>batch</c> - The promotion type that generates many random codes to use one time each.
+///  * <c>single</c> - The promotion type that generates one code to use many times.
 /// </para>
 /// </summary>
 [JsonConverter(typeof(StringEnumConverter<Type37>))]
@@ -18,9 +18,9 @@ public sealed record Type37 : StringEnum<Type37>
     {
     }
 
-    public static readonly Type37 Film = new("film");
+    public static readonly Type37 Batch = new("batch");
 
-    public static readonly Type37 Series = new("series");
+    public static readonly Type37 Single = new("single");
 
     public static Type37 FromValue(string value) => FromValueCore(value);
 }

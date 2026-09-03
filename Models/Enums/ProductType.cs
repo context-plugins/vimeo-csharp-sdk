@@ -1,7 +1,7 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Enum;
+using VimeoApi.Core.Enum;
 
-namespace Vimeo.Models.Enums;
+namespace VimeoApi.Models.Enums;
 
 /// <summary>
 /// The type of product to which the promotion can be applied. Only the <c>buy</c> and <c>rent</c> options are available when <b>access_type</b> is <c>vip</c>.

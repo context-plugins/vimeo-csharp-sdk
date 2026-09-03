@@ -8,6 +8,7 @@ Accessor: `client.EmbedPresetsCustomLogos` · Source: `Api/EmbedPresetsCustomLog
 
 ### CreateCustomLogo
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateCustomLogo(double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Picture`
 - **Error**: `SdkException<CreateCustomLogoError>` — **Case A (typed)**
@@ -21,6 +22,7 @@ Accessor: `client.EmbedPresetsCustomLogos` · Source: `Api/EmbedPresetsCustomLog
 
 ### CreateCustomLogoAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateCustomLogoAlt1(RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Picture`
 - **Error**: `SdkException<CreateCustomLogoAlt1Error>` — **Case A (typed)**
@@ -34,6 +36,7 @@ Accessor: `client.EmbedPresetsCustomLogos` · Source: `Api/EmbedPresetsCustomLog
 
 ### DeleteCustomLogo
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteCustomLogo(double logoId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteCustomLogoError>` — **Case A (typed)**
@@ -46,6 +49,7 @@ Accessor: `client.EmbedPresetsCustomLogos` · Source: `Api/EmbedPresetsCustomLog
 
 ### DeleteCustomLogoAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteCustomLogoAlt1(double logoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteCustomLogoAlt1Error>` — **Case A (typed)**
@@ -58,6 +62,7 @@ Accessor: `client.EmbedPresetsCustomLogos` · Source: `Api/EmbedPresetsCustomLog
 
 ### GetCustomLogo
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetCustomLogo(double logoId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Picture`
 - **Error**: `SdkException<GetCustomLogoError>` — **Case A (typed)**
@@ -71,6 +76,7 @@ Accessor: `client.EmbedPresetsCustomLogos` · Source: `Api/EmbedPresetsCustomLog
 
 ### GetCustomLogoAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetCustomLogoAlt1(double logoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Picture`
 - **Error**: `SdkException<GetCustomLogoAlt1Error>` — **Case A (typed)**
@@ -84,6 +90,7 @@ Accessor: `client.EmbedPresetsCustomLogos` · Source: `Api/EmbedPresetsCustomLog
 
 ### GetCustomLogos
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetCustomLogos(double userId, double? page, double? perPage, string? sizes, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `page` — nullable, no default → **must pass explicitly**
   - `perPage` — nullable, no default → **must pass explicitly**
@@ -101,6 +108,7 @@ Accessor: `client.EmbedPresetsCustomLogos` · Source: `Api/EmbedPresetsCustomLog
 
 ### GetCustomLogosAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetCustomLogosAlt1(double? page, double? perPage, string? sizes, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `page` — nullable, no default → **must pass explicitly**
   - `perPage` — nullable, no default → **must pass explicitly**

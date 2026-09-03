@@ -1,9 +1,8 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
-using Vimeo.Models.Enums;
+using VimeoApi.Core.Models;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 /// <summary>
 /// Information about the event's live video, where applicable.
@@ -24,7 +23,7 @@ public record LiveVideo
     /// </para>
     /// </summary>
     [JsonPropertyName("status")]
-    public required Status11 Status { get; init; }
+    public string Status { get; } = "streaming";
 
     /// <summary>
     /// The API URI that resolves to the connection data.

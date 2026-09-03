@@ -1,7 +1,7 @@
 using System;
 using System.Net.Http.Headers;
 
-namespace Vimeo.Core.Pagination.States;
+namespace VimeoApi.Core.Pagination.States;
 
 internal sealed record CursorState<TResponse> : IPageState<TResponse, CursorState<TResponse>>
 {

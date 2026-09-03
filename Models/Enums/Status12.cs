@@ -1,32 +1,38 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Enum;
+using VimeoApi.Core.Enum;
 
-namespace Vimeo.Models.Enums;
+namespace VimeoApi.Models.Enums;
 
 /// <summary>
-/// The status of the pre-live video's RTMP link.
+/// The ingest status of the live video.
 /// <para>
 /// Option descriptions:
-///  * <c>pending</c> - Vimeo is working on setting up the connection.
-///  * <c>ready</c> - Resources have been provisioned for the event.
-///  * <c>streaming</c> - Live video is currently streaming to the RTMP link.
-///  * <c>unavailable</c> - The connection is ready, but streaming to the RTMP link has not yet begun.
+///  * <c>0</c> - There’s a live video, but no RMTP URL or key.
+///  * <c>1</c> - There’s an RMTP URL and key, but the machine is provisioning.
+///  * <c>2</c> - There’s an RMTP URL and key, and the machine is provisioned, but the stream hasn’t started yet.
+///  * <c>3</c> - There’s an RMTP URL and key, and the machine is provisioned, but the stream didn’t start before the machine timed out.
+///  * <c>4</c> - The stream has started and is currently underway.
+///  * <c>5</c> - The stream has ended.
 /// </para>
 /// </summary>
-[JsonConverter(typeof(StringEnumConverter<Status12>))]
-public sealed record Status12 : StringEnum<Status12>
+[JsonConverter(typeof(IntEnumConverter<Status12>))]
+public sealed record Status12 : IntEnum<Status12>
 {
-    private Status12(string value) : base(value)
+    private Status12(int value) : base(value)
     {
     }
 
-    public static readonly Status12 Pending = new("pending");
+    public static readonly Status12 Value0 = new(0);
 
-    public static readonly Status12 Ready = new("ready");
+    public static readonly Status12 Value1 = new(1);
 
-    public static readonly Status12 Streaming = new("streaming");
+    public static readonly Status12 Value2 = new(2);
 
-    public static readonly Status12 Unavailable = new("unavailable");
+    public static readonly Status12 Value3 = new(3);
 
-    public static Status12 FromValue(string value) => FromValueCore(value);
+    public static readonly Status12 Value4 = new(4);
+
+    public static readonly Status12 Value5 = new(5);
+
+    public static Status12 FromValue(int value) => FromValueCore(value);
 }

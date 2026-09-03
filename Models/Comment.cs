@@ -1,9 +1,8 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
-using Vimeo.Models.Enums;
+using VimeoApi.Core.Models;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 public record Comment
 {
@@ -75,7 +74,7 @@ public record Comment
     /// </para>
     /// </summary>
     [JsonPropertyName("type")]
-    public required Type15 Type { get; init; }
+    public string Type { get; } = "video";
 
     /// <summary>
     /// The unique identifier to access the comment resource.

@@ -8,6 +8,7 @@ Accessor: `client.VideosContentRatings` · Source: `Api/VideosContentRatings.cs`
 
 ### GetContentRatings
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetContentRatings(RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `ContentRatingConnection`
 - **Error**: `SdkException<RawError>` — **Case B**

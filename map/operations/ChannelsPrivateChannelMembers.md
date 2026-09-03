@@ -8,6 +8,7 @@ Accessor: `client.ChannelsPrivateChannelMembers` · Source: `Api/ChannelsPrivate
 
 ### DeleteChannelPrivacyUser
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteChannelPrivacyUser(double channelId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteChannelPrivacyUserError>` — **Case A (typed)**
@@ -20,6 +21,7 @@ Accessor: `client.ChannelsPrivateChannelMembers` · Source: `Api/ChannelsPrivate
 
 ### GetChannelPrivacyUsers
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetChannelPrivacyUsers(double channelId, Direction? direction, double? page, double? perPage, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `direction` — nullable, no default → **must pass explicitly**
   - `page` — nullable, no default → **must pass explicitly**
@@ -38,6 +40,7 @@ Accessor: `client.ChannelsPrivateChannelMembers` · Source: `Api/ChannelsPrivate
 
 ### SetChannelPrivacyUser
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `SetChannelPrivacyUser(double channelId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<SetChannelPrivacyUserError>` — **Case A (typed)**
@@ -50,6 +53,7 @@ Accessor: `client.ChannelsPrivateChannelMembers` · Source: `Api/ChannelsPrivate
 
 ### SetChannelPrivacyUsers
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `SetChannelPrivacyUsers(double channelId, ChannelsPrivacyUsersRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `IReadOnlyList<User>`
 - **Error**: `SdkException<SetChannelPrivacyUsersError>` — **Case A (typed)**

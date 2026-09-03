@@ -1,7 +1,7 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Enum;
+using VimeoApi.Core.Enum;
 
-namespace Vimeo.Core.Authentication.OAuth2.AuthorizationCode;
+namespace VimeoApi.Core.Authentication.OAuth2.AuthorizationCode;
 
 [JsonConverter(typeof(StringEnumConverter<PkceMethod>))]
 public sealed record PkceMethod : StringEnum<PkceMethod>

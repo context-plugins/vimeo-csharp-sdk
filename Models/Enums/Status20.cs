@@ -1,15 +1,15 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Enum;
+using VimeoApi.Core.Enum;
 
-namespace Vimeo.Models.Enums;
+namespace VimeoApi.Models.Enums;
 
 /// <summary>
-/// The purchase status of the product.
+/// The status code for the availability of the video version.
 /// <para>
 /// Option descriptions:
-///  * <c>available</c> - The product is available for purchase.
-///  * <c>purchased</c> - The product is already purchased.
-///  * <c>unavailable</c> - The product isn't available for purchase.
+///  * <c>complete</c> - Transcoding is complete. The video version is available.
+///  * <c>error</c> - There was a transcoding error. The video version isn't available.
+///  * <c>in_progress</c> - Transcoding is in progress. The video version isn't available yet.
 /// </para>
 /// </summary>
 [JsonConverter(typeof(StringEnumConverter<Status20>))]
@@ -19,11 +19,11 @@ public sealed record Status20 : StringEnum<Status20>
     {
     }
 
-    public static readonly Status20 Available = new("available");
+    public static readonly Status20 Complete = new("complete");
 
-    public static readonly Status20 Purchased = new("purchased");
+    public static readonly Status20 Error = new("error");
 
-    public static readonly Status20 Unavailable = new("unavailable");
+    public static readonly Status20 InProgress = new("in_progress");
 
     public static Status20 FromValue(string value) => FromValueCore(value);
 }

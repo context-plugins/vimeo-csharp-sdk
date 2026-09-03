@@ -8,6 +8,7 @@ Accessor: `client.ChannelsModerators` · Source: `Api/ChannelsModerators.cs` · 
 
 ### AddChannelModerator
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `AddChannelModerator(double channelId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<AddChannelModeratorError>` — **Case A (typed)**
@@ -20,6 +21,7 @@ Accessor: `client.ChannelsModerators` · Source: `Api/ChannelsModerators.cs` · 
 
 ### AddChannelModerators
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `AddChannelModerators(double channelId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<AddChannelModeratorsError>` — **Case A (typed)**
@@ -33,6 +35,7 @@ Accessor: `client.ChannelsModerators` · Source: `Api/ChannelsModerators.cs` · 
 
 ### GetChannelModerator
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetChannelModerator(double channelId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `User`
 - **Error**: `SdkException<RawError>` — **Case B**
@@ -43,6 +46,7 @@ Accessor: `client.ChannelsModerators` · Source: `Api/ChannelsModerators.cs` · 
 
 ### GetChannelModerators
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetChannelModerators(double channelId, Direction? direction, double? page, double? perPage, string? query, Sort8? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 5 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `sort` ← `sort`
@@ -57,6 +61,7 @@ Accessor: `client.ChannelsModerators` · Source: `Api/ChannelsModerators.cs` · 
 
 ### RemoveChannelModerator
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `RemoveChannelModerator(double channelId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<RemoveChannelModeratorError>` — **Case A (typed)**
@@ -69,6 +74,7 @@ Accessor: `client.ChannelsModerators` · Source: `Api/ChannelsModerators.cs` · 
 
 ### RemoveChannelModerators
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `RemoveChannelModerators(double channelId, ChannelsModeratorsRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<RemoveChannelModeratorsError>` — **Case A (typed)**
@@ -82,6 +88,7 @@ Accessor: `client.ChannelsModerators` · Source: `Api/ChannelsModerators.cs` · 
 
 ### ReplaceChannelModerators
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `ReplaceChannelModerators(double channelId, ChannelsModeratorsRequest1 body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `IReadOnlyList<User>`
 - **Error**: `SdkException<ReplaceChannelModeratorsError>` — **Case A (typed)**

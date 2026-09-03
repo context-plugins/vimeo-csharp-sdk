@@ -8,6 +8,7 @@ Accessor: `client.AuthenticationExtrasExchange` · Source: `Api/AuthenticationEx
 
 ### ExchangeAuthCode
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `ExchangeAuthCode(OauthAccessTokenRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Auth`
 - **Error**: `SdkException<ExchangeAuthCodeError>` — **Case A (typed)**

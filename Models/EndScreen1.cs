@@ -1,8 +1,8 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
-using Vimeo.Models.Enums;
+using VimeoApi.Core.Models;
+using VimeoApi.Models.Enums;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 /// <summary>
 /// A representation of the end screen settings.
@@ -55,7 +55,7 @@ public record EndScreen1
     /// </para>
     /// </summary>
     [JsonPropertyName("type")]
-    public required Type25 Type { get; init; }
+    public required Type21 Type { get; init; }
 
     /// <summary>
     /// The additional videos that are offered after the main video ends.

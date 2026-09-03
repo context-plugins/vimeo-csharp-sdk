@@ -1,7 +1,7 @@
 using System;
 using System.Globalization;
 
-namespace Vimeo.Core.Extensions;
+namespace VimeoApi.Core.Extensions;
 
 internal static class DateTimeOffsetExtensions
 {

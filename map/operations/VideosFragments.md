@@ -8,12 +8,14 @@ Accessor: `client.VideosFragments` · Source: `Api/VideosFragments.cs` · 3 oper
 
 ### DeleteFragments
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteFragments(double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<RawError>` — **Case B**
 
 ### GetFragments
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetFragments(double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Fragments`
 - **Error**: `SdkException<RawError>` — **Case B**
@@ -24,6 +26,7 @@ Accessor: `client.VideosFragments` · Source: `Api/VideosFragments.cs` · 3 oper
 
 ### PutFragments
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `PutFragments(double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<RawError>` — **Case B**

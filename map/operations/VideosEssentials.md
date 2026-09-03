@@ -8,6 +8,7 @@ Accessor: `client.VideosEssentials` · Source: `Api/VideosEssentials.cs` · 15 o
 
 ### CheckIfUserOwnsVideo
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CheckIfUserOwnsVideo(double userId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Video`
 - **Error**: `SdkException<CheckIfUserOwnsVideoError>` — **Case A (typed)**
@@ -21,6 +22,7 @@ Accessor: `client.VideosEssentials` · Source: `Api/VideosEssentials.cs` · 15 o
 
 ### CheckIfUserOwnsVideoAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CheckIfUserOwnsVideoAlt1(double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Video`
 - **Error**: `SdkException<CheckIfUserOwnsVideoAlt1Error>` — **Case A (typed)**
@@ -34,6 +36,7 @@ Accessor: `client.VideosEssentials` · Source: `Api/VideosEssentials.cs` · 15 o
 
 ### CopyVideo
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CopyVideo(double userId, double videoId, UsersVideosCopyRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `Video`
@@ -49,6 +52,7 @@ Accessor: `client.VideosEssentials` · Source: `Api/VideosEssentials.cs` · 15 o
 
 ### CopyVideoAlt2
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CopyVideoAlt2(double videoId, MeVideosCopyRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `Video`
@@ -64,6 +68,7 @@ Accessor: `client.VideosEssentials` · Source: `Api/VideosEssentials.cs` · 15 o
 
 ### DeleteVideo
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteVideo(double videoId, VideosRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `void` (Task)
@@ -78,6 +83,7 @@ Accessor: `client.VideosEssentials` · Source: `Api/VideosEssentials.cs` · 15 o
 
 ### DeleteVideos
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteVideos(double userId, string uris, UsersVideosRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Query params (wire ← C#)**: `uris` ← `uris`
@@ -93,6 +99,7 @@ Accessor: `client.VideosEssentials` · Source: `Api/VideosEssentials.cs` · 15 o
 
 ### DeleteVideosAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteVideosAlt1(string uris, MeVideosRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Query params (wire ← C#)**: `uris` ← `uris`
@@ -108,6 +115,7 @@ Accessor: `client.VideosEssentials` · Source: `Api/VideosEssentials.cs` · 15 o
 
 ### EditVideo
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `EditVideo(double videoId, VideosRequest1 body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Video`
 - **Error**: `SdkException<EditVideoError>` — **Case A (typed)**
@@ -122,6 +130,7 @@ Accessor: `client.VideosEssentials` · Source: `Api/VideosEssentials.cs` · 15 o
 
 ### GetAppearances
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetAppearances(double userId, Direction? direction, Filter3? filter, bool? filterEmbeddable, double? page, double? perPage, string? query, Sort15? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 7 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `filter` ← `filter`, `filter_embeddable` ← `filterEmbeddable`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `sort` ← `sort`
@@ -140,6 +149,7 @@ Accessor: `client.VideosEssentials` · Source: `Api/VideosEssentials.cs` · 15 o
 
 ### GetAppearancesAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetAppearancesAlt1(Direction? direction, Filter3? filter, bool? filterEmbeddable, double? page, double? perPage, string? query, Sort15? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 7 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `filter` ← `filter`, `filter_embeddable` ← `filterEmbeddable`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `sort` ← `sort`
@@ -158,6 +168,7 @@ Accessor: `client.VideosEssentials` · Source: `Api/VideosEssentials.cs` · 15 o
 
 ### GetVideo
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVideo(double videoId, bool? timeLinks, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `timeLinks` — nullable, no default → **must pass explicitly**
 - **Query params (wire ← C#)**: `time_links` ← `timeLinks`
@@ -173,6 +184,7 @@ Accessor: `client.VideosEssentials` · Source: `Api/VideosEssentials.cs` · 15 o
 
 ### GetVideos
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVideos(double userId, string? containingUri, Direction? direction, Filter22? filter, bool? filterEmbeddable, bool? filterPlayable, bool? filterScreenRecorded, string? filterTag, string? filterTagAllOf, string? filterTagExclude, double? filterUploader, double? page, double? perPage, string? query, QueryFields? queryFields, Sort39? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 15 params (`containingUri` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `containing_uri` ← `containingUri`, `direction` ← `direction`, `filter` ← `filter`, `filter_embeddable` ← `filterEmbeddable`, `filter_playable` ← `filterPlayable`, `filter_screen_recorded` ← `filterScreenRecorded`, `filter_tag` ← `filterTag`, `filter_tag_all_of` ← `filterTagAllOf`, `filter_tag_exclude` ← `filterTagExclude`, `filter_uploader` ← `filterUploader`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `query_fields` ← `queryFields`, `sort` ← `sort`
@@ -189,6 +201,7 @@ Accessor: `client.VideosEssentials` · Source: `Api/VideosEssentials.cs` · 15 o
 
 ### GetVideosAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVideosAlt1(string? containingUri, Direction? direction, Filter22? filter, bool? filterEmbeddable, bool? filterPlayable, bool? filterScreenRecorded, string? filterTag, string? filterTagAllOf, string? filterTagExclude, double? filterUploader, double? page, double? perPage, string? query, QueryFields? queryFields, Sort39? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 15 params (`containingUri` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `containing_uri` ← `containingUri`, `direction` ← `direction`, `filter` ← `filter`, `filter_embeddable` ← `filterEmbeddable`, `filter_playable` ← `filterPlayable`, `filter_screen_recorded` ← `filterScreenRecorded`, `filter_tag` ← `filterTag`, `filter_tag_all_of` ← `filterTagAllOf`, `filter_tag_exclude` ← `filterTagExclude`, `filter_uploader` ← `filterUploader`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `query_fields` ← `queryFields`, `sort` ← `sort`
@@ -205,6 +218,7 @@ Accessor: `client.VideosEssentials` · Source: `Api/VideosEssentials.cs` · 15 o
 
 ### SearchVideos
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `SearchVideos(Direction? direction, Filter45? filter, string? links, double? page, double? perPage, string? query, Sort73? sort, string? uris, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 8 params (`direction` … `uris`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `filter` ← `filter`, `links` ← `links`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `sort` ← `sort`, `uris` ← `uris`
@@ -224,6 +238,7 @@ Accessor: `client.VideosEssentials` · Source: `Api/VideosEssentials.cs` · 15 o
 
 ### UpdateVideoCustomMetadata
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `UpdateVideoCustomMetadata(double videoId, VideosCustomMetadataRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `IReadOnlyList<CustomMetadataValues>`

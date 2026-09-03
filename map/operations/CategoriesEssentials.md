@@ -8,6 +8,7 @@ Accessor: `client.CategoriesEssentials` · Source: `Api/CategoriesEssentials.cs`
 
 ### GetCategories
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetCategories(Direction? direction, double? page, double? perPage, Sort3? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 4 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `page` ← `page`, `per_page` ← `perPage`, `sort` ← `sort`
@@ -22,6 +23,7 @@ Accessor: `client.CategoriesEssentials` · Source: `Api/CategoriesEssentials.cs`
 
 ### GetCategory
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetCategory(string category, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Category`
 - **Error**: `SdkException<GetCategoryError>` — **Case A (typed)**

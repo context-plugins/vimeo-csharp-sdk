@@ -8,6 +8,7 @@ Accessor: `client.VideosTranscripts` · Source: `Api/VideosTranscripts.cs` · 2 
 
 ### GetTranscript
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetTranscript(double texttrackId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `SegmentConnection`
 - **Error**: `SdkException<GetTranscriptError>` — **Case A (typed)**
@@ -21,6 +22,7 @@ Accessor: `client.VideosTranscripts` · Source: `Api/VideosTranscripts.cs` · 2 
 
 ### GetTranscriptMetadata
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetTranscriptMetadata(string containerUuid, double texttrackId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `TranscriptMetadata`
 - **Error**: `SdkException<GetTranscriptMetadataError>` — **Case A (typed)**

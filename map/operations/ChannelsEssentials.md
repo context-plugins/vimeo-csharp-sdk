@@ -8,6 +8,7 @@ Accessor: `client.ChannelsEssentials` · Source: `Api/ChannelsEssentials.cs` · 
 
 ### CreateChannel
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateChannel(ChannelsRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Channel`
 - **Error**: `SdkException<CreateChannelError>` — **Case A (typed)**
@@ -22,6 +23,7 @@ Accessor: `client.ChannelsEssentials` · Source: `Api/ChannelsEssentials.cs` · 
 
 ### DeleteChannel
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteChannel(double channelId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteChannelError>` — **Case A (typed)**
@@ -34,6 +36,7 @@ Accessor: `client.ChannelsEssentials` · Source: `Api/ChannelsEssentials.cs` · 
 
 ### EditChannel
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `EditChannel(double channelId, ChannelsRequest1? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `Channel`
@@ -49,6 +52,7 @@ Accessor: `client.ChannelsEssentials` · Source: `Api/ChannelsEssentials.cs` · 
 
 ### GetChannel
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetChannel(double channelId, string? sizes, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `sizes` — nullable, no default → **must pass explicitly**
 - **Query params (wire ← C#)**: `sizes` ← `sizes`
@@ -61,6 +65,7 @@ Accessor: `client.ChannelsEssentials` · Source: `Api/ChannelsEssentials.cs` · 
 
 ### GetChannelSubscriptions
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetChannelSubscriptions(double userId, Direction? direction, Filter12? filter, double? page, double? perPage, string? query, Sort4? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 6 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `filter` ← `filter`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `sort` ← `sort`
@@ -79,6 +84,7 @@ Accessor: `client.ChannelsEssentials` · Source: `Api/ChannelsEssentials.cs` · 
 
 ### GetChannelSubscriptionsAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetChannelSubscriptionsAlt1(Direction? direction, Filter12? filter, double? page, double? perPage, string? query, Sort4? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 6 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `filter` ← `filter`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `sort` ← `sort`
@@ -97,6 +103,7 @@ Accessor: `client.ChannelsEssentials` · Source: `Api/ChannelsEssentials.cs` · 
 
 ### GetChannels
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetChannels(Direction? direction, Filter1? filter, double? page, double? perPage, string? query, Sort7? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 6 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `filter` ← `filter`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `sort` ← `sort`

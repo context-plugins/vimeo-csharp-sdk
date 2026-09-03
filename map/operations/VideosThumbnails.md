@@ -8,6 +8,7 @@ Accessor: `client.VideosThumbnails` · Source: `Api/VideosThumbnails.cs` · 7 op
 
 ### CreateVideoThumbnail
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateVideoThumbnail(double videoId, VideosPicturesRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `Picture`
@@ -20,6 +21,7 @@ Accessor: `client.VideosThumbnails` · Source: `Api/VideosThumbnails.cs` · 7 op
 
 ### CreateVideoThumbnailAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateVideoThumbnailAlt1(double channelId, double videoId, ChannelsVideosPicturesRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `Picture`
@@ -32,12 +34,14 @@ Accessor: `client.VideosThumbnails` · Source: `Api/VideosThumbnails.cs` · 7 op
 
 ### DeleteVideoThumbnail
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteVideoThumbnail(double pictureId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<RawError>` — **Case B**
 
 ### EditVideoThumbnail
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `EditVideoThumbnail(double pictureId, double videoId, VideosPicturesRequest1? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `Picture`
@@ -50,6 +54,7 @@ Accessor: `client.VideosThumbnails` · Source: `Api/VideosThumbnails.cs` · 7 op
 
 ### GetVideoThumbnail
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVideoThumbnail(double pictureId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Picture`
 - **Error**: `SdkException<RawError>` — **Case B**
@@ -60,6 +65,7 @@ Accessor: `client.VideosThumbnails` · Source: `Api/VideosThumbnails.cs` · 7 op
 
 ### GetVideoThumbnails
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVideoThumbnails(double videoId, double? page, double? perPage, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `page` — nullable, no default → **must pass explicitly**
   - `perPage` — nullable, no default → **must pass explicitly**
@@ -73,6 +79,7 @@ Accessor: `client.VideosThumbnails` · Source: `Api/VideosThumbnails.cs` · 7 op
 
 ### GetVideoThumbnailsAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVideoThumbnailsAlt1(double channelId, double videoId, double? page, double? perPage, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `page` — nullable, no default → **must pass explicitly**
   - `perPage` — nullable, no default → **must pass explicitly**

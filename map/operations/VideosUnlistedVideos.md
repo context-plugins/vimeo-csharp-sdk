@@ -8,6 +8,7 @@ Accessor: `client.VideosUnlistedVideos` · Source: `Api/VideosUnlistedVideos.cs`
 
 ### AddVideoPrivacyUser
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `AddVideoPrivacyUser(double userId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `User`
 - **Error**: `SdkException<AddVideoPrivacyUserError>` — **Case A (typed)**
@@ -21,6 +22,7 @@ Accessor: `client.VideosUnlistedVideos` · Source: `Api/VideosUnlistedVideos.cs`
 
 ### AddVideoPrivacyUsers
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `AddVideoPrivacyUsers(double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `IReadOnlyList<User>`
 - **Error**: `SdkException<RawError>` — **Case B**
@@ -31,6 +33,7 @@ Accessor: `client.VideosUnlistedVideos` · Source: `Api/VideosUnlistedVideos.cs`
 
 ### AddVideoPrivacyUsersAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `AddVideoPrivacyUsersAlt1(double channelId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `IReadOnlyList<User>`
 - **Error**: `SdkException<RawError>` — **Case B**
@@ -41,6 +44,7 @@ Accessor: `client.VideosUnlistedVideos` · Source: `Api/VideosUnlistedVideos.cs`
 
 ### DeleteVideoPrivacyUser
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteVideoPrivacyUser(double userId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteVideoPrivacyUserError>` — **Case A (typed)**
@@ -53,6 +57,7 @@ Accessor: `client.VideosUnlistedVideos` · Source: `Api/VideosUnlistedVideos.cs`
 
 ### GetVideoPrivacyUsers
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVideoPrivacyUsers(double videoId, double? page, double? perPage, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `page` — nullable, no default → **must pass explicitly**
   - `perPage` — nullable, no default → **must pass explicitly**
@@ -69,6 +74,7 @@ Accessor: `client.VideosUnlistedVideos` · Source: `Api/VideosUnlistedVideos.cs`
 
 ### GetVideoPrivacyUsersAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVideoPrivacyUsersAlt1(double channelId, double videoId, double? page, double? perPage, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `page` — nullable, no default → **must pass explicitly**
   - `perPage` — nullable, no default → **must pass explicitly**

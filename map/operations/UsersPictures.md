@@ -8,6 +8,7 @@ Accessor: `client.UsersPictures` · Source: `Api/UsersPictures.cs` · 10 operati
 
 ### CreatePicture
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreatePicture(double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Picture`
 - **Error**: `SdkException<RawError>` — **Case B**
@@ -18,6 +19,7 @@ Accessor: `client.UsersPictures` · Source: `Api/UsersPictures.cs` · 10 operati
 
 ### CreatePictureAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreatePictureAlt1(RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Picture`
 - **Error**: `SdkException<RawError>` — **Case B**
@@ -28,18 +30,21 @@ Accessor: `client.UsersPictures` · Source: `Api/UsersPictures.cs` · 10 operati
 
 ### DeletePicture
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeletePicture(double portraitsetId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<RawError>` — **Case B**
 
 ### DeletePictureAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeletePictureAlt1(double portraitsetId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<RawError>` — **Case B**
 
 ### EditPicture
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `EditPicture(double portraitsetId, double userId, UsersPicturesRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `Picture`
@@ -52,6 +57,7 @@ Accessor: `client.UsersPictures` · Source: `Api/UsersPictures.cs` · 10 operati
 
 ### EditPictureAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `EditPictureAlt1(double portraitsetId, MePicturesRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `Picture`
@@ -64,6 +70,7 @@ Accessor: `client.UsersPictures` · Source: `Api/UsersPictures.cs` · 10 operati
 
 ### GetPicture
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetPicture(double portraitsetId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Picture`
 - **Error**: `SdkException<RawError>` — **Case B**
@@ -74,6 +81,7 @@ Accessor: `client.UsersPictures` · Source: `Api/UsersPictures.cs` · 10 operati
 
 ### GetPictureAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetPictureAlt1(double portraitsetId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Picture`
 - **Error**: `SdkException<RawError>` — **Case B**
@@ -84,6 +92,7 @@ Accessor: `client.UsersPictures` · Source: `Api/UsersPictures.cs` · 10 operati
 
 ### GetPictures
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetPictures(double userId, double? page, double? perPage, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `page` — nullable, no default → **must pass explicitly**
   - `perPage` — nullable, no default → **must pass explicitly**
@@ -97,6 +106,7 @@ Accessor: `client.UsersPictures` · Source: `Api/UsersPictures.cs` · 10 operati
 
 ### GetPicturesAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetPicturesAlt1(double? page, double? perPage, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `page` — nullable, no default → **must pass explicitly**
   - `perPage` — nullable, no default → **must pass explicitly**

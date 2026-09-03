@@ -8,6 +8,7 @@ Accessor: `client.LiveEssentials` · Source: `Api/LiveEssentials.cs` · 19 opera
 
 ### CreateLiveEvent
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateLiveEvent(double userId, UsersLiveEventsRequest1 body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `RecurringEvent`
 - **Error**: `SdkException<CreateLiveEventError>` — **Case A (typed)**
@@ -22,6 +23,7 @@ Accessor: `client.LiveEssentials` · Source: `Api/LiveEssentials.cs` · 19 opera
 
 ### CreateLiveEventAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateLiveEventAlt1(LiveEventsRequest1 body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `RecurringEvent`
 - **Error**: `SdkException<CreateLiveEventAlt1Error>` — **Case A (typed)**
@@ -36,6 +38,7 @@ Accessor: `client.LiveEssentials` · Source: `Api/LiveEssentials.cs` · 19 opera
 
 ### CreateLiveEventAlt2
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateLiveEventAlt2(MeLiveEventsRequest1 body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `RecurringEvent`
 - **Error**: `SdkException<CreateLiveEventAlt2Error>` — **Case A (typed)**
@@ -50,6 +53,7 @@ Accessor: `client.LiveEssentials` · Source: `Api/LiveEssentials.cs` · 19 opera
 
 ### DeleteLiveEvent
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteLiveEvent(double liveEventId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteLiveEventError>` — **Case A (typed)**
@@ -62,6 +66,7 @@ Accessor: `client.LiveEssentials` · Source: `Api/LiveEssentials.cs` · 19 opera
 
 ### DeleteLiveEventAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteLiveEventAlt1(double liveEventId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteLiveEventAlt1Error>` — **Case A (typed)**
@@ -74,6 +79,7 @@ Accessor: `client.LiveEssentials` · Source: `Api/LiveEssentials.cs` · 19 opera
 
 ### DeleteLiveEventAlt2
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteLiveEventAlt2(double liveEventId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteLiveEventAlt2Error>` — **Case A (typed)**
@@ -86,6 +92,7 @@ Accessor: `client.LiveEssentials` · Source: `Api/LiveEssentials.cs` · 19 opera
 
 ### DeleteLiveEvents
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteLiveEvents(double userId, UsersLiveEventsRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteLiveEventsError>` — **Case A (typed)**
@@ -99,6 +106,7 @@ Accessor: `client.LiveEssentials` · Source: `Api/LiveEssentials.cs` · 19 opera
 
 ### DeleteLiveEventsAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteLiveEventsAlt1(LiveEventsRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteLiveEventsAlt1Error>` — **Case A (typed)**
@@ -112,6 +120,7 @@ Accessor: `client.LiveEssentials` · Source: `Api/LiveEssentials.cs` · 19 opera
 
 ### DeleteLiveEventsAlt2
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteLiveEventsAlt2(MeLiveEventsRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteLiveEventsAlt2Error>` — **Case A (typed)**
@@ -125,6 +134,7 @@ Accessor: `client.LiveEssentials` · Source: `Api/LiveEssentials.cs` · 19 opera
 
 ### GetLiveEvent
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetLiveEvent(double liveEventId, double userId, string? password, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `password` — nullable, no default → **must pass explicitly**
 - **Query params (wire ← C#)**: `password` ← `password`
@@ -140,6 +150,7 @@ Accessor: `client.LiveEssentials` · Source: `Api/LiveEssentials.cs` · 19 opera
 
 ### GetLiveEventAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetLiveEventAlt1(double liveEventId, string? password, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `password` — nullable, no default → **must pass explicitly**
 - **Query params (wire ← C#)**: `password` ← `password`
@@ -155,6 +166,7 @@ Accessor: `client.LiveEssentials` · Source: `Api/LiveEssentials.cs` · 19 opera
 
 ### GetLiveEventAlt2
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetLiveEventAlt2(double liveEventId, string? password, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `password` — nullable, no default → **must pass explicitly**
 - **Query params (wire ← C#)**: `password` ← `password`
@@ -170,6 +182,7 @@ Accessor: `client.LiveEssentials` · Source: `Api/LiveEssentials.cs` · 19 opera
 
 ### GetLiveEventOccurrences
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetLiveEventOccurrences(double userId, string startDate, string? endDate, double? page, double? perPage, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `endDate` — nullable, no default → **must pass explicitly**
   - `page` — nullable, no default → **must pass explicitly**
@@ -184,7 +197,8 @@ Accessor: `client.LiveEssentials` · Source: `Api/LiveEssentials.cs` · 19 opera
 
 ### GetLiveEvents
 
-- **Signature**: `GetLiveEvents(double userId, Direction? direction, Filter8? filter, double? page, double? perPage, string? query, Sort8? sort, Type31? type, RequestOptions? requestOptions = null, CancellationToken ct = default)`
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
+- **Signature**: `GetLiveEvents(double userId, Direction? direction, Filter8? filter, double? page, double? perPage, string? query, Sort8? sort, Type27? type, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 7 params (`direction` … `type`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `filter` ← `filter`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `sort` ← `sort`, `type` ← `type`
 - **Returns**: `EventConnection`
@@ -195,12 +209,13 @@ Accessor: `client.LiveEssentials` · Source: `Api/LiveEssentials.cs` · 19 opera
 | `Direction` | `Models/Enums/Direction.cs` |
 | `Filter8` | `Models/Enums/Filter8.cs` |
 | `Sort8` | `Models/Enums/Sort8.cs` |
-| `Type31` | `Models/Enums/Type31.cs` |
+| `Type27` | `Models/Enums/Type27.cs` |
 | `EventConnection` | `Models/EventConnection.cs` |
 
 ### GetLiveEventsAlt1
 
-- **Signature**: `GetLiveEventsAlt1(Direction? direction, Filter8? filter, double? page, double? perPage, string? query, Sort8? sort, Type31? type, RequestOptions? requestOptions = null, CancellationToken ct = default)`
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
+- **Signature**: `GetLiveEventsAlt1(Direction? direction, Filter8? filter, double? page, double? perPage, string? query, Sort8? sort, Type27? type, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 7 params (`direction` … `type`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `filter` ← `filter`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `sort` ← `sort`, `type` ← `type`
 - **Returns**: `EventConnection`
@@ -211,12 +226,13 @@ Accessor: `client.LiveEssentials` · Source: `Api/LiveEssentials.cs` · 19 opera
 | `Direction` | `Models/Enums/Direction.cs` |
 | `Filter8` | `Models/Enums/Filter8.cs` |
 | `Sort8` | `Models/Enums/Sort8.cs` |
-| `Type31` | `Models/Enums/Type31.cs` |
+| `Type27` | `Models/Enums/Type27.cs` |
 | `EventConnection` | `Models/EventConnection.cs` |
 
 ### GetLiveEventsAlt2
 
-- **Signature**: `GetLiveEventsAlt2(Direction? direction, Filter8? filter, double? page, double? perPage, string? query, Sort8? sort, Type31? type, RequestOptions? requestOptions = null, CancellationToken ct = default)`
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
+- **Signature**: `GetLiveEventsAlt2(Direction? direction, Filter8? filter, double? page, double? perPage, string? query, Sort8? sort, Type27? type, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 7 params (`direction` … `type`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `filter` ← `filter`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `sort` ← `sort`, `type` ← `type`
 - **Returns**: `EventConnection`
@@ -227,11 +243,12 @@ Accessor: `client.LiveEssentials` · Source: `Api/LiveEssentials.cs` · 19 opera
 | `Direction` | `Models/Enums/Direction.cs` |
 | `Filter8` | `Models/Enums/Filter8.cs` |
 | `Sort8` | `Models/Enums/Sort8.cs` |
-| `Type31` | `Models/Enums/Type31.cs` |
+| `Type27` | `Models/Enums/Type27.cs` |
 | `EventConnection` | `Models/EventConnection.cs` |
 
 ### UpdateLiveEvent
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `UpdateLiveEvent(double liveEventId, double userId, UsersLiveEventsRequest2? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `RecurringEvent`
@@ -247,6 +264,7 @@ Accessor: `client.LiveEssentials` · Source: `Api/LiveEssentials.cs` · 19 opera
 
 ### UpdateLiveEventAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `UpdateLiveEventAlt1(double liveEventId, LiveEventsRequest2? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `RecurringEvent`
@@ -262,6 +280,7 @@ Accessor: `client.LiveEssentials` · Source: `Api/LiveEssentials.cs` · 19 opera
 
 ### UpdateLiveEventAlt2
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `UpdateLiveEventAlt2(double liveEventId, MeLiveEventsRequest2? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `RecurringEvent`

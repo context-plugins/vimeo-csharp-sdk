@@ -1,9 +1,9 @@
 using System.Net.Http;
 using System.Net.Http.Headers;
-using Vimeo.Core.Extensions;
-using Vimeo.Core.Models;
+using VimeoApi.Core.Extensions;
+using VimeoApi.Core.Models;
 
-namespace Vimeo.Core.Request;
+namespace VimeoApi.Core.Request;
 
 internal sealed class BinaryRequest : IRequest
 {

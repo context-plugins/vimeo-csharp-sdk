@@ -1,15 +1,15 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Enum;
+using VimeoApi.Core.Enum;
 
-namespace Vimeo.Models.Enums;
+namespace VimeoApi.Models.Enums;
 
 /// <summary>
-/// Which logo to show in the landing page navbar.
+/// The way in which the promotion generates promo codes.
 /// <para>
 /// Option descriptions:
-///  * <c>custom</c> - A custom brand-kit logo (see <c>uri</c>/<c>url</c>).
-///  * <c>none</c> - No logo is shown.
-///  * <c>vimeo</c> - The Vimeo logo.
+///  * <c>batch</c> - The promotion provides a unique promotional code for each user.
+///  * <c>batch_prefix</c> - Like <c>batch</c>, except that all codes have a similar prefix string. _This option is deprecated, yet it may still appear for some users._
+///  * <c>single</c> - The promotion provides a single promotional code for all users.
 /// </para>
 /// </summary>
 [JsonConverter(typeof(StringEnumConverter<Type18>))]
@@ -19,11 +19,11 @@ public sealed record Type18 : StringEnum<Type18>
     {
     }
 
-    public static readonly Type18 Custom = new("custom");
+    public static readonly Type18 Batch = new("batch");
 
-    public static readonly Type18 None = new("none");
+    public static readonly Type18 BatchPrefix = new("batch_prefix");
 
-    public static readonly Type18 Vimeo = new("vimeo");
+    public static readonly Type18 Single = new("single");
 
     public static Type18 FromValue(string value) => FromValueCore(value);
 }

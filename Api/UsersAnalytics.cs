@@ -2,17 +2,17 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using Vimeo.Core;
-using Vimeo.Core.Authentication;
-using Vimeo.Core.ErrorResponse;
-using Vimeo.Core.Exceptions;
-using Vimeo.Core.Models;
-using Vimeo.Core.Request;
-using Vimeo.Core.Response;
-using Vimeo.Models;
-using Vimeo.Models.Enums;
+using VimeoApi.Core;
+using VimeoApi.Core.Authentication;
+using VimeoApi.Core.ErrorResponse;
+using VimeoApi.Core.Exceptions;
+using VimeoApi.Core.Models;
+using VimeoApi.Core.Request;
+using VimeoApi.Core.Response;
+using VimeoApi.Models;
+using VimeoApi.Models.Enums;
 
-namespace Vimeo.Api;
+namespace VimeoApi.Api;
 
 /// <summary>
 /// Use these methods to work with the authenticated user's video analytics.

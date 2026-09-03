@@ -8,6 +8,7 @@ Accessor: `client.LikesEssentials` · Source: `Api/LikesEssentials.cs` · 11 ope
 
 ### CheckIfUserLikedVideo
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CheckIfUserLikedVideo(double userId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<CheckIfUserLikedVideoError>` — **Case A (typed)**
@@ -20,6 +21,7 @@ Accessor: `client.LikesEssentials` · Source: `Api/LikesEssentials.cs` · 11 ope
 
 ### CheckIfUserLikedVideoAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CheckIfUserLikedVideoAlt1(double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<CheckIfUserLikedVideoAlt1Error>` — **Case A (typed)**
@@ -32,6 +34,7 @@ Accessor: `client.LikesEssentials` · Source: `Api/LikesEssentials.cs` · 11 ope
 
 ### GetLikes
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetLikes(double userId, Filter3? filter, bool? filterEmbeddable, double? page, double? perPage, string? query, Sort15? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 6 params (`filter` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `filter` ← `filter`, `filter_embeddable` ← `filterEmbeddable`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `sort` ← `sort`
@@ -49,6 +52,7 @@ Accessor: `client.LikesEssentials` · Source: `Api/LikesEssentials.cs` · 11 ope
 
 ### GetLikesAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetLikesAlt1(Filter3? filter, bool? filterEmbeddable, double? page, double? perPage, string? query, Sort15? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 6 params (`filter` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `filter` ← `filter`, `filter_embeddable` ← `filterEmbeddable`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `sort` ← `sort`
@@ -66,6 +70,7 @@ Accessor: `client.LikesEssentials` · Source: `Api/LikesEssentials.cs` · 11 ope
 
 ### GetVideoLikes
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVideoLikes(double videoId, Direction? direction, double? page, double? perPage, Sort8? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 4 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `page` ← `page`, `per_page` ← `perPage`, `sort` ← `sort`
@@ -80,6 +85,7 @@ Accessor: `client.LikesEssentials` · Source: `Api/LikesEssentials.cs` · 11 ope
 
 ### GetVideoLikesAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVideoLikesAlt1(double channelId, double videoId, Direction? direction, double? page, double? perPage, Sort8? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 4 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `page` ← `page`, `per_page` ← `perPage`, `sort` ← `sort`
@@ -94,6 +100,7 @@ Accessor: `client.LikesEssentials` · Source: `Api/LikesEssentials.cs` · 11 ope
 
 ### GetVodLikes
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVodLikes(double ondemandId, Direction? direction, Filter25? filter, double? page, double? perPage, Sort8? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 5 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `filter` ← `filter`, `page` ← `page`, `per_page` ← `perPage`, `sort` ← `sort`
@@ -112,6 +119,7 @@ Accessor: `client.LikesEssentials` · Source: `Api/LikesEssentials.cs` · 11 ope
 
 ### LikeVideo
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `LikeVideo(double userId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<LikeVideoError>` — **Case A (typed)**
@@ -124,6 +132,7 @@ Accessor: `client.LikesEssentials` · Source: `Api/LikesEssentials.cs` · 11 ope
 
 ### LikeVideoAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `LikeVideoAlt1(double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<LikeVideoAlt1Error>` — **Case A (typed)**
@@ -136,6 +145,7 @@ Accessor: `client.LikesEssentials` · Source: `Api/LikesEssentials.cs` · 11 ope
 
 ### UnlikeVideo
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `UnlikeVideo(double userId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<UnlikeVideoError>` — **Case A (typed)**
@@ -148,6 +158,7 @@ Accessor: `client.LikesEssentials` · Source: `Api/LikesEssentials.cs` · 11 ope
 
 ### UnlikeVideoAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `UnlikeVideoAlt1(double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<UnlikeVideoAlt1Error>` — **Case A (typed)**

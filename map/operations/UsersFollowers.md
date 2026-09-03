@@ -8,6 +8,7 @@ Accessor: `client.UsersFollowers` · Source: `Api/UsersFollowers.cs` · 12 opera
 
 ### CheckIfUserIsFollowing
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CheckIfUserIsFollowing(double followUserId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<CheckIfUserIsFollowingError>` — **Case A (typed)**
@@ -20,6 +21,7 @@ Accessor: `client.UsersFollowers` · Source: `Api/UsersFollowers.cs` · 12 opera
 
 ### CheckIfUserIsFollowingAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CheckIfUserIsFollowingAlt1(double followUserId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<CheckIfUserIsFollowingAlt1Error>` — **Case A (typed)**
@@ -32,6 +34,7 @@ Accessor: `client.UsersFollowers` · Source: `Api/UsersFollowers.cs` · 12 opera
 
 ### FollowUser
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `FollowUser(double followUserId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<FollowUserError>` — **Case A (typed)**
@@ -44,6 +47,7 @@ Accessor: `client.UsersFollowers` · Source: `Api/UsersFollowers.cs` · 12 opera
 
 ### FollowUserAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `FollowUserAlt1(double followUserId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<FollowUserAlt1Error>` — **Case A (typed)**
@@ -56,6 +60,7 @@ Accessor: `client.UsersFollowers` · Source: `Api/UsersFollowers.cs` · 12 opera
 
 ### FollowUsers
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `FollowUsers(double userId, UsersFollowingRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<FollowUsersError>` — **Case A (typed)**
@@ -69,6 +74,7 @@ Accessor: `client.UsersFollowers` · Source: `Api/UsersFollowers.cs` · 12 opera
 
 ### FollowUsersAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `FollowUsersAlt1(MeFollowingRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<FollowUsersAlt1Error>` — **Case A (typed)**
@@ -82,6 +88,7 @@ Accessor: `client.UsersFollowers` · Source: `Api/UsersFollowers.cs` · 12 opera
 
 ### GetFollowers
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetFollowers(double userId, Direction? direction, double? page, double? perPage, string? query, Sort8? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 5 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `sort` ← `sort`
@@ -96,6 +103,7 @@ Accessor: `client.UsersFollowers` · Source: `Api/UsersFollowers.cs` · 12 opera
 
 ### GetFollowersAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetFollowersAlt1(Direction? direction, double? page, double? perPage, string? query, Sort8? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 5 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `sort` ← `sort`
@@ -110,6 +118,7 @@ Accessor: `client.UsersFollowers` · Source: `Api/UsersFollowers.cs` · 12 opera
 
 ### GetUserFollowing
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetUserFollowing(double userId, Direction? direction, Filter13? filter, double? page, double? perPage, string? query, Sort8? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 6 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `filter` ← `filter`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `sort` ← `sort`
@@ -125,6 +134,7 @@ Accessor: `client.UsersFollowers` · Source: `Api/UsersFollowers.cs` · 12 opera
 
 ### GetUserFollowingAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetUserFollowingAlt1(Direction? direction, Filter13? filter, double? page, double? perPage, string? query, Sort8? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 6 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `filter` ← `filter`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `sort` ← `sort`
@@ -140,12 +150,14 @@ Accessor: `client.UsersFollowers` · Source: `Api/UsersFollowers.cs` · 12 opera
 
 ### UnfollowUser
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `UnfollowUser(double followUserId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<RawError>` — **Case B**
 
 ### UnfollowUserAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `UnfollowUserAlt1(double followUserId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<RawError>` — **Case B**

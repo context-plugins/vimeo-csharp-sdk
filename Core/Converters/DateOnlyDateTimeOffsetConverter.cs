@@ -1,9 +1,9 @@
 using System;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using Vimeo.Core.Extensions;
+using VimeoApi.Core.Extensions;
 
-namespace Vimeo.Core.Converters;
+namespace VimeoApi.Core.Converters;
 
 internal sealed class DateOnlyDateTimeOffsetConverter : JsonConverter<DateTimeOffset>
 {

@@ -8,6 +8,7 @@ Accessor: `client.VideosRecommendations` · Source: `Api/VideosRecommendations.c
 
 ### GetRelatedVideos
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetRelatedVideos(double videoId, Filter46? filter, double? page, double? perPage, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `filter` — nullable, no default → **must pass explicitly**
   - `page` — nullable, no default → **must pass explicitly**

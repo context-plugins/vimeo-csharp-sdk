@@ -8,6 +8,7 @@ Accessor: `client.FoldersItems` · Source: `Api/FoldersItems.cs` · 3 operations
 
 ### DeleteFolderItemsAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteFolderItemsAlt1(double projectId, string uris, bool? sendToRecentlyDeleted, bool? shouldDeleteItems, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `sendToRecentlyDeleted` — nullable, no default → **must pass explicitly**
   - `shouldDeleteItems` — nullable, no default → **must pass explicitly**
@@ -23,6 +24,7 @@ Accessor: `client.FoldersItems` · Source: `Api/FoldersItems.cs` · 3 operations
 
 ### GetFolderItems
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetFolderItems(double projectId, string? clipPrivacyFilters, Direction? direction, Filter21? filter, double? page, double? perPage, Sort37? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 6 params (`clipPrivacyFilters` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `clip_privacy_filters` ← `clipPrivacyFilters`, `direction` ← `direction`, `filter` ← `filter`, `page` ← `page`, `per_page` ← `perPage`, `sort` ← `sort`
@@ -37,6 +39,7 @@ Accessor: `client.FoldersItems` · Source: `Api/FoldersItems.cs` · 3 operations
 
 ### GetFolderItems2
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetFolderItems2(double projectId, double userId, string? clipPrivacyFilters, Direction? direction, Filter21? filter, double? page, double? perPage, Sort37? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 6 params (`clipPrivacyFilters` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `clip_privacy_filters` ← `clipPrivacyFilters`, `direction` ← `direction`, `filter` ← `filter`, `page` ← `page`, `per_page` ← `perPage`, `sort` ← `sort`

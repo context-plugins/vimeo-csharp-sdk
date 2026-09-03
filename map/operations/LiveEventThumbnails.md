@@ -8,6 +8,7 @@ Accessor: `client.LiveEventThumbnails` · Source: `Api/LiveEventThumbnails.cs` �
 
 ### CreateLiveEventThumbnail
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateLiveEventThumbnail(double liveEventId, double userId, UsersLiveEventsPicturesRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `Picture`
@@ -23,6 +24,7 @@ Accessor: `client.LiveEventThumbnails` · Source: `Api/LiveEventThumbnails.cs` �
 
 ### CreateLiveEventThumbnailAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateLiveEventThumbnailAlt1(double liveEventId, LiveEventsPicturesRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `Picture`
@@ -38,6 +40,7 @@ Accessor: `client.LiveEventThumbnails` · Source: `Api/LiveEventThumbnails.cs` �
 
 ### CreateLiveEventThumbnailAlt2
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateLiveEventThumbnailAlt2(double liveEventId, MeLiveEventsPicturesRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `Picture`
@@ -53,6 +56,7 @@ Accessor: `client.LiveEventThumbnails` · Source: `Api/LiveEventThumbnails.cs` �
 
 ### DeleteLiveEventThumbnail
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteLiveEventThumbnail(double liveEventId, double thumbnailId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteLiveEventThumbnailError>` — **Case A (typed)**
@@ -65,6 +69,7 @@ Accessor: `client.LiveEventThumbnails` · Source: `Api/LiveEventThumbnails.cs` �
 
 ### DeleteLiveEventThumbnailAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteLiveEventThumbnailAlt1(double liveEventId, double thumbnailId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteLiveEventThumbnailAlt1Error>` — **Case A (typed)**
@@ -77,6 +82,7 @@ Accessor: `client.LiveEventThumbnails` · Source: `Api/LiveEventThumbnails.cs` �
 
 ### DeleteLiveEventThumbnailAlt2
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteLiveEventThumbnailAlt2(double liveEventId, double thumbnailId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteLiveEventThumbnailAlt2Error>` — **Case A (typed)**
@@ -89,6 +95,7 @@ Accessor: `client.LiveEventThumbnails` · Source: `Api/LiveEventThumbnails.cs` �
 
 ### EditLiveEventThumbnail
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `EditLiveEventThumbnail(double liveEventId, double thumbnailId, double userId, UsersLiveEventsPicturesThumbnailIdRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `Picture`
@@ -104,6 +111,7 @@ Accessor: `client.LiveEventThumbnails` · Source: `Api/LiveEventThumbnails.cs` �
 
 ### EditLiveEventThumbnailAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `EditLiveEventThumbnailAlt1(double liveEventId, double thumbnailId, LiveEventsPicturesRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `Picture`
@@ -119,6 +127,7 @@ Accessor: `client.LiveEventThumbnails` · Source: `Api/LiveEventThumbnails.cs` �
 
 ### EditLiveEventThumbnailAlt2
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `EditLiveEventThumbnailAlt2(double liveEventId, double thumbnailId, MeLiveEventsPicturesRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `Picture`
@@ -134,6 +143,7 @@ Accessor: `client.LiveEventThumbnails` · Source: `Api/LiveEventThumbnails.cs` �
 
 ### GetLiveEventThumbnail
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetLiveEventThumbnail(double liveEventId, double thumbnailId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Picture`
 - **Error**: `SdkException<GetLiveEventThumbnailError>` — **Case A (typed)**
@@ -147,6 +157,7 @@ Accessor: `client.LiveEventThumbnails` · Source: `Api/LiveEventThumbnails.cs` �
 
 ### GetLiveEventThumbnailAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetLiveEventThumbnailAlt1(double liveEventId, double thumbnailId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Picture`
 - **Error**: `SdkException<GetLiveEventThumbnailAlt1Error>` — **Case A (typed)**
@@ -160,6 +171,7 @@ Accessor: `client.LiveEventThumbnails` · Source: `Api/LiveEventThumbnails.cs` �
 
 ### GetLiveEventThumbnailAlt2
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetLiveEventThumbnailAlt2(double liveEventId, double thumbnailId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Picture`
 - **Error**: `SdkException<GetLiveEventThumbnailAlt2Error>` — **Case A (typed)**
@@ -173,6 +185,7 @@ Accessor: `client.LiveEventThumbnails` · Source: `Api/LiveEventThumbnails.cs` �
 
 ### GetLiveEventThumbnails
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetLiveEventThumbnails(double liveEventId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `PictureConnection`
 - **Error**: `SdkException<GetLiveEventThumbnailsError>` — **Case A (typed)**
@@ -186,6 +199,7 @@ Accessor: `client.LiveEventThumbnails` · Source: `Api/LiveEventThumbnails.cs` �
 
 ### GetLiveEventThumbnailsAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetLiveEventThumbnailsAlt1(double liveEventId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `PictureConnection`
 - **Error**: `SdkException<GetLiveEventThumbnailsAlt1Error>` — **Case A (typed)**
@@ -199,6 +213,7 @@ Accessor: `client.LiveEventThumbnails` · Source: `Api/LiveEventThumbnails.cs` �
 
 ### GetLiveEventThumbnailsAlt2
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetLiveEventThumbnailsAlt2(double liveEventId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `PictureConnection`
 - **Error**: `SdkException<GetLiveEventThumbnailsAlt2Error>` — **Case A (typed)**

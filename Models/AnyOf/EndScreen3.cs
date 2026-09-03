@@ -2,10 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using Vimeo.Core.Extensions;
-using Vimeo.Core.Models;
+using VimeoApi.Core.Extensions;
+using VimeoApi.Core.Models;
 
-namespace Vimeo.Models.AnyOf;
+namespace VimeoApi.Models.AnyOf;
 
 /// <summary>
 /// A collection of information about the embeddable player's end screen. The API returns an empty array instead of an object when no end screen is configured for the video.

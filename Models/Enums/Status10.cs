@@ -1,16 +1,16 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Enum;
+using VimeoApi.Core.Enum;
 
-namespace Vimeo.Models.Enums;
+namespace VimeoApi.Models.Enums;
 
 /// <summary>
-/// The availability of the animated thumbnail.
+/// The status of the pre-live video's RTMP link.
 /// <para>
 /// Option descriptions:
-///  * <c>cancelled</c> - The animated thumbnail's creation has been cancelled.
-///  * <c>completed</c> - The animated thumbnail has been created.
-///  * <c>failed</c> - The animated thumbnail's creation has failed.
-///  * <c>started</c> - The animated thumbnail's creation has started.
+///  * <c>pending</c> - Vimeo is working on setting up the connection.
+///  * <c>ready</c> - Resources have been provisioned for the event.
+///  * <c>streaming</c> - Live video is currently streaming to the RTMP link.
+///  * <c>unavailable</c> - The connection is ready, but streaming to the RTMP link has not yet begun.
 /// </para>
 /// </summary>
 [JsonConverter(typeof(StringEnumConverter<Status10>))]
@@ -20,13 +20,13 @@ public sealed record Status10 : StringEnum<Status10>
     {
     }
 
-    public static readonly Status10 Cancelled = new("cancelled");
+    public static readonly Status10 Pending = new("pending");
 
-    public static readonly Status10 Completed = new("completed");
+    public static readonly Status10 Ready = new("ready");
 
-    public static readonly Status10 Failed = new("failed");
+    public static readonly Status10 Streaming = new("streaming");
 
-    public static readonly Status10 Started = new("started");
+    public static readonly Status10 Unavailable = new("unavailable");
 
     public static Status10 FromValue(string value) => FromValueCore(value);
 }

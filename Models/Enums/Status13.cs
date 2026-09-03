@@ -1,14 +1,14 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Enum;
+using VimeoApi.Core.Enum;
 
-namespace Vimeo.Models.Enums;
+namespace VimeoApi.Models.Enums;
 
 /// <summary>
 /// The status of the event.
 /// <para>
 /// Option descriptions:
-///  * <c>ended</c> - The user ended the event.
-///  * <c>started</c> - The user started the event.
+///  * <c>ended</c> - The event has ended.
+///  * <c>started</c> - The event has started.
 /// </para>
 /// </summary>
 [JsonConverter(typeof(StringEnumConverter<Status13>))]

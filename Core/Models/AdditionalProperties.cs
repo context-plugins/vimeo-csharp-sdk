@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text.Json;
-using Vimeo.Core.Extensions;
+using VimeoApi.Core.Extensions;
 
-namespace Vimeo.Core.Models;
+namespace VimeoApi.Core.Models;
 
 public sealed class AdditionalProperties : IDictionary<string, JsonElement>, IEquatable<AdditionalProperties>
 {

@@ -8,6 +8,7 @@ Accessor: `client.GroupsSubscriptions` · Source: `Api/GroupsSubscriptions.cs` �
 
 ### JoinGroup
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `JoinGroup(double groupId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<JoinGroupError>` — **Case A (typed)**
@@ -21,6 +22,7 @@ Accessor: `client.GroupsSubscriptions` · Source: `Api/GroupsSubscriptions.cs` �
 
 ### JoinGroupAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `JoinGroupAlt1(double groupId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<JoinGroupAlt1Error>` — **Case A (typed)**
@@ -34,6 +36,7 @@ Accessor: `client.GroupsSubscriptions` · Source: `Api/GroupsSubscriptions.cs` �
 
 ### LeaveGroup
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `LeaveGroup(double groupId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<LeaveGroupError>` — **Case A (typed)**
@@ -47,6 +50,7 @@ Accessor: `client.GroupsSubscriptions` · Source: `Api/GroupsSubscriptions.cs` �
 
 ### LeaveGroupAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `LeaveGroupAlt1(double groupId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<LeaveGroupAlt1Error>` — **Case A (typed)**

@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
-using Vimeo.Models.Enums;
+using VimeoApi.Core.Models;
+using VimeoApi.Models.Enums;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 /// <summary>
 /// Information about the event's pre-live video, where applicable. A pre-live video is either activated or in the process of being activated.
@@ -27,7 +27,7 @@ public record PreLiveVideo
     /// </para>
     /// </summary>
     [JsonPropertyName("status")]
-    public required Status12 Status { get; init; }
+    public required Status10 Status { get; init; }
 
     /// <summary>
     /// The API URI that resolves to the connection data.

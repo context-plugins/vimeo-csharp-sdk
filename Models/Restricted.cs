@@ -1,8 +1,7 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
-using Vimeo.Models.Enums;
+using VimeoApi.Core.Models;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 /// <summary>
 /// The restricted video storage quota (for embeddable and private videos).
@@ -29,7 +28,7 @@ public record Restricted
     /// </para>
     /// </summary>
     [JsonPropertyName("unit")]
-    public required Unit2 Unit { get; init; }
+    public string Unit { get; } = "video_size";
 
     /// <summary>
     /// The number of bytes that the authenticated user has already used for restricted videos.

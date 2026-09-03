@@ -8,6 +8,7 @@ Accessor: `client.EmbedPresetsFolders` · Source: `Api/EmbedPresetsFolders.cs` �
 
 ### DeleteFolderEmbedPreset
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteFolderEmbedPreset(double presetId, double projectId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteFolderEmbedPresetError>` — **Case A (typed)**

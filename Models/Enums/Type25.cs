@@ -1,23 +1,17 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Enum;
+using VimeoApi.Core.Enum;
 
-namespace Vimeo.Models.Enums;
+namespace VimeoApi.Models.Enums;
 
 /// <summary>
-/// The elements that appear after the video ends.
+/// The type of text track.
 /// <para>
 /// Option descriptions:
-///  * <c>beginning</c> - The end screen is a thumbnail.
-///  * <c>custom</c> - The end screen is custom.
-///  * <c>email</c> - The end screen is an email form.
-///  * <c>image</c> - The end screen is an image.
-///  * <c>link</c> - The end screen is a link.
-///  * <c>loop</c> - The end screen is a loop.
-///  * <c>nothing</c> - There is no end screen.
-///  * <c>share</c> - The end screen is a share button.
-///  * <c>text</c> - The end screen is text.
-///  * <c>threevideos</c> - The end screen is three video suggestions.
-///  * <c>videos</c> - The end screen is video suggestions.
+///  * <c>captions</c> - The text track is the captions type.
+///  * <c>chapters</c> - The text track is the chapters type.
+///  * <c>descriptions</c> - The text track is the descriptions type.
+///  * <c>metadata</c> - The text track is the metadata type.
+///  * <c>subtitles</c> - The text track is the subtitles type.
 /// </para>
 /// </summary>
 [JsonConverter(typeof(StringEnumConverter<Type25>))]
@@ -27,27 +21,15 @@ public sealed record Type25 : StringEnum<Type25>
     {
     }
 
-    public static readonly Type25 Beginning = new("beginning");
+    public static readonly Type25 Captions = new("captions");
 
-    public static readonly Type25 Custom = new("custom");
+    public static readonly Type25 Chapters = new("chapters");
 
-    public static readonly Type25 Email = new("email");
+    public static readonly Type25 Descriptions = new("descriptions");
 
-    public static readonly Type25 Image = new("image");
+    public static readonly Type25 Metadata = new("metadata");
 
-    public static readonly Type25 Link = new("link");
-
-    public static readonly Type25 Loop = new("loop");
-
-    public static readonly Type25 Nothing = new("nothing");
-
-    public static readonly Type25 Share = new("share");
-
-    public static readonly Type25 Text = new("text");
-
-    public static readonly Type25 Threevideos = new("threevideos");
-
-    public static readonly Type25 Videos = new("videos");
+    public static readonly Type25 Subtitles = new("subtitles");
 
     public static Type25 FromValue(string value) => FromValueCore(value);
 }

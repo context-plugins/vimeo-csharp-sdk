@@ -8,6 +8,7 @@ Accessor: `client.VideosEmbedPrivacy` · Source: `Api/VideosEmbedPrivacy.cs` · 
 
 ### AddVideoPrivacyDomain
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `AddVideoPrivacyDomain(string domain, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<AddVideoPrivacyDomainError>` — **Case A (typed)**
@@ -20,6 +21,7 @@ Accessor: `client.VideosEmbedPrivacy` · Source: `Api/VideosEmbedPrivacy.cs` · 
 
 ### DeleteVideoPrivacyDomain
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteVideoPrivacyDomain(string domain, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteVideoPrivacyDomainError>` — **Case A (typed)**
@@ -32,6 +34,7 @@ Accessor: `client.VideosEmbedPrivacy` · Source: `Api/VideosEmbedPrivacy.cs` · 
 
 ### GetVideoPrivacyDomains
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVideoPrivacyDomains(double videoId, Direction? direction, double? page, double? perPage, Sort78? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 4 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `page` ← `page`, `per_page` ← `perPage`, `sort` ← `sort`

@@ -8,6 +8,7 @@ Accessor: `client.LiveEventEnd` · Source: `Api/LiveEventEnd.cs` · 3 operations
 
 ### EndLiveEvent
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `EndLiveEvent(double liveEventId, string userId, double? clipId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `clipId` — nullable, no default → **must pass explicitly**
 - **Query params (wire ← C#)**: `clip_id` ← `clipId`
@@ -23,6 +24,7 @@ Accessor: `client.LiveEventEnd` · Source: `Api/LiveEventEnd.cs` · 3 operations
 
 ### EndLiveEventAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `EndLiveEventAlt1(double liveEventId, double? clipId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `clipId` — nullable, no default → **must pass explicitly**
 - **Query params (wire ← C#)**: `clip_id` ← `clipId`
@@ -38,6 +40,7 @@ Accessor: `client.LiveEventEnd` · Source: `Api/LiveEventEnd.cs` · 3 operations
 
 ### EndLiveEventAlt2
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `EndLiveEventAlt2(double liveEventId, double? clipId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `clipId` — nullable, no default → **must pass explicitly**
 - **Query params (wire ← C#)**: `clip_id` ← `clipId`

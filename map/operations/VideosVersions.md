@@ -8,6 +8,7 @@ Accessor: `client.VideosVersions` · Source: `Api/VideosVersions.cs` · 13 opera
 
 ### CreateAudioTrack
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateAudioTrack(double versionId, double videoId, VideosVersionsAudiotracksRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `AlternateAudioTrack`
 - **Error**: `SdkException<CreateAudioTrackError>` — **Case A (typed)**
@@ -22,6 +23,7 @@ Accessor: `client.VideosVersions` · Source: `Api/VideosVersions.cs` · 13 opera
 
 ### CreateVideoVersion
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateVideoVersion(double videoId, VideosVersionsRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `VideoVersion`
 - **Error**: `SdkException<CreateVideoVersionError>` — **Case A (typed)**
@@ -36,6 +38,7 @@ Accessor: `client.VideosVersions` · Source: `Api/VideosVersions.cs` · 13 opera
 
 ### DeleteAudioTrack
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteAudioTrack(string audiotrackId, double versionId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteAudioTrackError>` — **Case A (typed)**
@@ -48,6 +51,7 @@ Accessor: `client.VideosVersions` · Source: `Api/VideosVersions.cs` · 13 opera
 
 ### DeleteVideoVersion
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteVideoVersion(double versionId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteVideoVersionError>` — **Case A (typed)**
@@ -60,6 +64,7 @@ Accessor: `client.VideosVersions` · Source: `Api/VideosVersions.cs` · 13 opera
 
 ### EditAudioTrack
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `EditAudioTrack(string audiotrackId, double versionId, double videoId, VideosVersionsAudiotracksAudiotrackIdRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `AlternateAudioTrack`
@@ -75,6 +80,7 @@ Accessor: `client.VideosVersions` · Source: `Api/VideosVersions.cs` · 13 opera
 
 ### EditVideoVersion
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `EditVideoVersion(double versionId, double videoId, VideosVersionsRequest1? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `VideoVersion`
@@ -91,6 +97,7 @@ Accessor: `client.VideosVersions` · Source: `Api/VideosVersions.cs` · 13 opera
 
 ### GetAudioTrack
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetAudioTrack(string audiotrackId, double versionId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `AlternateAudioTrack`
 - **Error**: `SdkException<GetAudioTrackError>` — **Case A (typed)**
@@ -104,6 +111,7 @@ Accessor: `client.VideosVersions` · Source: `Api/VideosVersions.cs` · 13 opera
 
 ### GetAudioTracks
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetAudioTracks(double versionId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `AlternateAudioTrackConnection`
 - **Error**: `SdkException<GetAudioTracksError>` — **Case A (typed)**
@@ -117,12 +125,14 @@ Accessor: `client.VideosVersions` · Source: `Api/VideosVersions.cs` · 13 opera
 
 ### GetAudiotrackDownloads
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetAudiotrackDownloads(double versionId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<RawError>` — **Case B**
 
 ### GetVersionThumbnail
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVersionThumbnail(double versionId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Picture`
 - **Error**: `SdkException<RawError>` — **Case B**
@@ -133,6 +143,7 @@ Accessor: `client.VideosVersions` · Source: `Api/VideosVersions.cs` · 13 opera
 
 ### GetVideoVersion
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVideoVersion(double versionId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `VideoVersion`
 - **Error**: `SdkException<GetVideoVersionError>` — **Case A (typed)**
@@ -146,6 +157,7 @@ Accessor: `client.VideosVersions` · Source: `Api/VideosVersions.cs` · 13 opera
 
 ### GetVideoVersions
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVideoVersions(double videoId, double? page, double? perPage, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `page` — nullable, no default → **must pass explicitly**
   - `perPage` — nullable, no default → **must pass explicitly**
@@ -163,6 +175,7 @@ Accessor: `client.VideosVersions` · Source: `Api/VideosVersions.cs` · 13 opera
 
 ### GetVideoVersionsAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVideoVersionsAlt1(double channelId, double videoId, double? page, double? perPage, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `page` — nullable, no default → **must pass explicitly**
   - `perPage` — nullable, no default → **must pass explicitly**

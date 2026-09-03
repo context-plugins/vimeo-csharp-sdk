@@ -8,6 +8,7 @@ Accessor: `client.OnDemandGenres` · Source: `Api/OnDemandGenres.cs` · 8 operat
 
 ### AddVodGenre
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `AddVodGenre(string genreId, double ondemandId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `OnDemandGenre`
 - **Error**: `SdkException<AddVodGenreError>` — **Case A (typed)**
@@ -21,6 +22,7 @@ Accessor: `client.OnDemandGenres` · Source: `Api/OnDemandGenres.cs` · 8 operat
 
 ### DeleteVodGenre
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteVodGenre(string genreId, double ondemandId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteVodGenreError>` — **Case A (typed)**
@@ -33,6 +35,7 @@ Accessor: `client.OnDemandGenres` · Source: `Api/OnDemandGenres.cs` · 8 operat
 
 ### GetGenreVod
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetGenreVod(string genreId, double ondemandId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `OnDemandPage`
 - **Error**: `SdkException<GetGenreVodError>` — **Case A (typed)**
@@ -46,6 +49,7 @@ Accessor: `client.OnDemandGenres` · Source: `Api/OnDemandGenres.cs` · 8 operat
 
 ### GetGenreVods
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetGenreVods(string genreId, Direction? direction, Filter24? filter, double? page, double? perPage, string? query, Sort41? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 6 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `filter` ← `filter`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `sort` ← `sort`
@@ -64,6 +68,7 @@ Accessor: `client.OnDemandGenres` · Source: `Api/OnDemandGenres.cs` · 8 operat
 
 ### GetVodGenre
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVodGenre(string genreId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `OnDemandGenre`
 - **Error**: `SdkException<GetVodGenreError>` — **Case A (typed)**
@@ -77,6 +82,7 @@ Accessor: `client.OnDemandGenres` · Source: `Api/OnDemandGenres.cs` · 8 operat
 
 ### GetVodGenreByOndemandId
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVodGenreByOndemandId(string genreId, double ondemandId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `OnDemandGenre`
 - **Error**: `SdkException<GetVodGenreByOndemandIdError>` — **Case A (typed)**
@@ -90,6 +96,7 @@ Accessor: `client.OnDemandGenres` · Source: `Api/OnDemandGenres.cs` · 8 operat
 
 ### GetVodGenres
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVodGenres(RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `OnDemandGenreConnection`
 - **Error**: `SdkException<GetVodGenresError>` — **Case A (typed)**
@@ -103,6 +110,7 @@ Accessor: `client.OnDemandGenres` · Source: `Api/OnDemandGenres.cs` · 8 operat
 
 ### GetVodGenresByOndemandId
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVodGenresByOndemandId(double ondemandId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `OnDemandGenreConnection`
 - **Error**: `SdkException<GetVodGenresByOndemandIdError>` — **Case A (typed)**

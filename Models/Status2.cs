@@ -1,12 +1,12 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
+using VimeoApi.Core.Models;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 /// <summary>
 /// An object containing data on the value of <b>status</b> and whether it's required for the interaction.
 /// </summary>
-public record Status3
+public record Status2
 {
     /// <summary>
     /// Whether the status of the role upgrade request must be sent to achieve the desired action.

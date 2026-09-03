@@ -8,6 +8,7 @@ Accessor: `client.VideosShowcases` · Source: `Api/VideosShowcases.cs` · 2 oper
 
 ### AddOrRemoveMultipleAlbums
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `AddOrRemoveMultipleAlbums(double videoId, VideosAlbumsRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `IReadOnlyList<Album>`
@@ -23,6 +24,7 @@ Accessor: `client.VideosShowcases` · Source: `Api/VideosShowcases.cs` · 2 oper
 
 ### GetVideoAlbums
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVideoAlbums(double videoId, double? page, double? perPage, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `page` — nullable, no default → **must pass explicitly**
   - `perPage` — nullable, no default → **must pass explicitly**

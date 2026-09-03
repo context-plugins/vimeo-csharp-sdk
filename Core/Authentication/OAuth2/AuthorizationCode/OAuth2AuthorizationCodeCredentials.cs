@@ -1,7 +1,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Vimeo.Core.Authentication.OAuth2.AuthorizationCode;
+namespace VimeoApi.Core.Authentication.OAuth2.AuthorizationCode;
 
 /// <summary>
 /// Callback invoked by the SDK to get an OAuth2 authorization code from the user.

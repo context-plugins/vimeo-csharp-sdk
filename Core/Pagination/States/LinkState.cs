@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Net.Http.Headers;
-using Vimeo.Core.Models;
+using VimeoApi.Core.Models;
 
-namespace Vimeo.Core.Pagination.States;
+namespace VimeoApi.Core.Pagination.States;
 
 internal sealed record LinkState<TResponse> : IPageState<TResponse, LinkState<TResponse>>
 {

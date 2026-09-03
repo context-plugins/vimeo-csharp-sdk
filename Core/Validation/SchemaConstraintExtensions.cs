@@ -3,7 +3,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text.RegularExpressions;
 
-namespace Vimeo.Core.Validation;
+namespace VimeoApi.Core.Validation;
 
 internal static class SchemaConstraintExtensions
 {

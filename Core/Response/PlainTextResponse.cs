@@ -3,7 +3,7 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Vimeo.Core.Response;
+namespace VimeoApi.Core.Response;
 
 internal sealed class PlainTextResponse<TResponse> : IResponse<TResponse>
 {

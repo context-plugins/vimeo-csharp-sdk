@@ -1,6 +1,6 @@
-using Vimeo.Core.Enum;
+using VimeoApi.Core.Enum;
 
-namespace Vimeo.Core.Webhooks;
+namespace VimeoApi.Core.Webhooks;
 
 public abstract record WebhookEvent<TPayload>
 {

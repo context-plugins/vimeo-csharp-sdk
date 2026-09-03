@@ -1,15 +1,17 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Enum;
+using VimeoApi.Core.Enum;
 
-namespace Vimeo.Models.Enums;
+namespace VimeoApi.Models.Enums;
 
 /// <summary>
-/// The way in which the promotion generates promo codes.
+/// The preset outro type.
 /// <para>
 /// Option descriptions:
-///  * <c>batch</c> - The promotion provides a unique promotional code for each user.
-///  * <c>batch_prefix</c> - Like <c>batch</c>, except that all codes have a similar prefix string. _This option is deprecated, yet it may still appear for some users._
-///  * <c>single</c> - The promotion provides a single promotional code for all users.
+///  * <c>link</c> - The outro includes a link.
+///  * <c>no idea</c> - The outro type is <c>no idea</c>. The outro includes uploaded videos.
+///  * <c>text</c> - The outro includes text.
+///  * <c>uploaded_clips</c> - The outro includes uploaded videos.
+///  * <c>uploaded_videos</c> - The outro includes uploaded videos.
 /// </para>
 /// </summary>
 [JsonConverter(typeof(StringEnumConverter<Type22>))]
@@ -19,11 +21,15 @@ public sealed record Type22 : StringEnum<Type22>
     {
     }
 
-    public static readonly Type22 Batch = new("batch");
+    public static readonly Type22 Link = new("link");
 
-    public static readonly Type22 BatchPrefix = new("batch_prefix");
+    public static readonly Type22 NoIdea = new("no idea");
 
-    public static readonly Type22 Single = new("single");
+    public static readonly Type22 Text = new("text");
+
+    public static readonly Type22 UploadedClips = new("uploaded_clips");
+
+    public static readonly Type22 UploadedVideos = new("uploaded_videos");
 
     public static Type22 FromValue(string value) => FromValueCore(value);
 }

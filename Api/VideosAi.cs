@@ -2,17 +2,17 @@ using System;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using Vimeo.Core;
-using Vimeo.Core.Authentication;
-using Vimeo.Core.Exceptions;
-using Vimeo.Core.Models;
-using Vimeo.Core.Request;
-using Vimeo.Core.Response;
-using Vimeo.Errors;
-using Vimeo.Models;
-using Vimeo.Models.Enums;
+using VimeoApi.Core;
+using VimeoApi.Core.Authentication;
+using VimeoApi.Core.Exceptions;
+using VimeoApi.Core.Models;
+using VimeoApi.Core.Request;
+using VimeoApi.Core.Response;
+using VimeoApi.Errors;
+using VimeoApi.Models;
+using VimeoApi.Models.Enums;
 
-namespace Vimeo.Api;
+namespace VimeoApi.Api;
 
 /// <summary>
 /// Use these methods to access Vimeo's AI-powered video intelligence features, including automatic transcription, subtitle translation, audio dubbing, and video Q&amp;A. All endpoints require the <c>ai</c> OAuth scope and are available exclusively to Enterprise accounts. POST requests are subject to per-endpoint rate limits — contact your account team or Vimeo Sales to increase your allotment. Vimeo AI feature use is subject to <see href="https://vimeo.com/legal/service-terms/ai">Vimeo's AI Addendum</see>.
@@ -123,7 +123,7 @@ public sealed class VideosAi
     /// filter by feature: <c>transcription</c> for speech-to-text languages, <c>subtitling</c> for subtitle translation
     /// languages, or <c>dubbing</c> for audio dubbing languages (includes available accents per language).
     /// </remarks>
-    public Task GetAiLanguages(Type52? type, RequestOptions? requestOptions = null, CancellationToken ct = default) =>
+    public Task GetAiLanguages(Type48? type, RequestOptions? requestOptions = null, CancellationToken ct = default) =>
         _rawClient.Execute(_server.Default("/videos/ai/languages"),
             [],
             [new Param("type", type)],

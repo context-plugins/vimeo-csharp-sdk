@@ -8,7 +8,8 @@ Accessor: `client.UsersFeeds` · Source: `Api/UsersFeeds.cs` · 2 operations
 
 ### GetFeed
 
-- **Signature**: `GetFeed(double userId, string? offset, double? page, double? perPage, Type33? type, RequestOptions? requestOptions = null, CancellationToken ct = default)`
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
+- **Signature**: `GetFeed(double userId, string? offset, double? page, double? perPage, Type29? type, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 4 params (`offset` … `type`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `offset` ← `offset`, `page` ← `page`, `per_page` ← `perPage`, `type` ← `type`
 - **Returns**: `Activity31Connection`
@@ -17,14 +18,15 @@ Accessor: `client.UsersFeeds` · Source: `Api/UsersFeeds.cs` · 2 operations
 
 | Type | Source |
 | --- | --- |
-| `Type33` | `Models/Enums/Type33.cs` |
+| `Type29` | `Models/Enums/Type29.cs` |
 | `Activity31Connection` | `Models/Activity31Connection.cs` |
 | `GetFeedError` | `Errors/GetFeedError.cs` |
 | `Error` | `Models/Error.cs` |
 
 ### GetFeedAlt1
 
-- **Signature**: `GetFeedAlt1(string? offset, double? page, double? perPage, Type33? type, RequestOptions? requestOptions = null, CancellationToken ct = default)`
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
+- **Signature**: `GetFeedAlt1(string? offset, double? page, double? perPage, Type29? type, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 4 params (`offset` … `type`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `offset` ← `offset`, `page` ← `page`, `per_page` ← `perPage`, `type` ← `type`
 - **Returns**: `Activity31Connection`
@@ -33,7 +35,7 @@ Accessor: `client.UsersFeeds` · Source: `Api/UsersFeeds.cs` · 2 operations
 
 | Type | Source |
 | --- | --- |
-| `Type33` | `Models/Enums/Type33.cs` |
+| `Type29` | `Models/Enums/Type29.cs` |
 | `Activity31Connection` | `Models/Activity31Connection.cs` |
 | `GetFeedAlt1Error` | `Errors/GetFeedAlt1Error.cs` |
 | `Error` | `Models/Error.cs` |

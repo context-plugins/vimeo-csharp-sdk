@@ -1,7 +1,7 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Enum;
+using VimeoApi.Core.Enum;
 
-namespace Vimeo.Models.Enums;
+namespace VimeoApi.Models.Enums;
 
 /// <summary>
 /// The data type of the field. Required when creating a new field. <b>Immutable</b> after creation.
@@ -15,24 +15,24 @@ namespace Vimeo.Models.Enums;
 ///  * <c>str</c> - Freeform string value.
 /// </para>
 /// </summary>
-[JsonConverter(typeof(StringEnumConverter<Type43>))]
-public sealed record Type43 : StringEnum<Type43>
+[JsonConverter(typeof(StringEnumConverter<Type39>))]
+public sealed record Type39 : StringEnum<Type39>
 {
-    private Type43(string value) : base(value)
+    private Type39(string value) : base(value)
     {
     }
 
-    public static readonly Type43 Bool = new("bool");
+    public static readonly Type39 Bool = new("bool");
 
-    public static readonly Type43 Date = new("date");
+    public static readonly Type39 Date = new("date");
 
-    public static readonly Type43 Int = new("int");
+    public static readonly Type39 Int = new("int");
 
-    public static readonly Type43 MultiSelect = new("multi-select");
+    public static readonly Type39 MultiSelect = new("multi-select");
 
-    public static readonly Type43 Select = new("select");
+    public static readonly Type39 Select = new("select");
 
-    public static readonly Type43 Str = new("str");
+    public static readonly Type39 Str = new("str");
 
-    public static Type43 FromValue(string value) => FromValueCore(value);
+    public static Type39 FromValue(string value) => FromValueCore(value);
 }

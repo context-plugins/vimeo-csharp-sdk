@@ -8,6 +8,7 @@ Accessor: `client.VideosAnimatedThumbnails` · Source: `Api/VideosAnimatedThumbn
 
 ### CreateAnimatedThumbset
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateAnimatedThumbset(double videoId, VideosAnimatedThumbsetsRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `AnimatedThumbset`
 - **Error**: `SdkException<CreateAnimatedThumbsetError>` — **Case A (typed)**
@@ -23,6 +24,7 @@ Accessor: `client.VideosAnimatedThumbnails` · Source: `Api/VideosAnimatedThumbn
 
 ### DeleteAnimatedThumbset
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteAnimatedThumbset(string pictureId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteAnimatedThumbsetError>` — **Case A (typed)**
@@ -35,6 +37,7 @@ Accessor: `client.VideosAnimatedThumbnails` · Source: `Api/VideosAnimatedThumbn
 
 ### GetAllAnimatedThumbset
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetAllAnimatedThumbset(double videoId, double? page, double? perPage, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `page` — nullable, no default → **must pass explicitly**
   - `perPage` — nullable, no default → **must pass explicitly**
@@ -51,6 +54,7 @@ Accessor: `client.VideosAnimatedThumbnails` · Source: `Api/VideosAnimatedThumbn
 
 ### GetAnimatedThumbset
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetAnimatedThumbset(string pictureId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `AnimatedThumbset`
 - **Error**: `SdkException<GetAnimatedThumbsetError>` — **Case A (typed)**
@@ -64,6 +68,7 @@ Accessor: `client.VideosAnimatedThumbnails` · Source: `Api/VideosAnimatedThumbn
 
 ### GetAnimatedThumbsetStatus
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetAnimatedThumbsetStatus(string pictureId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `AnimatedThumbset`
 - **Error**: `SdkException<GetAnimatedThumbsetStatusError>` — **Case A (typed)**

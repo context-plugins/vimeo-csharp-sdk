@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Net.Http;
-using Vimeo.Core.Authentication;
-using Vimeo.Core.Request;
+using VimeoApi.Core.Authentication;
+using VimeoApi.Core.Request;
 
-namespace Vimeo.Core.Models;
+namespace VimeoApi.Core.Models;
 
 internal sealed class ApiRequest
 {

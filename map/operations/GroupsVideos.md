@@ -8,6 +8,7 @@ Accessor: `client.GroupsVideos` · Source: `Api/GroupsVideos.cs` · 5 operations
 
 ### AddVideoToGroup
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `AddVideoToGroup(double groupId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Video`
 - **Error**: `SdkException<AddVideoToGroupError>` — **Case A (typed)**
@@ -22,6 +23,7 @@ Accessor: `client.GroupsVideos` · Source: `Api/GroupsVideos.cs` · 5 operations
 
 ### DeleteVideoFromGroup
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteVideoFromGroup(double groupId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteVideoFromGroupError>` — **Case A (typed)**
@@ -35,6 +37,7 @@ Accessor: `client.GroupsVideos` · Source: `Api/GroupsVideos.cs` · 5 operations
 
 ### GetAvailableVideoGroups
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetAvailableVideoGroups(double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `GroupConnection`
 - **Error**: `SdkException<GetAvailableVideoGroupsError>` — **Case A (typed)**
@@ -48,6 +51,7 @@ Accessor: `client.GroupsVideos` · Source: `Api/GroupsVideos.cs` · 5 operations
 
 ### GetGroupVideo
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetGroupVideo(double groupId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Video`
 - **Error**: `SdkException<GetGroupVideoError>` — **Case A (typed)**
@@ -61,6 +65,7 @@ Accessor: `client.GroupsVideos` · Source: `Api/GroupsVideos.cs` · 5 operations
 
 ### GetGroupVideos
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetGroupVideos(double groupId, Direction? direction, Filter3? filter, bool? filterEmbeddable, double? page, double? perPage, string? query, Sort15? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 7 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `filter` ← `filter`, `filter_embeddable` ← `filterEmbeddable`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `sort` ← `sort`

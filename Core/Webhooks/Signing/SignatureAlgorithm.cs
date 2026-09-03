@@ -1,6 +1,6 @@
 using System.Security.Cryptography;
 
-namespace Vimeo.Core.Webhooks.Signing;
+namespace VimeoApi.Core.Webhooks.Signing;
 
 internal abstract record SignatureAlgorithm
 {

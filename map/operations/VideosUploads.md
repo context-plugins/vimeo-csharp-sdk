@@ -8,6 +8,7 @@ Accessor: `client.VideosUploads` · Source: `Api/VideosUploads.cs` · 4 operatio
 
 ### CompleteStreamingUpload
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CompleteStreamingUpload(double uploadId, double userId, string signature, double videoFileId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Query params (wire ← C#)**: `signature` ← `signature`, `video_file_id` ← `videoFileId`
 - **Returns**: `void` (Task)
@@ -21,6 +22,7 @@ Accessor: `client.VideosUploads` · Source: `Api/VideosUploads.cs` · 4 operatio
 
 ### GetUploadAttempt
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetUploadAttempt(double uploadId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `UploadAttempt`
 - **Error**: `SdkException<RawError>` — **Case B**
@@ -31,6 +33,7 @@ Accessor: `client.VideosUploads` · Source: `Api/VideosUploads.cs` · 4 operatio
 
 ### UploadVideo
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `UploadVideo(double userId, UsersVideosRequest1 body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Video`
 - **Error**: `SdkException<UploadVideoError>` — **Case A (typed)**
@@ -45,6 +48,7 @@ Accessor: `client.VideosUploads` · Source: `Api/VideosUploads.cs` · 4 operatio
 
 ### UploadVideoAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `UploadVideoAlt1(MeVideosRequest1 body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Video`
 - **Error**: `SdkException<UploadVideoAlt1Error>` — **Case A (typed)**

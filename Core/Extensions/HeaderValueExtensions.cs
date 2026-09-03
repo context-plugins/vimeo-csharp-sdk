@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Linq;
 using System.Net.Http.Headers;
 
-namespace Vimeo.Core.Extensions;
+namespace VimeoApi.Core.Extensions;
 
 internal static class HeaderValueExtensions
 {

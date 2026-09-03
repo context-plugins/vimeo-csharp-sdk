@@ -8,6 +8,7 @@ Accessor: `client.SearchFederated` · Source: `Api/SearchFederated.cs` · 2 oper
 
 ### FederatedSearchUserItems
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `FederatedSearchUserItems(double userId, Direction? direction, Filter30? filter, string? filterPrivacy, string? modifiedEndDate, string? modifiedStartDate, double? page, double? perPage, string? query, string? queryFields, Sort46? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 10 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `filter` ← `filter`, `filter_privacy` ← `filterPrivacy`, `modified_end_date` ← `modifiedEndDate`, `modified_start_date` ← `modifiedStartDate`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `query_fields` ← `queryFields`, `sort` ← `sort`
@@ -26,6 +27,7 @@ Accessor: `client.SearchFederated` · Source: `Api/SearchFederated.cs` · 2 oper
 
 ### FederatedSearchUserItemsAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `FederatedSearchUserItemsAlt1(string workspaceUuid, Direction? direction, Filter30? filter, string? filterPrivacy, string? modifiedEndDate, string? modifiedStartDate, double? page, double? perPage, string? query, string? queryFields, Sort46? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 10 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `filter` ← `filter`, `filter_privacy` ← `filterPrivacy`, `modified_end_date` ← `modifiedEndDate`, `modified_start_date` ← `modifiedStartDate`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `query_fields` ← `queryFields`, `sort` ← `sort`

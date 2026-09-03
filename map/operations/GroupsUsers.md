@@ -8,6 +8,7 @@ Accessor: `client.GroupsUsers` · Source: `Api/GroupsUsers.cs` · 5 operations
 
 ### CheckIfUserJoinedGroup
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CheckIfUserJoinedGroup(double groupId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<CheckIfUserJoinedGroupError>` — **Case A (typed)**
@@ -20,6 +21,7 @@ Accessor: `client.GroupsUsers` · Source: `Api/GroupsUsers.cs` · 5 operations
 
 ### CheckIfUserJoinedGroupAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CheckIfUserJoinedGroupAlt1(double groupId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<CheckIfUserJoinedGroupAlt1Error>` — **Case A (typed)**
@@ -32,6 +34,7 @@ Accessor: `client.GroupsUsers` · Source: `Api/GroupsUsers.cs` · 5 operations
 
 ### GetGroupMembers
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetGroupMembers(double groupId, Direction? direction, Filter2? filter, double? page, double? perPage, string? query, Sort8? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 6 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `filter` ← `filter`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `sort` ← `sort`
@@ -50,6 +53,7 @@ Accessor: `client.GroupsUsers` · Source: `Api/GroupsUsers.cs` · 5 operations
 
 ### GetUserGroups
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetUserGroups(double userId, Direction? direction, Filter12? filter, double? page, double? perPage, string? query, Sort5? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 6 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `filter` ← `filter`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `sort` ← `sort`
@@ -68,6 +72,7 @@ Accessor: `client.GroupsUsers` · Source: `Api/GroupsUsers.cs` · 5 operations
 
 ### GetUserGroupsAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetUserGroupsAlt1(Direction? direction, Filter12? filter, double? page, double? perPage, string? query, Sort5? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 6 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `filter` ← `filter`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `sort` ← `sort`

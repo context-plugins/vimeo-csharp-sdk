@@ -1,6 +1,6 @@
-using Vimeo.Core.Models;
+using VimeoApi.Core.Models;
 
-namespace Vimeo.Servers;
+namespace VimeoApi.Servers;
 
 public class DefaultOptions
 {

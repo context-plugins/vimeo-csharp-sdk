@@ -8,6 +8,7 @@ Accessor: `client.VideosModeration` · Source: `Api/VideosModeration.cs` · 1 op
 
 ### GetVideoReportingReasons
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVideoReportingReasons(RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `VideoReportReason`
 - **Error**: `SdkException<GetVideoReportingReasonsError>` — **Case A (typed)**

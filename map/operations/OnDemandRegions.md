@@ -8,6 +8,7 @@ Accessor: `client.OnDemandRegions` · Source: `Api/OnDemandRegions.cs` · 8 oper
 
 ### AddVodRegion
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `AddVodRegion(string country, double ondemandId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `OnDemandRegion`
 - **Error**: `SdkException<AddVodRegionError>` — **Case A (typed)**
@@ -21,6 +22,7 @@ Accessor: `client.OnDemandRegions` · Source: `Api/OnDemandRegions.cs` · 8 oper
 
 ### DeleteVodRegion
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteVodRegion(string country, double ondemandId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteVodRegionError>` — **Case A (typed)**
@@ -33,6 +35,7 @@ Accessor: `client.OnDemandRegions` · Source: `Api/OnDemandRegions.cs` · 8 oper
 
 ### DeleteVodRegions
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteVodRegions(double ondemandId, OndemandPagesRegionsRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `IReadOnlyList<OnDemandRegion>`
@@ -48,6 +51,7 @@ Accessor: `client.OnDemandRegions` · Source: `Api/OnDemandRegions.cs` · 8 oper
 
 ### GetRegion
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetRegion(string country, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `OnDemandRegion`
 - **Error**: `SdkException<GetRegionError>` — **Case A (typed)**
@@ -61,6 +65,7 @@ Accessor: `client.OnDemandRegions` · Source: `Api/OnDemandRegions.cs` · 8 oper
 
 ### GetRegions
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetRegions(RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `OnDemandRegionConnection`
 - **Error**: `SdkException<RawError>` — **Case B**
@@ -71,6 +76,7 @@ Accessor: `client.OnDemandRegions` · Source: `Api/OnDemandRegions.cs` · 8 oper
 
 ### GetVodRegion
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVodRegion(string country, double ondemandId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `OnDemandRegion`
 - **Error**: `SdkException<GetVodRegionError>` — **Case A (typed)**
@@ -84,6 +90,7 @@ Accessor: `client.OnDemandRegions` · Source: `Api/OnDemandRegions.cs` · 8 oper
 
 ### GetVodRegions
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVodRegions(double ondemandId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `OnDemandRegionConnection`
 - **Error**: `SdkException<GetVodRegionsError>` — **Case A (typed)**
@@ -97,6 +104,7 @@ Accessor: `client.OnDemandRegions` · Source: `Api/OnDemandRegions.cs` · 8 oper
 
 ### SetVodRegions
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `SetVodRegions(double ondemandId, OndemandPagesRegionsRequest1 body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `OnDemandRegion`
 - **Error**: `SdkException<SetVodRegionsError>` — **Case A (typed)**

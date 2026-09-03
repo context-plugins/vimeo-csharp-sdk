@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
-using Vimeo.Models.Enums;
+using VimeoApi.Core.Models;
+using VimeoApi.Models.Enums;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 public record AnimatedThumbset
 {
@@ -36,7 +36,7 @@ public record AnimatedThumbset
     /// </para>
     /// </summary>
     [JsonPropertyName("status")]
-    public required Status10 Status { get; init; }
+    public required Status9 Status { get; init; }
 
     /// <summary>
     /// The URI of the set of animated thumbnails.

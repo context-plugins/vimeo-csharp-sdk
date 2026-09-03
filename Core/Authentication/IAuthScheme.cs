@@ -4,7 +4,7 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Vimeo.Core.Authentication;
+namespace VimeoApi.Core.Authentication;
 
 public interface IAuthScheme
 {

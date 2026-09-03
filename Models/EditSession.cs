@@ -1,8 +1,8 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
-using Vimeo.Models.Enums;
+using VimeoApi.Core.Models;
+using VimeoApi.Models.Enums;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 /// <summary>
 /// Information about the video's Vimeo Create editing session. This data requires a bearer token with the <c>private</c> scope.
@@ -19,7 +19,7 @@ public record EditSession
     /// </para>
     /// </summary>
     [JsonPropertyName("status")]
-    public required Status22 Status { get; init; }
+    public required Status19 Status { get; init; }
 
     [JsonExtensionData]
     public AdditionalProperties AdditionalProperties { get; init; } = [];

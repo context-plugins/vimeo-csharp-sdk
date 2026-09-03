@@ -8,6 +8,7 @@ Accessor: `client.AuthenticationExtrasAuthenticate` · Source: `Api/Authenticati
 
 ### ClientAuth
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `ClientAuth(OauthAuthorizeClientRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Auth`
 - **Error**: `SdkException<ClientAuthError>` — **Case A (typed)**

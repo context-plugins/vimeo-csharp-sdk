@@ -8,6 +8,7 @@ Accessor: `client.OnDemandPosters` · Source: `Api/OnDemandPosters.cs` · 4 oper
 
 ### AddVodPoster
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `AddVodPoster(double ondemandId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Picture`
 - **Error**: `SdkException<AddVodPosterError>` — **Case A (typed)**
@@ -21,6 +22,7 @@ Accessor: `client.OnDemandPosters` · Source: `Api/OnDemandPosters.cs` · 4 oper
 
 ### EditVodPoster
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `EditVodPoster(double ondemandId, double posterId, OndemandPagesPicturesRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `Picture`
@@ -33,6 +35,7 @@ Accessor: `client.OnDemandPosters` · Source: `Api/OnDemandPosters.cs` · 4 oper
 
 ### GetVodPoster
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVodPoster(double ondemandId, double posterId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Picture`
 - **Error**: `SdkException<RawError>` — **Case B**
@@ -43,6 +46,7 @@ Accessor: `client.OnDemandPosters` · Source: `Api/OnDemandPosters.cs` · 4 oper
 
 ### GetVodPosters
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVodPosters(double ondemandId, double? page, double? perPage, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `page` — nullable, no default → **must pass explicitly**
   - `perPage` — nullable, no default → **must pass explicitly**

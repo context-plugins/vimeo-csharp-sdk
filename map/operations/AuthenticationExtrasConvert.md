@@ -8,6 +8,7 @@ Accessor: `client.AuthenticationExtrasConvert` · Source: `Api/AuthenticationExt
 
 ### ConvertAccessToken
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `ConvertAccessToken(OauthAuthorizeVimeoOauth1Request body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Auth`
 - **Error**: `SdkException<ConvertAccessTokenError>` — **Case A (typed)**

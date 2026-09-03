@@ -8,6 +8,7 @@ Accessor: `client.LiveGraphics` · Source: `Api/LiveGraphics.cs` · 3 operations
 
 ### AddComposerVideoGraphicItem
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `AddComposerVideoGraphicItem(double liveEventId, LiveEventsComposerGraphicsVideosRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `ComposerGraphics`
 - **Error**: `SdkException<AddComposerVideoGraphicItemError>` — **Case A (typed)**
@@ -22,6 +23,7 @@ Accessor: `client.LiveGraphics` · Source: `Api/LiveGraphics.cs` · 3 operations
 
 ### DeleteComposerVideoGraphicItem
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteComposerVideoGraphicItem(double liveEventId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteComposerVideoGraphicItemError>` — **Case A (typed)**
@@ -34,6 +36,7 @@ Accessor: `client.LiveGraphics` · Source: `Api/LiveGraphics.cs` · 3 operations
 
 ### GetComposerVideoGraphicItems
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetComposerVideoGraphicItems(double liveEventId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `ComposerGraphicsConnection`
 - **Error**: `SdkException<GetComposerVideoGraphicItemsError>` — **Case A (typed)**

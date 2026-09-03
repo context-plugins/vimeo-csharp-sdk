@@ -8,6 +8,7 @@ Accessor: `client.ChannelsTags` · Source: `Api/ChannelsTags.cs` · 5 operations
 
 ### AddChannelTag
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `AddChannelTag(double channelId, string word, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<AddChannelTagError>` — **Case A (typed)**
@@ -21,6 +22,7 @@ Accessor: `client.ChannelsTags` · Source: `Api/ChannelsTags.cs` · 5 operations
 
 ### AddTagsToChannel
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `AddTagsToChannel(double channelId, IReadOnlyList<ChannelsTagsRequest> body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `IReadOnlyList<Tag>`
 - **Error**: `SdkException<AddTagsToChannelError>` — **Case A (typed)**
@@ -36,6 +38,7 @@ Accessor: `client.ChannelsTags` · Source: `Api/ChannelsTags.cs` · 5 operations
 
 ### CheckIfChannelHasTag
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CheckIfChannelHasTag(double channelId, string word, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<CheckIfChannelHasTagError>` — **Case A (typed)**
@@ -49,6 +52,7 @@ Accessor: `client.ChannelsTags` · Source: `Api/ChannelsTags.cs` · 5 operations
 
 ### DeleteTagFromChannel
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteTagFromChannel(double channelId, string word, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteTagFromChannelError>` — **Case A (typed)**
@@ -62,6 +66,7 @@ Accessor: `client.ChannelsTags` · Source: `Api/ChannelsTags.cs` · 5 operations
 
 ### GetChannelTags
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetChannelTags(double channelId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `TagConnection`
 - **Error**: `SdkException<GetChannelTagsError>` — **Case A (typed)**

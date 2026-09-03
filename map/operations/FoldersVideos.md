@@ -8,6 +8,7 @@ Accessor: `client.FoldersVideos` · Source: `Api/FoldersVideos.cs` · 10 operati
 
 ### AddVideoToProject
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `AddVideoToProject(double projectId, double userId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<AddVideoToProjectError>` — **Case A (typed)**
@@ -20,6 +21,7 @@ Accessor: `client.FoldersVideos` · Source: `Api/FoldersVideos.cs` · 10 operati
 
 ### AddVideoToProjectAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `AddVideoToProjectAlt1(double projectId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<AddVideoToProjectAlt1Error>` — **Case A (typed)**
@@ -32,6 +34,7 @@ Accessor: `client.FoldersVideos` · Source: `Api/FoldersVideos.cs` · 10 operati
 
 ### AddVideosToProject
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `AddVideosToProject(double projectId, double userId, UsersProjectsVideosRequest1 body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<AddVideosToProjectError>` — **Case A (typed)**
@@ -45,6 +48,7 @@ Accessor: `client.FoldersVideos` · Source: `Api/FoldersVideos.cs` · 10 operati
 
 ### AddVideosToProjectAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `AddVideosToProjectAlt1(double projectId, MeProjectsVideosRequest1 body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<AddVideosToProjectAlt1Error>` — **Case A (typed)**
@@ -58,6 +62,7 @@ Accessor: `client.FoldersVideos` · Source: `Api/FoldersVideos.cs` · 10 operati
 
 ### GetProjectVideos
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetProjectVideos(double projectId, double userId, Direction? direction, string? filterTag, string? filterTagAllOf, string? filterTagExclude, bool? includeSubfolders, double? page, double? perPage, string? query, string? queryFields, Sort37? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 10 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `filter_tag` ← `filterTag`, `filter_tag_all_of` ← `filterTagAllOf`, `filter_tag_exclude` ← `filterTagExclude`, `include_subfolders` ← `includeSubfolders`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `query_fields` ← `queryFields`, `sort` ← `sort`
@@ -75,6 +80,7 @@ Accessor: `client.FoldersVideos` · Source: `Api/FoldersVideos.cs` · 10 operati
 
 ### GetProjectVideosAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetProjectVideosAlt1(double projectId, Direction? direction, string? filterTag, string? filterTagAllOf, string? filterTagExclude, bool? includeSubfolders, double? page, double? perPage, string? query, string? queryFields, Sort37? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 10 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `filter_tag` ← `filterTag`, `filter_tag_all_of` ← `filterTagAllOf`, `filter_tag_exclude` ← `filterTagExclude`, `include_subfolders` ← `includeSubfolders`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `query_fields` ← `queryFields`, `sort` ← `sort`
@@ -92,6 +98,7 @@ Accessor: `client.FoldersVideos` · Source: `Api/FoldersVideos.cs` · 10 operati
 
 ### RemoveVideoFromProject
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `RemoveVideoFromProject(double projectId, double userId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<RemoveVideoFromProjectError>` — **Case A (typed)**
@@ -104,6 +111,7 @@ Accessor: `client.FoldersVideos` · Source: `Api/FoldersVideos.cs` · 10 operati
 
 ### RemoveVideoFromProjectAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `RemoveVideoFromProjectAlt1(double projectId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<RemoveVideoFromProjectAlt1Error>` — **Case A (typed)**
@@ -116,6 +124,7 @@ Accessor: `client.FoldersVideos` · Source: `Api/FoldersVideos.cs` · 10 operati
 
 ### RemoveVideosFromProject
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `RemoveVideosFromProject(double projectId, double userId, UsersProjectsVideosRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<RemoveVideosFromProjectError>` — **Case A (typed)**
@@ -129,6 +138,7 @@ Accessor: `client.FoldersVideos` · Source: `Api/FoldersVideos.cs` · 10 operati
 
 ### RemoveVideosFromProjectAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `RemoveVideosFromProjectAlt1(double projectId, MeProjectsVideosRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<RemoveVideosFromProjectAlt1Error>` — **Case A (typed)**

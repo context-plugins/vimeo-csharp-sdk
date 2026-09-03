@@ -2,18 +2,18 @@ using System;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using Vimeo.Core;
-using Vimeo.Core.Authentication;
-using Vimeo.Core.ErrorResponse;
-using Vimeo.Core.Exceptions;
-using Vimeo.Core.Models;
-using Vimeo.Core.Request;
-using Vimeo.Core.Response;
-using Vimeo.Errors;
-using Vimeo.Models;
-using Vimeo.Models.Enums;
+using VimeoApi.Core;
+using VimeoApi.Core.Authentication;
+using VimeoApi.Core.ErrorResponse;
+using VimeoApi.Core.Exceptions;
+using VimeoApi.Core.Models;
+using VimeoApi.Core.Request;
+using VimeoApi.Core.Response;
+using VimeoApi.Errors;
+using VimeoApi.Models;
+using VimeoApi.Models.Enums;
 
-namespace Vimeo.Api;
+namespace VimeoApi.Api;
 
 /// <summary>
 /// These are the most common methods for working with events.
@@ -423,7 +423,7 @@ public sealed class LiveEssentials
         double? perPage,
         string? query,
         Sort8? sort,
-        Type31? type,
+        Type27? type,
         RequestOptions? requestOptions = null,
         CancellationToken ct = default) =>
         _rawClient.Execute(_server.Default("/users/{user_id}/live_events"),
@@ -467,7 +467,7 @@ public sealed class LiveEssentials
         double? perPage,
         string? query,
         Sort8? sort,
-        Type31? type,
+        Type27? type,
         RequestOptions? requestOptions = null,
         CancellationToken ct = default) =>
         _rawClient.Execute(_server.Default("/live_events"),
@@ -511,7 +511,7 @@ public sealed class LiveEssentials
         double? perPage,
         string? query,
         Sort8? sort,
-        Type31? type,
+        Type27? type,
         RequestOptions? requestOptions = null,
         CancellationToken ct = default) =>
         _rawClient.Execute(_server.Default("/me/live_events"),

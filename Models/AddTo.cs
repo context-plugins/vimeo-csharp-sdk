@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
+using VimeoApi.Core.Models;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 /// <summary>
 /// When a channel appears in the context of adding or removing a video from it (<c>/videos/{video_id}/available_channels</c>), include information about adding or removing the video. This data requires a bearer token with the <c>private</c> scope.

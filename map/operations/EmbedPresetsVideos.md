@@ -8,12 +8,14 @@ Accessor: `client.EmbedPresetsVideos` · Source: `Api/EmbedPresetsVideos.cs` · 
 
 ### AddVideoEmbedPreset
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `AddVideoEmbedPreset(double presetId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<RawError>` — **Case B**
 
 ### DeleteVideoEmbedPreset
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteVideoEmbedPreset(double presetId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteVideoEmbedPresetError>` — **Case A (typed)**
@@ -26,6 +28,7 @@ Accessor: `client.EmbedPresetsVideos` · Source: `Api/EmbedPresetsVideos.cs` · 
 
 ### GetEmbedPresetVideos
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetEmbedPresetVideos(double presetId, double userId, double? page, double? perPage, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `page` — nullable, no default → **must pass explicitly**
   - `perPage` — nullable, no default → **must pass explicitly**
@@ -39,6 +42,7 @@ Accessor: `client.EmbedPresetsVideos` · Source: `Api/EmbedPresetsVideos.cs` · 
 
 ### GetEmbedPresetVideosAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetEmbedPresetVideosAlt1(double presetId, double? page, double? perPage, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `page` — nullable, no default → **must pass explicitly**
   - `perPage` — nullable, no default → **must pass explicitly**
@@ -52,6 +56,7 @@ Accessor: `client.EmbedPresetsVideos` · Source: `Api/EmbedPresetsVideos.cs` · 
 
 ### GetVideoEmbedPreset
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVideoEmbedPreset(double presetId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<GetVideoEmbedPresetError>` — **Case A (typed)**

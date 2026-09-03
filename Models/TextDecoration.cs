@@ -1,8 +1,7 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
-using Vimeo.Models.Enums;
+using VimeoApi.Core.Models;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 public record TextDecoration
 {
@@ -27,7 +26,7 @@ public record TextDecoration
     /// </para>
     /// </summary>
     [JsonPropertyName("type")]
-    public required Type12 Type { get; init; }
+    public string Type { get; } = "url";
 
     [JsonExtensionData]
     public AdditionalProperties AdditionalProperties { get; init; } = [];

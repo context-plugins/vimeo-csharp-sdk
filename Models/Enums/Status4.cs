@@ -1,17 +1,23 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Enum;
+using VimeoApi.Core.Enum;
 
-namespace Vimeo.Models.Enums;
+namespace VimeoApi.Models.Enums;
 
 /// <summary>
-/// The play status of the video.
+/// The status code for the availability of the video.
 /// <para>
 /// Option descriptions:
-///  * <c>drm_plays_exceeded</c> - The user's quota for DRM plays has been exceeded.
-///  * <c>playable</c> - The video is playable.
-///  * <c>purchase_required</c> - The video must be purchased.
-///  * <c>restricted</c> - Playback for the video is restricted.
+///  * <c>available</c> - The video is available.
+///  * <c>failed</c> - There was an error in rendering the video.
+///  * <c>processing</c> - Rendering has started and is currently underway for the video.
+///  * <c>quota_exceeded</c> - The user's weekly upload quota is exceeded with this video.
+///  * <c>total_cap_exceeded</c> - The user's total storage limit is exceeded with this video.
+///  * <c>transcode_starting</c> - Transcoding is starting for the video.
+///  * <c>transcoding</c> - Transcoding has started and is currently underway for the video.
+///  * <c>transcoding_error</c> - There was an error in transcoding the video.
 ///  * <c>unavailable</c> - The video is unavailable.
+///  * <c>uploading</c> - The video is being uploaded.
+///  * <c>uploading_error</c> - There was an error in uploading the video.
 /// </para>
 /// </summary>
 [JsonConverter(typeof(StringEnumConverter<Status4>))]
@@ -21,15 +27,27 @@ public sealed record Status4 : StringEnum<Status4>
     {
     }
 
-    public static readonly Status4 DrmPlaysExceeded = new("drm_plays_exceeded");
+    public static readonly Status4 Available = new("available");
 
-    public static readonly Status4 Playable = new("playable");
+    public static readonly Status4 Failed = new("failed");
 
-    public static readonly Status4 PurchaseRequired = new("purchase_required");
+    public static readonly Status4 Processing = new("processing");
 
-    public static readonly Status4 Restricted = new("restricted");
+    public static readonly Status4 QuotaExceeded = new("quota_exceeded");
+
+    public static readonly Status4 TotalCapExceeded = new("total_cap_exceeded");
+
+    public static readonly Status4 TranscodeStarting = new("transcode_starting");
+
+    public static readonly Status4 Transcoding = new("transcoding");
+
+    public static readonly Status4 TranscodingError = new("transcoding_error");
 
     public static readonly Status4 Unavailable = new("unavailable");
+
+    public static readonly Status4 Uploading = new("uploading");
+
+    public static readonly Status4 UploadingError = new("uploading_error");
 
     public static Status4 FromValue(string value) => FromValueCore(value);
 }

@@ -1,8 +1,8 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
-using Vimeo.Models.Enums;
+using VimeoApi.Core.Models;
+using VimeoApi.Models.Enums;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 public record ProjectItem
 {
@@ -51,7 +51,7 @@ public record ProjectItem
     /// </para>
     /// </summary>
     [JsonPropertyName("type")]
-    public required Type21 Type { get; init; }
+    public required Type17 Type { get; init; }
 
     /// <summary>
     /// The project item video.

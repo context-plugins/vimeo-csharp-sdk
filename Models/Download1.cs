@@ -1,8 +1,7 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
-using Vimeo.Models.Enums;
+using VimeoApi.Core.Models;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 public record Download1
 {
@@ -32,7 +31,7 @@ public record Download1
     /// </para>
     /// </summary>
     [JsonPropertyName("rendition")]
-    public required Rendition2 Rendition { get; init; }
+    public string Rendition { get; } = "source";
 
     [JsonExtensionData]
     public AdditionalProperties AdditionalProperties { get; init; } = [];

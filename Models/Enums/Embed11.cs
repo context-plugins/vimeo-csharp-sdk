@@ -1,7 +1,7 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Enum;
+using VimeoApi.Core.Enum;
 
-namespace Vimeo.Models.Enums;
+namespace VimeoApi.Models.Enums;
 
 /// <summary>
 /// The privacy for the user's embedded videos. The <c>whitelist</c> value enables you to define all valid embeddable domains. See our <see href="https://developer.vimeo.com/api/guides/videos/interact#set-off-site-privacy">Interacting with Videos</see> guide for details on adding and removing domains.

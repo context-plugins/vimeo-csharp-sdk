@@ -8,6 +8,7 @@ Accessor: `client.ShowcasesCustomShowcaseThumbnails` · Source: `Api/ShowcasesCu
 
 ### CreateShowcaseCustomThumb
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateShowcaseCustomThumb(double albumId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Picture`
 - **Error**: `SdkException<CreateShowcaseCustomThumbError>` — **Case A (typed)**
@@ -21,6 +22,7 @@ Accessor: `client.ShowcasesCustomShowcaseThumbnails` · Source: `Api/ShowcasesCu
 
 ### DeleteShowcaseCustomThumbnail
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteShowcaseCustomThumbnail(double albumId, double thumbnailId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteShowcaseCustomThumbnailError>` — **Case A (typed)**
@@ -33,6 +35,7 @@ Accessor: `client.ShowcasesCustomShowcaseThumbnails` · Source: `Api/ShowcasesCu
 
 ### GetShowcaseCustomThumbnail
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetShowcaseCustomThumbnail(double albumId, double thumbnailId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Picture`
 - **Error**: `SdkException<GetShowcaseCustomThumbnailError>` — **Case A (typed)**
@@ -46,6 +49,7 @@ Accessor: `client.ShowcasesCustomShowcaseThumbnails` · Source: `Api/ShowcasesCu
 
 ### GetShowcaseCustomThumbs
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetShowcaseCustomThumbs(double albumId, double userId, double? page, double? perPage, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `page` — nullable, no default → **must pass explicitly**
   - `perPage` — nullable, no default → **must pass explicitly**
@@ -63,6 +67,7 @@ Accessor: `client.ShowcasesCustomShowcaseThumbnails` · Source: `Api/ShowcasesCu
 
 ### ReplaceShowcaseCustomThumb
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `ReplaceShowcaseCustomThumb(double albumId, double thumbnailId, double userId, UsersAlbumsCustomThumbnailsThumbnailIdRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `Picture`

@@ -7,10 +7,10 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Threading;
 using System.Threading.Tasks;
-using Vimeo.Core.Exceptions;
-using Vimeo.Core.Extensions;
+using VimeoApi.Core.Exceptions;
+using VimeoApi.Core.Extensions;
 
-namespace Vimeo.Core.Response;
+namespace VimeoApi.Core.Response;
 
 internal sealed class JsonSseResponse<TResponse> : IResponse<IAsyncEnumerable<TResponse>>
 {

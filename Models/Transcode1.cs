@@ -1,8 +1,8 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
-using Vimeo.Models.Enums;
+using VimeoApi.Core.Models;
+using VimeoApi.Models.Enums;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 /// <summary>
 /// The transcode information for the audio track.
@@ -19,7 +19,7 @@ public record Transcode1
     /// </para>
     /// </summary>
     [JsonPropertyName("status")]
-    public required Status9 Status { get; init; }
+    public required Status8 Status { get; init; }
 
     [JsonExtensionData]
     public AdditionalProperties AdditionalProperties { get; init; } = [];

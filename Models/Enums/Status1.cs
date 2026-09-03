@@ -1,13 +1,15 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Enum;
+using VimeoApi.Core.Enum;
 
-namespace Vimeo.Models.Enums;
+namespace VimeoApi.Models.Enums;
 
 /// <summary>
-/// The status of the authenticated user's trial.
+/// The status of the video.
 /// <para>
 /// Option descriptions:
-///  * <c>free_trial</c> - The user is currently in a free trial.
+///  * <c>done</c> - The video is finished processing.
+///  * <c>failed</c> - Video processing has failed.
+///  * <c>processing</c> - The video is still being processed.
 /// </para>
 /// </summary>
 [JsonConverter(typeof(StringEnumConverter<Status1>))]
@@ -17,7 +19,11 @@ public sealed record Status1 : StringEnum<Status1>
     {
     }
 
-    public static readonly Status1 FreeTrial = new("free_trial");
+    public static readonly Status1 Done = new("done");
+
+    public static readonly Status1 Failed = new("failed");
+
+    public static readonly Status1 Processing = new("processing");
 
     public static Status1 FromValue(string value) => FromValueCore(value);
 }

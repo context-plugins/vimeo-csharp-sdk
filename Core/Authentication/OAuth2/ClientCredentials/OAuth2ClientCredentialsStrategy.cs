@@ -4,12 +4,12 @@ using System.Net.Http;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using Vimeo.Core.ErrorResponse;
-using Vimeo.Core.Models;
-using Vimeo.Core.Request;
-using Vimeo.Core.Response;
+using VimeoApi.Core.ErrorResponse;
+using VimeoApi.Core.Models;
+using VimeoApi.Core.Request;
+using VimeoApi.Core.Response;
 
-namespace Vimeo.Core.Authentication.OAuth2.ClientCredentials;
+namespace VimeoApi.Core.Authentication.OAuth2.ClientCredentials;
 
 internal sealed class OAuth2ClientCredentialsStrategy : IOAuth2TokenStrategy<OAuth2ClientCredentials>
 {

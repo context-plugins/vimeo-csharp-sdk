@@ -1,6 +1,6 @@
 using System;
 
-namespace Vimeo.Core.Webhooks.Signing;
+namespace VimeoApi.Core.Webhooks.Signing;
 
 internal abstract record SignatureDigestEncoding
 {

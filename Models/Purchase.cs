@@ -1,8 +1,8 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
-using Vimeo.Models.Enums;
+using VimeoApi.Core.Models;
+using VimeoApi.Models.Enums;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 public record Purchase
 {
@@ -16,7 +16,7 @@ public record Purchase
     /// </para>
     /// </summary>
     [JsonPropertyName("status")]
-    public required Status20 Status { get; init; }
+    public required Status17 Status { get; init; }
 
     /// <summary>
     /// The redirect URIs associated with the plan.

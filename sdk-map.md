@@ -1,20 +1,20 @@
 <!-- Generated file — do not edit; regenerated with the SDK. -->
 
-# SDK map — Vimeo (.NET)
+# SDK map — Vimeo API (.NET)
 
 > A generated table of contents for this SDK. Consult this map and its sub-pages to learn signatures, error types, and server/auth wiring **by lookup**. Model shapes and enum values are *not* duplicated here — the map names the file declaring each type; read the shape there. The compiler is the backstop: a wrong name fails to build.
 
 |  |  |
 | --- | --- |
-| SDK display name | Vimeo |
-| Root namespace | `Vimeo` |
+| SDK display name | Vimeo API |
+| Root namespace | `VimeoApi` |
 | Target framework | `netstandard2.0` (C# `LangVersion 14`, `Nullable enable`) |
 | API spec version | `3.4.9` |
 | Generator | APIMatic |
 
 Staleness check: the API spec version above changes when the SDK is regenerated from a new spec. If a lookup here fails to compile, trust the compiler and re-read the source file named in the row.
 
-All `Source` paths on this map and its sub-pages are relative to the **SDK root** — the directory holding this file and `Vimeo.csproj` — never to the page that carries them. Open them as-is from the SDK root, from any page; if the SDK sits under a subdirectory of a larger repo, prefix that subdirectory.
+All `Source` paths on this map and its sub-pages are relative to the **SDK root** — the directory holding this file and `VimeoApi.csproj` — never to the page that carries them. Open them as-is from the SDK root, from any page; if the SDK sits under a subdirectory of a larger repo, prefix that subdirectory.
 
 ---
 
@@ -24,7 +24,7 @@ All `Source` paths on this map and its sub-pages are relative to the **SDK root*
 var httpClient = new HttpClient();
 // TODO: configure more client options here
 var options =
-    new VimeoClientOptions
+    new VimeoApiClientOptions
     {
         Bearer = "YOUR_BEARER_TOKEN",
         Oauth2ClientCredentials = new OAuth2ClientCredentials
@@ -40,13 +40,13 @@ var options =
         },
         Environment = ServerEnvironment.Production,
     };
-var client = new VimeoClient(httpClient, options);
+var client = new VimeoApiClient(httpClient, options);
 ```
 
-DI alternative (`services.AddVimeoClient`):
+DI alternative (`services.AddVimeoApiClient`):
 
 ```csharp
-services.AddVimeoClient(options =>
+services.AddVimeoApiClient(options =>
     {
         options.Bearer = "YOUR_BEARER_TOKEN";
         options.Oauth2ClientCredentials =
@@ -67,9 +67,9 @@ services.AddVimeoClient(options =>
     });
 ```
 
-Every API group is a property on the client (e.g. `client.ApiAppsWebhooks`). Source: `VimeoClient.cs`. The only constructor is `VimeoClient(HttpClient httpClient, VimeoClientOptions options)`.
+Every API group is a property on the client (e.g. `client.ApiAppsWebhooks`). Source: `VimeoApiClient.cs`. The only constructor is `VimeoApiClient(HttpClient httpClient, VimeoApiClientOptions options)`.
 
-All `VimeoClientOptions` properties (source: `VimeoClientOptions.cs`):
+All `VimeoApiClientOptions` properties (source: `VimeoApiClientOptions.cs`):
 
 | Property | Type |
 | --- | --- |
@@ -84,7 +84,7 @@ All `VimeoClientOptions` properties (source: `VimeoClientOptions.cs`):
 | `Oauth2ClientCredentials` | `OAuth2ClientCredentials?` |
 | `Oauth2ClientCredentialsTokenStrategy` | `IOAuth2TokenStrategy<OAuth2ClientCredentials>?` |
 
-`RetryOptions` members (namespace `Vimeo.Core.Configuration` — add `using Vimeo.Core.Configuration;`; source: `Core/Configuration/RetryOptions.cs`; all members are `required`, so build a full instance or start from `RetryOptions.Default()`):
+`RetryOptions` members (namespace `VimeoApi.Core.Configuration` — add `using VimeoApi.Core.Configuration;`; source: `Core/Configuration/RetryOptions.cs`; all members are `required`, so build a full instance or start from `RetryOptions.Default()`):
 
 | Member | Type |
 | --- | --- |
@@ -275,7 +275,7 @@ Each links to a sub-page with one row per operation: signature with must-pass-ex
 | --- | --- | --- |
 | Records (plain `record` data models) | 784 | `Models/` |
 | Unions (`AnyOf`) — variant factories + `TryGet…` | 1 | `Models/AnyOf/` |
-| Enums (`StringEnum<T>` / `IntEnum<T>`) — C# member names + wire values | 281 | `Models/Enums/` |
+| Enums (`StringEnum<T>` / `IntEnum<T>`) — C# member names + wire values | 270 | `Models/Enums/` |
 | Typed error classes (`: ApiError`, one per Case A operation) | 411 | `Errors/` |
 
 Conventions: records are immutable, `init`-only; `required` properties must be set in the object initializer; `T?` is optional. A field's wire name is its `[JsonPropertyName]` and often differs from the C# name (`AmountInCents` ↔ `amount_in_cents`) — read it off the property, don't derive it. `OneOf`/`AnyOf` unions wrap `Optional<T>` variants — build via static factory or implicit conversion, read via `TryGet…(out …)`; `AllOf` compositions are not unions — every constituent is a `required` property, so set them all, and those constituent properties carry no `[JsonPropertyName]` and have no wire name of their own, because the generated converter flattens each constituent's own fields directly into the one parent JSON object. Enums are **not** C# enums — build with `Type.FromValue("wire")` or the static members, whose names are PascalCase even when the wire value isn't (`CollectionMethod.Invoice`, not `.invoice`).
@@ -284,12 +284,12 @@ Namespaces by content type (add `using` accordingly):
 
 | Contents | Namespace |
 | --- | --- |
-| Client & options (root) | `Vimeo` |
-| Operation controllers (`Api/`) | `Vimeo.Api` |
-| Records (`Models/`) | `Vimeo.Models` |
-| Enums (`Models/Enums/`) | `Vimeo.Models.Enums` |
-| AnyOf unions (`Models/AnyOf/`) | `Vimeo.Models.AnyOf` |
-| Error classes (`Errors/`) | `Vimeo.Errors` |
+| Client & options (root) | `VimeoApi` |
+| Operation controllers (`Api/`) | `VimeoApi.Api` |
+| Records (`Models/`) | `VimeoApi.Models` |
+| Enums (`Models/Enums/`) | `VimeoApi.Models.Enums` |
+| AnyOf unions (`Models/AnyOf/`) | `VimeoApi.Models.AnyOf` |
+| Error classes (`Errors/`) | `VimeoApi.Errors` |
 
 ---
 
@@ -300,6 +300,13 @@ Namespaces by content type (add `using` accordingly):
 **OAuth2 (authorization code).** Set `options.Oauth2AuthorizationCode` with client id, redirect URI and a `PromptForAuthorizationCode` callback; authorization at `https://api.vimeo.com/oauth/authorize`, tokens from `https://api.vimeo.com/oauth/access_token`. `options.Oauth2AuthorizationCodeTokenStrategy` overrides how tokens are acquired and cached; leave it unset for the SDK's own handling.
 
 **OAuth2 (client credentials).** Set `options.Oauth2ClientCredentials` with your client id and secret; tokens are fetched from `https://api.vimeo.com/oauth/authorize/client`. `options.Oauth2ClientCredentialsTokenStrategy` overrides how tokens are acquired and cached; leave it unset for the SDK's own handling.
+
+Operation blocks name their credential in an **Auth** bullet; an operation whose spec declares no scheme carries no such bullet.
+
+- `AND` — every credential listed must be set for the call to be fully authenticated.
+- `OR` — the first credential you set that applies successfully is the one sent, in the order listed.
+
+A credential you never set is skipped rather than throwing, and the request is sent anyway — so an authentication failure can mean no credential was sent rather than a bad one. Under `OR`, if every credential you did set fails to apply, `AuthSchemeException` is thrown.
 
 **Environments.** `options.Environment` selects the target environment (`Servers/ServerEnvironment.cs`):
 

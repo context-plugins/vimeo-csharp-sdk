@@ -1,18 +1,16 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Enum;
+using VimeoApi.Core.Enum;
 
-namespace Vimeo.Models.Enums;
+namespace VimeoApi.Models.Enums;
 
 /// <summary>
-/// The data type of the metadata field.
+/// The project item type.
 /// <para>
 /// Option descriptions:
-///  * <c>bool</c> - Boolean value.
-///  * <c>date</c> - Date value.
-///  * <c>int</c> - Integer value.
-///  * <c>multi-select</c> - Multi-select from allowed values.
-///  * <c>select</c> - Single-select from allowed values.
-///  * <c>str</c> - String value.
+///  * <c>folder</c> - The project item is a folder.
+///  * <c>live_event</c> - The project item is an event.
+///  * <c>showcase</c> - The project item is a showcase.
+///  * <c>video</c> - The project item is a video.
 /// </para>
 /// </summary>
 [JsonConverter(typeof(StringEnumConverter<Type17>))]
@@ -22,17 +20,13 @@ public sealed record Type17 : StringEnum<Type17>
     {
     }
 
-    public static readonly Type17 Bool = new("bool");
+    public static readonly Type17 Folder = new("folder");
 
-    public static readonly Type17 Date = new("date");
+    public static readonly Type17 LiveEvent = new("live_event");
 
-    public static readonly Type17 Int = new("int");
+    public static readonly Type17 Showcase = new("showcase");
 
-    public static readonly Type17 MultiSelect = new("multi-select");
-
-    public static readonly Type17 Select = new("select");
-
-    public static readonly Type17 Str = new("str");
+    public static readonly Type17 Video = new("video");
 
     public static Type17 FromValue(string value) => FromValueCore(value);
 }

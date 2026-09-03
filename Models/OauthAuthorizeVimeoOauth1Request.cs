@@ -1,8 +1,7 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
-using Vimeo.Models.Enums;
+using VimeoApi.Core.Models;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 public record OauthAuthorizeVimeoOauth1Request
 {
@@ -14,7 +13,7 @@ public record OauthAuthorizeVimeoOauth1Request
     /// </para>
     /// </summary>
     [JsonPropertyName("grant_type")]
-    public required GrantType2 GrantType { get; init; }
+    public string GrantType { get; } = "vimeo_oauth1";
 
     /// <summary>
     /// The OAuth 1 token.

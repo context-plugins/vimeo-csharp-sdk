@@ -1,11 +1,11 @@
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using Vimeo.Core.ErrorResponse;
-using Vimeo.Core.Models;
-using Vimeo.Models;
+using VimeoApi.Core.ErrorResponse;
+using VimeoApi.Core.Models;
+using VimeoApi.Models;
 
-namespace Vimeo.Errors;
+namespace VimeoApi.Errors;
 
 public sealed class LikeVideoAlt1Error : ApiError
 {

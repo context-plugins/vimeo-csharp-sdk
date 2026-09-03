@@ -8,6 +8,7 @@ Accessor: `client.LiveEventLowLatency` · Source: `Api/LiveEventLowLatency.cs` �
 
 ### ToggleRleLowLatency
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `ToggleRleLowLatency(double liveEventId, double userId, UsersLiveEventsLowLatencyRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `RecurringEventLowLatency`
@@ -23,6 +24,7 @@ Accessor: `client.LiveEventLowLatency` · Source: `Api/LiveEventLowLatency.cs` �
 
 ### ToggleRleLowLatencyAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `ToggleRleLowLatencyAlt1(double liveEventId, LiveEventsLowLatencyRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `RecurringEventLowLatency`
@@ -38,6 +40,7 @@ Accessor: `client.LiveEventLowLatency` · Source: `Api/LiveEventLowLatency.cs` �
 
 ### ToggleRleLowLatencyAlt2
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `ToggleRleLowLatencyAlt2(double liveEventId, MeLiveEventsLowLatencyRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `RecurringEventLowLatency`

@@ -1,6 +1,6 @@
 # Reference
 
-> Source: [VimeoClient](VimeoClient.cs)
+> Source: [VimeoApiClient](VimeoApiClient.cs)
 
 ## ApiAppsWebhooks
 
@@ -11792,7 +11792,7 @@ catch (SdkException<RawError> ex)
 </details>
 
 <details>
-<summary><code>Task&lt;EventConnection&gt; GetLiveEvents(double userId, Direction? direction, Filter8? filter, double? page, double? perPage, string? query, Sort8? sort, Type31? type, RequestOptions? requestOptions = null, CancellationToken ct = default);</code></summary>
+<summary><code>Task&lt;EventConnection&gt; GetLiveEvents(double userId, Direction? direction, Filter8? filter, double? page, double? perPage, string? query, Sort8? sort, Type27? type, RequestOptions? requestOptions = null, CancellationToken ct = default);</code></summary>
 
 <dl>
 <dd>
@@ -11848,7 +11848,7 @@ catch (SdkException<RawError> ex)
 | <code>perPage</code> | <code>double?</code> | The number of items to show on each page of results, up to a maximum of 100. |
 | <code>query</code> | <code>string?</code> | The search query to use to filter the results. |
 | <code>sort</code> | <code>[Sort8?](Models/Enums/Sort8.cs)</code> | The way to sort the results.<br><br>Option descriptions:<br> * `alphabetical` - Sort the results alphabetically.<br> * `date` - Sort the results by creation date. |
-| <code>type</code> | <code>[Type31?](Models/Enums/Type31.cs)</code> | The type of event to return.<br><br>Option descriptions:<br> * `all` - Return all events.<br> * `one_time` - Return one-time events only.<br> * `recurring` - Return recurring events only. |
+| <code>type</code> | <code>[Type27?](Models/Enums/Type27.cs)</code> | The type of event to return.<br><br>Option descriptions:<br> * `all` - Return all events.<br> * `one_time` - Return one-time events only.<br> * `recurring` - Return recurring events only. |
 
 </dd>
 </dl>
@@ -11871,7 +11871,7 @@ catch (SdkException<RawError> ex)
 </details>
 
 <details>
-<summary><code>Task&lt;EventConnection&gt; GetLiveEventsAlt1(Direction? direction, Filter8? filter, double? page, double? perPage, string? query, Sort8? sort, Type31? type, RequestOptions? requestOptions = null, CancellationToken ct = default);</code></summary>
+<summary><code>Task&lt;EventConnection&gt; GetLiveEventsAlt1(Direction? direction, Filter8? filter, double? page, double? perPage, string? query, Sort8? sort, Type27? type, RequestOptions? requestOptions = null, CancellationToken ct = default);</code></summary>
 
 <dl>
 <dd>
@@ -11919,7 +11919,7 @@ catch (SdkException<RawError> ex)
 | <code>perPage</code> | <code>double?</code> | The number of items to show on each page of results, up to a maximum of 100. |
 | <code>query</code> | <code>string?</code> | The search query to use to filter the results. |
 | <code>sort</code> | <code>[Sort8?](Models/Enums/Sort8.cs)</code> | The way to sort the results.<br><br>Option descriptions:<br> * `alphabetical` - Sort the results alphabetically.<br> * `date` - Sort the results by creation date. |
-| <code>type</code> | <code>[Type31?](Models/Enums/Type31.cs)</code> | The type of event to return.<br><br>Option descriptions:<br> * `all` - Return all events.<br> * `one_time` - Return one-time events only.<br> * `recurring` - Return recurring events only. |
+| <code>type</code> | <code>[Type27?](Models/Enums/Type27.cs)</code> | The type of event to return.<br><br>Option descriptions:<br> * `all` - Return all events.<br> * `one_time` - Return one-time events only.<br> * `recurring` - Return recurring events only. |
 
 </dd>
 </dl>
@@ -11942,7 +11942,7 @@ catch (SdkException<RawError> ex)
 </details>
 
 <details>
-<summary><code>Task&lt;EventConnection&gt; GetLiveEventsAlt2(Direction? direction, Filter8? filter, double? page, double? perPage, string? query, Sort8? sort, Type31? type, RequestOptions? requestOptions = null, CancellationToken ct = default);</code></summary>
+<summary><code>Task&lt;EventConnection&gt; GetLiveEventsAlt2(Direction? direction, Filter8? filter, double? page, double? perPage, string? query, Sort8? sort, Type27? type, RequestOptions? requestOptions = null, CancellationToken ct = default);</code></summary>
 
 <dl>
 <dd>
@@ -11990,7 +11990,7 @@ catch (SdkException<RawError> ex)
 | <code>perPage</code> | <code>double?</code> | The number of items to show on each page of results, up to a maximum of 100. |
 | <code>query</code> | <code>string?</code> | The search query to use to filter the results. |
 | <code>sort</code> | <code>[Sort8?](Models/Enums/Sort8.cs)</code> | The way to sort the results.<br><br>Option descriptions:<br> * `alphabetical` - Sort the results alphabetically.<br> * `date` - Sort the results by creation date. |
-| <code>type</code> | <code>[Type31?](Models/Enums/Type31.cs)</code> | The type of event to return.<br><br>Option descriptions:<br> * `all` - Return all events.<br> * `one_time` - Return one-time events only.<br> * `recurring` - Return recurring events only. |
+| <code>type</code> | <code>[Type27?](Models/Enums/Type27.cs)</code> | The type of event to return.<br><br>Option descriptions:<br> * `all` - Return all events.<br> * `one_time` - Return one-time events only.<br> * `recurring` - Return recurring events only. |
 
 </dd>
 </dl>
@@ -25345,7 +25345,7 @@ catch (SdkException<RawError> ex)
 > Source: [UsersFeeds](Api/UsersFeeds.cs)
 
 <details>
-<summary><code>Task&lt;Activity31Connection&gt; GetFeed(double userId, string? offset, double? page, double? perPage, Type33? type, RequestOptions? requestOptions = null, CancellationToken ct = default);</code></summary>
+<summary><code>Task&lt;Activity31Connection&gt; GetFeed(double userId, string? offset, double? page, double? perPage, Type29? type, RequestOptions? requestOptions = null, CancellationToken ct = default);</code></summary>
 
 <dl>
 <dd>
@@ -25394,7 +25394,7 @@ catch (SdkException<GetFeedError> ex)
 | <code>offset</code> | <code>string?</code> | The pagination offset. We recommend that you use the pagination links in the feed response instead of working with this value directly. For more details, see our [pagination documentation](https://developer.vimeo.com/api/common-formats#using-the-pagination-parameter). |
 | <code>page</code> | <code>double?</code> | The page number of the results to show. |
 | <code>perPage</code> | <code>double?</code> | The number of items to show on each page of results, up to a maximum of 100. |
-| <code>type</code> | <code>[Type33?](Models/Enums/Type33.cs)</code> | The feed type.<br><br>Option descriptions:<br> * `appears` - Videos in which the user appears.<br> * `category_featured` - Featured videos.<br> * `channel` - Channel videos.<br> * `facebook_feed` - Videos from the user's Facebook feed.<br> * `following` - Videos from accounts that the user follows.<br> * `group` - Group videos.<br> * `likes` - Liked videos.<br> * `ondemand_publish` - On Demand videos.<br> * `share` - Shared videos.<br> * `tagged_with` - Tagged videos.<br> * `twitter_timeline` - Videos from the user's Twitter timeline.<br> * `uploads` - Uploaded videos. |
+| <code>type</code> | <code>[Type29?](Models/Enums/Type29.cs)</code> | The feed type.<br><br>Option descriptions:<br> * `appears` - Videos in which the user appears.<br> * `category_featured` - Featured videos.<br> * `channel` - Channel videos.<br> * `facebook_feed` - Videos from the user's Facebook feed.<br> * `following` - Videos from accounts that the user follows.<br> * `group` - Group videos.<br> * `likes` - Liked videos.<br> * `ondemand_publish` - On Demand videos.<br> * `share` - Shared videos.<br> * `tagged_with` - Tagged videos.<br> * `twitter_timeline` - Videos from the user's Twitter timeline.<br> * `uploads` - Uploaded videos. |
 
 </dd>
 </dl>
@@ -25417,7 +25417,7 @@ catch (SdkException<GetFeedError> ex)
 </details>
 
 <details>
-<summary><code>Task&lt;Activity31Connection&gt; GetFeedAlt1(string? offset, double? page, double? perPage, Type33? type, RequestOptions? requestOptions = null, CancellationToken ct = default);</code></summary>
+<summary><code>Task&lt;Activity31Connection&gt; GetFeedAlt1(string? offset, double? page, double? perPage, Type29? type, RequestOptions? requestOptions = null, CancellationToken ct = default);</code></summary>
 
 <dl>
 <dd>
@@ -25465,7 +25465,7 @@ catch (SdkException<GetFeedAlt1Error> ex)
 | <code>offset</code> | <code>string?</code> | The pagination offset. We recommend that you use the pagination links in the feed response instead of working with this value directly. For more details, see our [pagination documentation](https://developer.vimeo.com/api/common-formats#using-the-pagination-parameter). |
 | <code>page</code> | <code>double?</code> | The page number of the results to show. |
 | <code>perPage</code> | <code>double?</code> | The number of items to show on each page of results, up to a maximum of 100. |
-| <code>type</code> | <code>[Type33?](Models/Enums/Type33.cs)</code> | The feed type.<br><br>Option descriptions:<br> * `appears` - Videos in which the user appears.<br> * `category_featured` - Featured videos.<br> * `channel` - Channel videos.<br> * `facebook_feed` - Videos from the user's Facebook feed.<br> * `following` - Videos from accounts that the user follows.<br> * `group` - Group videos.<br> * `likes` - Liked videos.<br> * `ondemand_publish` - On Demand videos.<br> * `share` - Shared videos.<br> * `tagged_with` - Tagged videos.<br> * `twitter_timeline` - Videos from the user's Twitter timeline.<br> * `uploads` - Uploaded videos. |
+| <code>type</code> | <code>[Type29?](Models/Enums/Type29.cs)</code> | The feed type.<br><br>Option descriptions:<br> * `appears` - Videos in which the user appears.<br> * `category_featured` - Featured videos.<br> * `channel` - Channel videos.<br> * `facebook_feed` - Videos from the user's Facebook feed.<br> * `following` - Videos from accounts that the user follows.<br> * `group` - Group videos.<br> * `likes` - Liked videos.<br> * `ondemand_publish` - On Demand videos.<br> * `share` - Shared videos.<br> * `tagged_with` - Tagged videos.<br> * `twitter_timeline` - Videos from the user's Twitter timeline.<br> * `uploads` - Uploaded videos. |
 
 </dd>
 </dl>
@@ -27489,7 +27489,7 @@ catch (SdkException<EditAiTexttrackError> ex)
 </details>
 
 <details>
-<summary><code>Task GetAiLanguages(Type52? type, RequestOptions? requestOptions = null, CancellationToken ct = default);</code></summary>
+<summary><code>Task GetAiLanguages(Type48? type, RequestOptions? requestOptions = null, CancellationToken ct = default);</code></summary>
 
 <dl>
 <dd>
@@ -27535,7 +27535,7 @@ catch (SdkException<GetAiLanguagesError> ex)
 
 | Name | Type | Description |
 | --- | --- | --- |
-| <code>type</code> | <code>[Type52?](Models/Enums/Type52.cs)</code> | The AI feature type to list languages for.<br><br>Option descriptions:<br> * `dubbing` - Languages supported for AI audio dubbing. Includes available accents per language.<br> * `subtitling` - Languages supported for AI subtitle translation.<br> * `transcription` - Languages supported for AI transcription (speech-to-text). |
+| <code>type</code> | <code>[Type48?](Models/Enums/Type48.cs)</code> | The AI feature type to list languages for.<br><br>Option descriptions:<br> * `dubbing` - Languages supported for AI audio dubbing. Includes available accents per language.<br> * `subtitling` - Languages supported for AI subtitle translation.<br> * `transcription` - Languages supported for AI transcription (speech-to-text). |
 
 </dd>
 </dl>

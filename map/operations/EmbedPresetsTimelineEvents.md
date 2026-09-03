@@ -8,6 +8,7 @@ Accessor: `client.EmbedPresetsTimelineEvents` · Source: `Api/EmbedPresetsTimeli
 
 ### CreateVideoCustomLogo
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateVideoCustomLogo(double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Picture`
 - **Error**: `SdkException<CreateVideoCustomLogoError>` — **Case A (typed)**
@@ -21,6 +22,7 @@ Accessor: `client.EmbedPresetsTimelineEvents` · Source: `Api/EmbedPresetsTimeli
 
 ### GetVideoCustomLogo
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVideoCustomLogo(double thumbnailId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Picture`
 - **Error**: `SdkException<GetVideoCustomLogoError>` — **Case A (typed)**

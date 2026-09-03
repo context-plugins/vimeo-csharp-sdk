@@ -8,6 +8,7 @@ Accessor: `client.ChannelsCategories` · Source: `Api/ChannelsCategories.cs` · 
 
 ### AddChannelCategories
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `AddChannelCategories(double channelId, ChannelsCategoriesRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<AddChannelCategoriesError>` — **Case A (typed)**
@@ -22,6 +23,7 @@ Accessor: `client.ChannelsCategories` · Source: `Api/ChannelsCategories.cs` · 
 
 ### CategorizeChannel
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CategorizeChannel(string category, double channelId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<CategorizeChannelError>` — **Case A (typed)**
@@ -35,6 +37,7 @@ Accessor: `client.ChannelsCategories` · Source: `Api/ChannelsCategories.cs` · 
 
 ### DeleteChannelCategory
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteChannelCategory(string category, double channelId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteChannelCategoryError>` — **Case A (typed)**
@@ -48,6 +51,7 @@ Accessor: `client.ChannelsCategories` · Source: `Api/ChannelsCategories.cs` · 
 
 ### GetChannelCategories
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetChannelCategories(double channelId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `CategoryConnection`
 - **Error**: `SdkException<GetChannelCategoriesError>` — **Case A (typed)**

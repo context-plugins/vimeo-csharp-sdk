@@ -1,8 +1,8 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
-using Vimeo.Models.Enums;
+using VimeoApi.Core.Models;
+using VimeoApi.Models.Enums;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 public record EditingSession
 {
@@ -58,7 +58,7 @@ public record EditingSession
     /// </para>
     /// </summary>
     [JsonPropertyName("status")]
-    public required Status2 Status { get; init; }
+    public required Status1 Status { get; init; }
 
     /// <summary>
     /// The version's canonical relative URI.

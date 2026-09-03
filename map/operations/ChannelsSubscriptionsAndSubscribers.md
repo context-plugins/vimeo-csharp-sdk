@@ -8,6 +8,7 @@ Accessor: `client.ChannelsSubscriptionsAndSubscribers` · Source: `Api/ChannelsS
 
 ### CheckIfUserSubscribedToChannel
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CheckIfUserSubscribedToChannel(double channelId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<CheckIfUserSubscribedToChannelError>` — **Case A (typed)**
@@ -20,6 +21,7 @@ Accessor: `client.ChannelsSubscriptionsAndSubscribers` · Source: `Api/ChannelsS
 
 ### CheckIfUserSubscribedToChannelAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CheckIfUserSubscribedToChannelAlt1(double channelId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<CheckIfUserSubscribedToChannelAlt1Error>` — **Case A (typed)**
@@ -32,6 +34,7 @@ Accessor: `client.ChannelsSubscriptionsAndSubscribers` · Source: `Api/ChannelsS
 
 ### GetChannelSubscribers
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetChannelSubscribers(double channelId, Filter2 filter, Direction? direction, double? page, double? perPage, string? query, Sort8? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 5 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `filter` ← `filter`, `direction` ← `direction`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `sort` ← `sort`
@@ -50,6 +53,7 @@ Accessor: `client.ChannelsSubscriptionsAndSubscribers` · Source: `Api/ChannelsS
 
 ### SubscribeToChannel
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `SubscribeToChannel(double channelId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<SubscribeToChannelError>` — **Case A (typed)**
@@ -62,6 +66,7 @@ Accessor: `client.ChannelsSubscriptionsAndSubscribers` · Source: `Api/ChannelsS
 
 ### SubscribeToChannelAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `SubscribeToChannelAlt1(double channelId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<SubscribeToChannelAlt1Error>` — **Case A (typed)**
@@ -74,6 +79,7 @@ Accessor: `client.ChannelsSubscriptionsAndSubscribers` · Source: `Api/ChannelsS
 
 ### UnsubscribeFromChannel
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `UnsubscribeFromChannel(double channelId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<UnsubscribeFromChannelError>` — **Case A (typed)**
@@ -86,6 +92,7 @@ Accessor: `client.ChannelsSubscriptionsAndSubscribers` · Source: `Api/ChannelsS
 
 ### UnsubscribeFromChannelAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `UnsubscribeFromChannelAlt1(double channelId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<UnsubscribeFromChannelAlt1Error>` — **Case A (typed)**

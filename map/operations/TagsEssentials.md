@@ -8,6 +8,7 @@ Accessor: `client.TagsEssentials` · Source: `Api/TagsEssentials.cs` · 1 operat
 
 ### GetTag
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetTag(string word, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Tag`
 - **Error**: `SdkException<RawError>` — **Case B**

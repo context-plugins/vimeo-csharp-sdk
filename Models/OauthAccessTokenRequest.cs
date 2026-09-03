@@ -1,8 +1,7 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
-using Vimeo.Models.Enums;
+using VimeoApi.Core.Models;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 public record OauthAccessTokenRequest
 {
@@ -20,7 +19,7 @@ public record OauthAccessTokenRequest
     /// </para>
     /// </summary>
     [JsonPropertyName("grant_type")]
-    public required GrantType GrantType { get; init; }
+    public string GrantType { get; } = "authorization_code";
 
     /// <summary>
     /// The redirect URI. The value of this field must match the URI from <c>/oauth/authorize</c>.

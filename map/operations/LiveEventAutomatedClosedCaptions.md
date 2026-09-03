@@ -8,6 +8,7 @@ Accessor: `client.LiveEventAutomatedClosedCaptions` · Source: `Api/LiveEventAut
 
 ### EditLiveEventAutoCc
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `EditLiveEventAutoCc(double liveEventId, double userId, UsersLiveEventsAutoCcRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `EventAutomatedClosedCaptions`
 - **Error**: `SdkException<EditLiveEventAutoCcError>` — **Case A (typed)**
@@ -22,6 +23,7 @@ Accessor: `client.LiveEventAutomatedClosedCaptions` · Source: `Api/LiveEventAut
 
 ### EditLiveEventAutoCcAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `EditLiveEventAutoCcAlt1(double liveEventId, LiveEventsAutoCcRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `EventAutomatedClosedCaptions`
 - **Error**: `SdkException<EditLiveEventAutoCcAlt1Error>` — **Case A (typed)**
@@ -36,6 +38,7 @@ Accessor: `client.LiveEventAutomatedClosedCaptions` · Source: `Api/LiveEventAut
 
 ### EditLiveEventAutoCcAlt2
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `EditLiveEventAutoCcAlt2(double liveEventId, MeLiveEventsAutoCcRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `EventAutomatedClosedCaptions`
 - **Error**: `SdkException<EditLiveEventAutoCcAlt2Error>` — **Case A (typed)**

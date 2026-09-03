@@ -1,15 +1,15 @@
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using Vimeo.Core;
-using Vimeo.Core.Authentication;
-using Vimeo.Core.Exceptions;
-using Vimeo.Core.Models;
-using Vimeo.Core.Request;
-using Vimeo.Core.Response;
-using Vimeo.Errors;
+using VimeoApi.Core;
+using VimeoApi.Core.Authentication;
+using VimeoApi.Core.Exceptions;
+using VimeoApi.Core.Models;
+using VimeoApi.Core.Request;
+using VimeoApi.Core.Response;
+using VimeoApi.Errors;
 
-namespace Vimeo.Api;
+namespace VimeoApi.Api;
 
 /// <summary>
 /// Use these methods to work with M3U8 playback URLs for event streams.

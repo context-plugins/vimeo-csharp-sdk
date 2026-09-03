@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
-using Vimeo.Models.Enums;
+using VimeoApi.Core.Models;
+using VimeoApi.Models.Enums;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 public record OnDemandVideo
 {
@@ -115,7 +115,7 @@ public record OnDemandVideo
     /// </para>
     /// </summary>
     [JsonPropertyName("type")]
-    public required Type23 Type { get; init; }
+    public required Type19 Type { get; init; }
 
     /// <summary>
     /// The video container's relative URI.

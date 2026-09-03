@@ -8,6 +8,7 @@ Accessor: `client.OnDemandBackgrounds` · Source: `Api/OnDemandBackgrounds.cs` �
 
 ### CreateVodBackground
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateVodBackground(double ondemandId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Picture`
 - **Error**: `SdkException<CreateVodBackgroundError>` — **Case A (typed)**
@@ -21,6 +22,7 @@ Accessor: `client.OnDemandBackgrounds` · Source: `Api/OnDemandBackgrounds.cs` �
 
 ### DeleteVodBackground
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteVodBackground(double backgroundId, double ondemandId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteVodBackgroundError>` — **Case A (typed)**
@@ -33,6 +35,7 @@ Accessor: `client.OnDemandBackgrounds` · Source: `Api/OnDemandBackgrounds.cs` �
 
 ### EditVodBackground
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `EditVodBackground(double backgroundId, double ondemandId, OndemandPagesBackgroundsRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `Picture`
@@ -48,6 +51,7 @@ Accessor: `client.OnDemandBackgrounds` · Source: `Api/OnDemandBackgrounds.cs` �
 
 ### GetVodBackground
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVodBackground(double backgroundId, double ondemandId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Picture`
 - **Error**: `SdkException<GetVodBackgroundError>` — **Case A (typed)**
@@ -61,6 +65,7 @@ Accessor: `client.OnDemandBackgrounds` · Source: `Api/OnDemandBackgrounds.cs` �
 
 ### GetVodBackgrounds
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVodBackgrounds(double ondemandId, double? page, double? perPage, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `page` — nullable, no default → **must pass explicitly**
   - `perPage` — nullable, no default → **must pass explicitly**

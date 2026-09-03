@@ -8,6 +8,7 @@ Accessor: `client.PaymentsEssentials` · Source: `Api/PaymentsEssentials.cs` · 
 
 ### DeletePaymentMethod
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeletePaymentMethod(string paymentMethodId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeletePaymentMethodError>` — **Case A (typed)**
@@ -20,6 +21,7 @@ Accessor: `client.PaymentsEssentials` · Source: `Api/PaymentsEssentials.cs` · 
 
 ### GetPaymentMethodInfo
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetPaymentMethodInfo(string paymentMethodId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `PaymentMethod`
 - **Error**: `SdkException<GetPaymentMethodInfoError>` — **Case A (typed)**
@@ -33,12 +35,14 @@ Accessor: `client.PaymentsEssentials` · Source: `Api/PaymentsEssentials.cs` · 
 
 ### GetSubscriptionInfo
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetSubscriptionInfo(string subscriptionId, string userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<RawError>` — **Case B**
 
 ### ListPaymentMethods
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `ListPaymentMethods(string? cardmemberName, double? page, double? perPage, bool? showDisabled, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 4 params (`cardmemberName` … `showDisabled`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `cardmember_name` ← `cardmemberName`, `page` ← `page`, `per_page` ← `perPage`, `show_disabled` ← `showDisabled`

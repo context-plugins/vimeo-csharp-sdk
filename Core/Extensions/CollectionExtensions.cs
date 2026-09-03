@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Vimeo.Core.Extensions;
+namespace VimeoApi.Core.Extensions;
 
 internal static class CollectionExtensions
 {

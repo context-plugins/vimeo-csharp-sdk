@@ -8,6 +8,7 @@ Accessor: `client.PortfoliosVideos` · Source: `Api/PortfoliosVideos.cs` · 8 op
 
 ### AddVideoToPortfolio
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `AddVideoToPortfolio(double portfolioId, double userId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<AddVideoToPortfolioError>` — **Case A (typed)**
@@ -20,6 +21,7 @@ Accessor: `client.PortfoliosVideos` · Source: `Api/PortfoliosVideos.cs` · 8 op
 
 ### AddVideoToPortfolioAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `AddVideoToPortfolioAlt1(double portfolioId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<AddVideoToPortfolioAlt1Error>` — **Case A (typed)**
@@ -32,6 +34,7 @@ Accessor: `client.PortfoliosVideos` · Source: `Api/PortfoliosVideos.cs` · 8 op
 
 ### DeleteVideoFromPortfolio
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteVideoFromPortfolio(double portfolioId, double userId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteVideoFromPortfolioError>` — **Case A (typed)**
@@ -44,6 +47,7 @@ Accessor: `client.PortfoliosVideos` · Source: `Api/PortfoliosVideos.cs` · 8 op
 
 ### DeleteVideoFromPortfolioAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteVideoFromPortfolioAlt1(double portfolioId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteVideoFromPortfolioAlt1Error>` — **Case A (typed)**
@@ -56,6 +60,7 @@ Accessor: `client.PortfoliosVideos` · Source: `Api/PortfoliosVideos.cs` · 8 op
 
 ### GetPortfolioVideo
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetPortfolioVideo(double portfolioId, double userId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Video`
 - **Error**: `SdkException<RawError>` — **Case B**
@@ -66,6 +71,7 @@ Accessor: `client.PortfoliosVideos` · Source: `Api/PortfoliosVideos.cs` · 8 op
 
 ### GetPortfolioVideoAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetPortfolioVideoAlt1(double portfolioId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Video`
 - **Error**: `SdkException<RawError>` — **Case B**
@@ -76,6 +82,7 @@ Accessor: `client.PortfoliosVideos` · Source: `Api/PortfoliosVideos.cs` · 8 op
 
 ### GetPortfolioVideos
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetPortfolioVideos(double portfolioId, double userId, string? containingUri, Filter3? filter, bool? filterEmbeddable, double? page, double? perPage, Sort35? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 6 params (`containingUri` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `containing_uri` ← `containingUri`, `filter` ← `filter`, `filter_embeddable` ← `filterEmbeddable`, `page` ← `page`, `per_page` ← `perPage`, `sort` ← `sort`
@@ -90,6 +97,7 @@ Accessor: `client.PortfoliosVideos` · Source: `Api/PortfoliosVideos.cs` · 8 op
 
 ### GetPortfolioVideosAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetPortfolioVideosAlt1(double portfolioId, string? containingUri, Filter3? filter, bool? filterEmbeddable, double? page, double? perPage, Sort35? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 6 params (`containingUri` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `containing_uri` ← `containingUri`, `filter` ← `filter`, `filter_embeddable` ← `filterEmbeddable`, `page` ← `page`, `per_page` ← `perPage`, `sort` ← `sort`

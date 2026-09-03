@@ -8,6 +8,7 @@ Accessor: `client.LiveAudioTracks` · Source: `Api/LiveAudioTracks.cs` · 2 oper
 
 ### GetEventAudioTracks
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetEventAudioTracks(double liveEventId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `EventAudioTracks`
 - **Error**: `SdkException<GetEventAudioTracksError>` — **Case A (typed)**
@@ -21,6 +22,7 @@ Accessor: `client.LiveAudioTracks` · Source: `Api/LiveAudioTracks.cs` · 2 oper
 
 ### UpdateEventAudioTracks
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `UpdateEventAudioTracks(double liveEventId, LiveEventsAudioTracksRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `EventAudioTracks`

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Net.Http.Json;
-using Vimeo.Core.Models;
+using VimeoApi.Core.Models;
 
-namespace Vimeo.Core.Request;
+namespace VimeoApi.Core.Request;
 
 internal sealed class FormRequest : IRequest
 {

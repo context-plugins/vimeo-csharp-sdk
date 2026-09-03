@@ -8,6 +8,7 @@ Accessor: `client.VideosTags` · Source: `Api/VideosTags.cs` · 6 operations
 
 ### AddVideoTag
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `AddVideoTag(double videoId, string word, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Tag`
 - **Error**: `SdkException<AddVideoTagError>` — **Case A (typed)**
@@ -21,6 +22,7 @@ Accessor: `client.VideosTags` · Source: `Api/VideosTags.cs` · 6 operations
 
 ### AddVideoTags
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `AddVideoTags(double videoId, double? page, double? perPage, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `page` — nullable, no default → **must pass explicitly**
   - `perPage` — nullable, no default → **must pass explicitly**
@@ -37,6 +39,7 @@ Accessor: `client.VideosTags` · Source: `Api/VideosTags.cs` · 6 operations
 
 ### CheckVideoForTag
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CheckVideoForTag(double videoId, string word, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Tag`
 - **Error**: `SdkException<CheckVideoForTagError>` — **Case A (typed)**
@@ -50,6 +53,7 @@ Accessor: `client.VideosTags` · Source: `Api/VideosTags.cs` · 6 operations
 
 ### DeleteVideoTag
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteVideoTag(double videoId, string word, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteVideoTagError>` — **Case A (typed)**
@@ -62,6 +66,7 @@ Accessor: `client.VideosTags` · Source: `Api/VideosTags.cs` · 6 operations
 
 ### GetVideoTags
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVideoTags(double videoId, double? page, double? perPage, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `page` — nullable, no default → **must pass explicitly**
   - `perPage` — nullable, no default → **must pass explicitly**
@@ -75,6 +80,7 @@ Accessor: `client.VideosTags` · Source: `Api/VideosTags.cs` · 6 operations
 
 ### GetVideosWithTag
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVideosWithTag(string word, Direction? direction, double? page, double? perPage, Sort47? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 4 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `page` ← `page`, `per_page` ← `perPage`, `sort` ← `sort`

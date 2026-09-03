@@ -1,8 +1,8 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
-using Vimeo.Models.Enums;
+using VimeoApi.Core.Models;
+using VimeoApi.Models.Enums;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 public record MeOndemandPagesRequest
 {
@@ -94,7 +94,7 @@ public record MeOndemandPagesRequest
     /// </para>
     /// </summary>
     [JsonPropertyName("type")]
-    public required Type37 Type { get; init; }
+    public required Type33 Type { get; init; }
 
     [JsonExtensionData]
     public AdditionalProperties AdditionalProperties { get; init; } = [];

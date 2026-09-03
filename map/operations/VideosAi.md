@@ -8,6 +8,7 @@ Accessor: `client.VideosAi` · Source: `Api/VideosAi.cs` · 11 operations
 
 ### AskAiQuestion
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `AskAiQuestion(double videoId, VideosAiAskRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `void` (Task)
@@ -23,6 +24,7 @@ Accessor: `client.VideosAi` · Source: `Api/VideosAi.cs` · 11 operations
 
 ### EditAiTexttrack
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `EditAiTexttrack(double texttrackId, double videoId, VideosAiTexttracksRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `void` (Task)
@@ -38,7 +40,8 @@ Accessor: `client.VideosAi` · Source: `Api/VideosAi.cs` · 11 operations
 
 ### GetAiLanguages
 
-- **Signature**: `GetAiLanguages(Type52? type, RequestOptions? requestOptions = null, CancellationToken ct = default)`
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
+- **Signature**: `GetAiLanguages(Type48? type, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `type` — nullable, no default → **must pass explicitly**
 - **Query params (wire ← C#)**: `type` ← `type`
 - **Returns**: `void` (Task)
@@ -47,12 +50,13 @@ Accessor: `client.VideosAi` · Source: `Api/VideosAi.cs` · 11 operations
 
 | Type | Source |
 | --- | --- |
-| `Type52` | `Models/Enums/Type52.cs` |
+| `Type48` | `Models/Enums/Type48.cs` |
 | `GetAiLanguagesError` | `Errors/GetAiLanguagesError.cs` |
 | `Error` | `Models/Error.cs` |
 
 ### GetAiMetadata
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetAiMetadata(double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<GetAiMetadataError>` — **Case A (typed)**
@@ -66,6 +70,7 @@ Accessor: `client.VideosAi` · Source: `Api/VideosAi.cs` · 11 operations
 
 ### GetAiQuestions
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetAiQuestions(double videoId, string? language, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `language` — nullable, no default → **must pass explicitly**
 - **Query params (wire ← C#)**: `language` ← `language`
@@ -81,6 +86,7 @@ Accessor: `client.VideosAi` · Source: `Api/VideosAi.cs` · 11 operations
 
 ### GetAiTranscribeStatus
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetAiTranscribeStatus(double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<GetAiTranscribeStatusError>` — **Case A (typed)**
@@ -94,6 +100,7 @@ Accessor: `client.VideosAi` · Source: `Api/VideosAi.cs` · 11 operations
 
 ### GetAiTranslateDubbingStatus
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetAiTranslateDubbingStatus(double videoId, string? language, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `language` — nullable, no default → **must pass explicitly**
 - **Query params (wire ← C#)**: `language` ← `language`
@@ -109,6 +116,7 @@ Accessor: `client.VideosAi` · Source: `Api/VideosAi.cs` · 11 operations
 
 ### GetAiTranslateSubtitlesStatus
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetAiTranslateSubtitlesStatus(double videoId, string? language, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `language` — nullable, no default → **must pass explicitly**
 - **Query params (wire ← C#)**: `language` ← `language`
@@ -124,6 +132,7 @@ Accessor: `client.VideosAi` · Source: `Api/VideosAi.cs` · 11 operations
 
 ### StartAiTranscribe
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `StartAiTranscribe(double videoId, VideosAiTranscribeRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `void` (Task)
@@ -139,6 +148,7 @@ Accessor: `client.VideosAi` · Source: `Api/VideosAi.cs` · 11 operations
 
 ### StartAiTranslateDubbing
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `StartAiTranslateDubbing(double videoId, VideosAiTranslateDubbingRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `void` (Task)
@@ -154,6 +164,7 @@ Accessor: `client.VideosAi` · Source: `Api/VideosAi.cs` · 11 operations
 
 ### StartAiTranslateSubtitles
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `StartAiTranslateSubtitles(double videoId, VideosAiTranslateSubtitlesRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `void` (Task)

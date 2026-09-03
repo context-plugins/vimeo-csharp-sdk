@@ -1,13 +1,18 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Enum;
+using VimeoApi.Core.Enum;
 
-namespace Vimeo.Models.Enums;
+namespace VimeoApi.Models.Enums;
 
 /// <summary>
-/// The Vimeo content to which the reply relates.
+/// The data type of the metadata field.
 /// <para>
 /// Option descriptions:
-///  * <c>video</c> - The comment is about a video.
+///  * <c>bool</c> - Boolean value.
+///  * <c>date</c> - Date value.
+///  * <c>int</c> - Integer value.
+///  * <c>multi-select</c> - Multi-select from allowed values.
+///  * <c>select</c> - Single-select from allowed values.
+///  * <c>str</c> - String value.
 /// </para>
 /// </summary>
 [JsonConverter(typeof(StringEnumConverter<Type13>))]
@@ -17,7 +22,17 @@ public sealed record Type13 : StringEnum<Type13>
     {
     }
 
-    public static readonly Type13 Video = new("video");
+    public static readonly Type13 Bool = new("bool");
+
+    public static readonly Type13 Date = new("date");
+
+    public static readonly Type13 Int = new("int");
+
+    public static readonly Type13 MultiSelect = new("multi-select");
+
+    public static readonly Type13 Select = new("select");
+
+    public static readonly Type13 Str = new("str");
 
     public static Type13 FromValue(string value) => FromValueCore(value);
 }

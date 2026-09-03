@@ -1,8 +1,8 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
-using Vimeo.Models.Enums;
+using VimeoApi.Core.Models;
+using VimeoApi.Models.Enums;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 public record TextTrack
 {
@@ -126,7 +126,7 @@ public record TextTrack
     /// </para>
     /// </summary>
     [JsonPropertyName("type")]
-    public required Type28? Type { get; init; }
+    public required Type24? Type { get; init; }
 
     /// <summary>
     /// The relative URI of the text track.

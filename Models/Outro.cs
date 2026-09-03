@@ -1,8 +1,8 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
-using Vimeo.Models.Enums;
+using VimeoApi.Core.Models;
+using VimeoApi.Models.Enums;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 public record Outro
 {
@@ -39,7 +39,7 @@ public record Outro
     /// </para>
     /// </summary>
     [JsonPropertyName("type")]
-    public required Type26 Type { get; init; }
+    public required Type22 Type { get; init; }
 
     /// <summary>
     /// A comma-separated list of video URIs. This field appears only when <b>type</b> is <c>no idea</c>.

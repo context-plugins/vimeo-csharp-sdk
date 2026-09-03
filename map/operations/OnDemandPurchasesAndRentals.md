@@ -8,6 +8,7 @@ Accessor: `client.OnDemandPurchasesAndRentals` · Source: `Api/OnDemandPurchases
 
 ### CheckIfVodWasPurchasedAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CheckIfVodWasPurchasedAlt1(double ondemandId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `OnDemandPage`
 - **Error**: `SdkException<CheckIfVodWasPurchasedAlt1Error>` — **Case A (typed)**
@@ -21,6 +22,7 @@ Accessor: `client.OnDemandPurchasesAndRentals` · Source: `Api/OnDemandPurchases
 
 ### GetVodPurchases
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVodPurchases(double userId, Direction? direction, Filter19? filter, double? page, double? perPage, Sort33? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 5 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `filter` ← `filter`, `page` ← `page`, `per_page` ← `perPage`, `sort` ← `sort`
@@ -39,6 +41,7 @@ Accessor: `client.OnDemandPurchasesAndRentals` · Source: `Api/OnDemandPurchases
 
 ### GetVodPurchasesAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVodPurchasesAlt1(Direction? direction, Filter19? filter, double? page, double? perPage, Sort33? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 5 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `filter` ← `filter`, `page` ← `page`, `per_page` ← `perPage`, `sort` ← `sort`

@@ -1,8 +1,8 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
-using Vimeo.Models.Enums;
+using VimeoApi.Core.Models;
+using VimeoApi.Models.Enums;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 public record OnDemandPromotion
 {
@@ -101,7 +101,7 @@ public record OnDemandPromotion
     /// </para>
     /// </summary>
     [JsonPropertyName("type")]
-    public required Type22 Type { get; init; }
+    public required Type18 Type { get; init; }
 
     /// <summary>
     /// The promotion's canonical relative URI.

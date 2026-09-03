@@ -2,10 +2,10 @@ using System;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using Vimeo.Core.Models;
-using Vimeo.Core.Response;
+using VimeoApi.Core.Models;
+using VimeoApi.Core.Response;
 
-namespace Vimeo.Core.ErrorResponse;
+namespace VimeoApi.Core.ErrorResponse;
 
 public abstract class ApiError
 {

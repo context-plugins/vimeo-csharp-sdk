@@ -8,6 +8,7 @@ Accessor: `client.VideosVideoComments` · Source: `Api/VideosVideoComments.cs` �
 
 ### CreateComment
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateComment(double videoId, VideosCommentsRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `Comment`
@@ -23,6 +24,7 @@ Accessor: `client.VideosVideoComments` · Source: `Api/VideosVideoComments.cs` �
 
 ### CreateCommentAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateCommentAlt1(double channelId, double videoId, ChannelsVideosCommentsRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `Comment`
@@ -38,6 +40,7 @@ Accessor: `client.VideosVideoComments` · Source: `Api/VideosVideoComments.cs` �
 
 ### CreateCommentReply
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateCommentReply(double commentId, double videoId, VideosCommentsRepliesRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Comment`
 - **Error**: `SdkException<CreateCommentReplyError>` — **Case A (typed)**
@@ -52,6 +55,7 @@ Accessor: `client.VideosVideoComments` · Source: `Api/VideosVideoComments.cs` �
 
 ### DeleteComment
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteComment(double commentId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteCommentError>` — **Case A (typed)**
@@ -65,6 +69,7 @@ Accessor: `client.VideosVideoComments` · Source: `Api/VideosVideoComments.cs` �
 
 ### EditComment
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `EditComment(double commentId, double videoId, VideosCommentsRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `Comment`
@@ -80,6 +85,7 @@ Accessor: `client.VideosVideoComments` · Source: `Api/VideosVideoComments.cs` �
 
 ### GetComment
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetComment(double commentId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Comment`
 - **Error**: `SdkException<GetCommentError>` — **Case A (typed)**
@@ -93,6 +99,7 @@ Accessor: `client.VideosVideoComments` · Source: `Api/VideosVideoComments.cs` �
 
 ### GetCommentReplies
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetCommentReplies(double commentId, double videoId, double? page, double? perPage, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `page` — nullable, no default → **must pass explicitly**
   - `perPage` — nullable, no default → **must pass explicitly**
@@ -109,6 +116,7 @@ Accessor: `client.VideosVideoComments` · Source: `Api/VideosVideoComments.cs` �
 
 ### GetComments
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetComments(double videoId, Direction? direction, double? page, double? perPage, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `direction` — nullable, no default → **must pass explicitly**
   - `page` — nullable, no default → **must pass explicitly**
@@ -124,6 +132,7 @@ Accessor: `client.VideosVideoComments` · Source: `Api/VideosVideoComments.cs` �
 
 ### GetCommentsAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetCommentsAlt1(double channelId, double videoId, Direction? direction, double? page, double? perPage, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `direction` — nullable, no default → **must pass explicitly**
   - `page` — nullable, no default → **must pass explicitly**

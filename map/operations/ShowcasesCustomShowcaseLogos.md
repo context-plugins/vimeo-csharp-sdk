@@ -8,6 +8,7 @@ Accessor: `client.ShowcasesCustomShowcaseLogos` · Source: `Api/ShowcasesCustomS
 
 ### CreateShowcaseLogo
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateShowcaseLogo(double albumId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Picture`
 - **Error**: `SdkException<CreateShowcaseLogoError>` — **Case A (typed)**
@@ -21,6 +22,7 @@ Accessor: `client.ShowcasesCustomShowcaseLogos` · Source: `Api/ShowcasesCustomS
 
 ### DeleteShowcaseLogo
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteShowcaseLogo(double albumId, double logoId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteShowcaseLogoError>` — **Case A (typed)**
@@ -33,6 +35,7 @@ Accessor: `client.ShowcasesCustomShowcaseLogos` · Source: `Api/ShowcasesCustomS
 
 ### GetShowcaseLogo
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetShowcaseLogo(double albumId, double logoId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Picture`
 - **Error**: `SdkException<GetShowcaseLogoError>` — **Case A (typed)**
@@ -46,6 +49,7 @@ Accessor: `client.ShowcasesCustomShowcaseLogos` · Source: `Api/ShowcasesCustomS
 
 ### GetShowcaseLogos
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetShowcaseLogos(double albumId, double userId, double? page, double? perPage, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `page` — nullable, no default → **must pass explicitly**
   - `perPage` — nullable, no default → **must pass explicitly**
@@ -62,6 +66,7 @@ Accessor: `client.ShowcasesCustomShowcaseLogos` · Source: `Api/ShowcasesCustomS
 
 ### ReplaceShowcaseLogo
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `ReplaceShowcaseLogo(double albumId, double logoId, double userId, UsersAlbumsLogosLogoIdRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `Picture`

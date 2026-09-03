@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Vimeo.Core.Webhooks.Signing;
+namespace VimeoApi.Core.Webhooks.Signing;
 
 internal abstract record MessageSegment
 {

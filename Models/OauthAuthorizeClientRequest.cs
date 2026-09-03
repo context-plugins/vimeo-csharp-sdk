@@ -1,8 +1,7 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
-using Vimeo.Models.Enums;
+using VimeoApi.Core.Models;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 public record OauthAuthorizeClientRequest
 {
@@ -14,7 +13,7 @@ public record OauthAuthorizeClientRequest
     /// </para>
     /// </summary>
     [JsonPropertyName("grant_type")]
-    public required GrantType1 GrantType { get; init; }
+    public string GrantType { get; } = "client_credentials";
 
     /// <summary>
     /// A space-separated list of the authentication scopes to access. The default is <c>public</c>.

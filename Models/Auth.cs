@@ -1,8 +1,7 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
-using Vimeo.Models.Enums;
+using VimeoApi.Core.Models;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 public record Auth
 {
@@ -46,7 +45,7 @@ public record Auth
     /// </para>
     /// </summary>
     [JsonPropertyName("token_type")]
-    public required TokenType TokenType { get; init; }
+    public string TokenType { get; } = "bearer";
 
     /// <summary>
     /// The user associated with the token.

@@ -8,6 +8,7 @@ Accessor: `client.LiveEmbedPrivacy` · Source: `Api/LiveEmbedPrivacy.cs` · 6 op
 
 ### GetLiveEventWhitelist
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetLiveEventWhitelist(double liveEventId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `DomainConnection`
 - **Error**: `SdkException<GetLiveEventWhitelistError>` — **Case A (typed)**
@@ -21,6 +22,7 @@ Accessor: `client.LiveEmbedPrivacy` · Source: `Api/LiveEmbedPrivacy.cs` · 6 op
 
 ### GetLiveEventWhitelistAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetLiveEventWhitelistAlt1(double liveEventId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `DomainConnection`
 - **Error**: `SdkException<GetLiveEventWhitelistAlt1Error>` — **Case A (typed)**
@@ -34,6 +36,7 @@ Accessor: `client.LiveEmbedPrivacy` · Source: `Api/LiveEmbedPrivacy.cs` · 6 op
 
 ### GetLiveEventWhitelistAlt2
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetLiveEventWhitelistAlt2(double liveEventId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `DomainConnection`
 - **Error**: `SdkException<GetLiveEventWhitelistAlt2Error>` — **Case A (typed)**
@@ -47,6 +50,7 @@ Accessor: `client.LiveEmbedPrivacy` · Source: `Api/LiveEmbedPrivacy.cs` · 6 op
 
 ### SetLiveEventWhitelist
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `SetLiveEventWhitelist(double liveEventId, double userId, UsersLiveEventsPrivacyDomainsRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `void` (Task)
@@ -61,6 +65,7 @@ Accessor: `client.LiveEmbedPrivacy` · Source: `Api/LiveEmbedPrivacy.cs` · 6 op
 
 ### SetLiveEventWhitelistAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `SetLiveEventWhitelistAlt1(double liveEventId, LiveEventsPrivacyDomainsRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `void` (Task)
@@ -75,6 +80,7 @@ Accessor: `client.LiveEmbedPrivacy` · Source: `Api/LiveEmbedPrivacy.cs` · 6 op
 
 ### SetLiveEventWhitelistAlt2
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `SetLiveEventWhitelistAlt2(double liveEventId, MeLiveEventsPrivacyDomainsRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `void` (Task)

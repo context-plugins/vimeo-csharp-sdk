@@ -8,6 +8,7 @@ Accessor: `client.CategoriesVideos` · Source: `Api/CategoriesVideos.cs` · 4 op
 
 ### CheckCategoryForVideo
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CheckCategoryForVideo(string category, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Video`
 - **Error**: `SdkException<CheckCategoryForVideoError>` — **Case A (typed)**
@@ -21,6 +22,7 @@ Accessor: `client.CategoriesVideos` · Source: `Api/CategoriesVideos.cs` · 4 op
 
 ### GetCategoryVideos
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetCategoryVideos(string category, Direction? direction, Filter? filter, bool? filterEmbeddable, double? page, double? perPage, string? query, Sort6? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 7 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `filter` ← `filter`, `filter_embeddable` ← `filterEmbeddable`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `sort` ← `sort`
@@ -39,6 +41,7 @@ Accessor: `client.CategoriesVideos` · Source: `Api/CategoriesVideos.cs` · 4 op
 
 ### GetVideoCategories
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVideoCategories(double videoId, double? page, double? perPage, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `page` — nullable, no default → **must pass explicitly**
   - `perPage` — nullable, no default → **must pass explicitly**
@@ -55,6 +58,7 @@ Accessor: `client.CategoriesVideos` · Source: `Api/CategoriesVideos.cs` · 4 op
 
 ### SuggestVideoCategory
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `SuggestVideoCategory(double videoId, VideosCategoriesRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Category`
 - **Error**: `SdkException<SuggestVideoCategoryError>` — **Case A (typed)**

@@ -1,16 +1,15 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Enum;
+using VimeoApi.Core.Enum;
 
-namespace Vimeo.Models.Enums;
+namespace VimeoApi.Models.Enums;
 
 /// <summary>
-/// The status code for the availability of the uploaded video.
+/// The transcode status of the audio track.
 /// <para>
 /// Option descriptions:
-///  * <c>canceled</c> - The upload was canceled.
-///  * <c>complete</c> - The upload is complete.
-///  * <c>error</c> - The upload ended with an error.
-///  * <c>in_progress</c> - The upload is underway.
+///  * <c>complete</c> - Transcoding is complete. The audio track is available.
+///  * <c>error</c> - There was a transcoding error. The audio track isn't available.
+///  * <c>in_progress</c> - Transcoding is in progress. The audio track isn't available yet.
 /// </para>
 /// </summary>
 [JsonConverter(typeof(StringEnumConverter<Status8>))]
@@ -19,8 +18,6 @@ public sealed record Status8 : StringEnum<Status8>
     private Status8(string value) : base(value)
     {
     }
-
-    public static readonly Status8 Canceled = new("canceled");
 
     public static readonly Status8 Complete = new("complete");
 

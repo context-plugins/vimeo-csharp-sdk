@@ -8,6 +8,7 @@ Accessor: `client.LiveEventVideos` · Source: `Api/LiveEventVideos.cs` · 12 ope
 
 ### AddVideosToLiveEvent
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `AddVideosToLiveEvent(double liveEventId, double userId, UsersLiveEventsVideosRequest1? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `void` (Task)
@@ -22,6 +23,7 @@ Accessor: `client.LiveEventVideos` · Source: `Api/LiveEventVideos.cs` · 12 ope
 
 ### AddVideosToLiveEventAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `AddVideosToLiveEventAlt1(double liveEventId, LiveEventsVideosRequest1? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `void` (Task)
@@ -36,6 +38,7 @@ Accessor: `client.LiveEventVideos` · Source: `Api/LiveEventVideos.cs` · 12 ope
 
 ### AddVideosToLiveEventAlt2
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `AddVideosToLiveEventAlt2(double liveEventId, MeLiveEventsVideosRequest1? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `void` (Task)
@@ -50,6 +53,7 @@ Accessor: `client.LiveEventVideos` · Source: `Api/LiveEventVideos.cs` · 12 ope
 
 ### GetLiveEventVideo
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetLiveEventVideo(double liveEventId, double userId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Video`
 - **Error**: `SdkException<GetLiveEventVideoError>` — **Case A (typed)**
@@ -63,6 +67,7 @@ Accessor: `client.LiveEventVideos` · Source: `Api/LiveEventVideos.cs` · 12 ope
 
 ### GetLiveEventVideoAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetLiveEventVideoAlt1(double liveEventId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Video`
 - **Error**: `SdkException<GetLiveEventVideoAlt1Error>` — **Case A (typed)**
@@ -76,6 +81,7 @@ Accessor: `client.LiveEventVideos` · Source: `Api/LiveEventVideos.cs` · 12 ope
 
 ### GetLiveEventVideoAlt2
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetLiveEventVideoAlt2(double liveEventId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Video`
 - **Error**: `SdkException<GetLiveEventVideoAlt2Error>` — **Case A (typed)**
@@ -89,6 +95,7 @@ Accessor: `client.LiveEventVideos` · Source: `Api/LiveEventVideos.cs` · 12 ope
 
 ### GetLiveEventVideos
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetLiveEventVideos(double liveEventId, double userId, string? containingUri, Direction? direction, Filter3? filter, bool? filterEmbeddable, double? page, double? perPage, string? query, Sort17? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 8 params (`containingUri` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `containing_uri` ← `containingUri`, `direction` ← `direction`, `filter` ← `filter`, `filter_embeddable` ← `filterEmbeddable`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `sort` ← `sort`
@@ -107,6 +114,7 @@ Accessor: `client.LiveEventVideos` · Source: `Api/LiveEventVideos.cs` · 12 ope
 
 ### GetLiveEventVideosAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetLiveEventVideosAlt1(double liveEventId, string? containingUri, Direction? direction, Filter3? filter, bool? filterEmbeddable, double? page, double? perPage, string? query, Sort17? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 8 params (`containingUri` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `containing_uri` ← `containingUri`, `direction` ← `direction`, `filter` ← `filter`, `filter_embeddable` ← `filterEmbeddable`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `sort` ← `sort`
@@ -125,6 +133,7 @@ Accessor: `client.LiveEventVideos` · Source: `Api/LiveEventVideos.cs` · 12 ope
 
 ### GetLiveEventVideosAlt2
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetLiveEventVideosAlt2(double liveEventId, string? containingUri, Direction? direction, Filter3? filter, bool? filterEmbeddable, double? page, double? perPage, string? query, Sort17? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 8 params (`containingUri` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `containing_uri` ← `containingUri`, `direction` ← `direction`, `filter` ← `filter`, `filter_embeddable` ← `filterEmbeddable`, `page` ← `page`, `per_page` ← `perPage`, `query` ← `query`, `sort` ← `sort`
@@ -143,6 +152,7 @@ Accessor: `client.LiveEventVideos` · Source: `Api/LiveEventVideos.cs` · 12 ope
 
 ### RemoveVideosFromLiveEvent
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `RemoveVideosFromLiveEvent(double liveEventId, double userId, UsersLiveEventsVideosRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `void` (Task)
@@ -157,6 +167,7 @@ Accessor: `client.LiveEventVideos` · Source: `Api/LiveEventVideos.cs` · 12 ope
 
 ### RemoveVideosFromLiveEventAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `RemoveVideosFromLiveEventAlt1(double liveEventId, LiveEventsVideosRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `void` (Task)
@@ -171,6 +182,7 @@ Accessor: `client.LiveEventVideos` · Source: `Api/LiveEventVideos.cs` · 12 ope
 
 ### RemoveVideosFromLiveEventAlt2
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `RemoveVideosFromLiveEventAlt2(double liveEventId, MeLiveEventsVideosRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `void` (Task)

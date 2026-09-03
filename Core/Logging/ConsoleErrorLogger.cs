@@ -1,7 +1,7 @@
 using System;
 using Microsoft.Extensions.Logging;
 
-namespace Vimeo.Core.Logging;
+namespace VimeoApi.Core.Logging;
 
 internal sealed class ConsoleErrorLoggerFactory : ILoggerFactory
 {

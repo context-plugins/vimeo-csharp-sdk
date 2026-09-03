@@ -1,7 +1,7 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Enum;
+using VimeoApi.Core.Enum;
 
-namespace Vimeo.Models.Enums;
+namespace VimeoApi.Models.Enums;
 
 /// <summary>
 /// The type of transaction to which the promotion applies. When <b>access_type</b> is <c>default</c>, the default value is <c>any</c>. When <b>access_type</b> is <c>vip</c>, the default value is <c>rent</c> and the only valid product types are <c>buy</c> and <c>rent</c>.

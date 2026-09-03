@@ -2,7 +2,7 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Vimeo.Core.ErrorResponse;
+namespace VimeoApi.Core.ErrorResponse;
 
 public interface IErrorResponse<TError>
 {

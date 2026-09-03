@@ -8,6 +8,7 @@ Accessor: `client.EmbedPresetsEssentials` · Source: `Api/EmbedPresetsEssentials
 
 ### CreateEmbedPresets
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateEmbedPresets(double userId, UsersPresetsRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `Preset`
@@ -20,6 +21,7 @@ Accessor: `client.EmbedPresetsEssentials` · Source: `Api/EmbedPresetsEssentials
 
 ### CreateEmbedPresetsAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateEmbedPresetsAlt1(MePresetsRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `Preset`
@@ -32,6 +34,7 @@ Accessor: `client.EmbedPresetsEssentials` · Source: `Api/EmbedPresetsEssentials
 
 ### DeleteEmbedPreset
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteEmbedPreset(double presetId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteEmbedPresetError>` — **Case A (typed)**
@@ -44,6 +47,7 @@ Accessor: `client.EmbedPresetsEssentials` · Source: `Api/EmbedPresetsEssentials
 
 ### DeleteEmbedPresetAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `DeleteEmbedPresetAlt1(double presetId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<DeleteEmbedPresetAlt1Error>` — **Case A (typed)**
@@ -56,6 +60,7 @@ Accessor: `client.EmbedPresetsEssentials` · Source: `Api/EmbedPresetsEssentials
 
 ### EditEmbedPreset
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `EditEmbedPreset(double presetId, double userId, UsersPresetsRequest1? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `Preset`
@@ -71,6 +76,7 @@ Accessor: `client.EmbedPresetsEssentials` · Source: `Api/EmbedPresetsEssentials
 
 ### EditEmbedPresetAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `EditEmbedPresetAlt1(double presetId, MePresetsRequest1? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `Preset`
@@ -86,6 +92,7 @@ Accessor: `client.EmbedPresetsEssentials` · Source: `Api/EmbedPresetsEssentials
 
 ### GetEmbedPreset
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetEmbedPreset(double presetId, double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Preset`
 - **Error**: `SdkException<RawError>` — **Case B**
@@ -96,6 +103,7 @@ Accessor: `client.EmbedPresetsEssentials` · Source: `Api/EmbedPresetsEssentials
 
 ### GetEmbedPresetAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetEmbedPresetAlt1(double presetId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `Preset`
 - **Error**: `SdkException<RawError>` — **Case B**
@@ -106,6 +114,7 @@ Accessor: `client.EmbedPresetsEssentials` · Source: `Api/EmbedPresetsEssentials
 
 ### GetEmbedPresets
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetEmbedPresets(double userId, double? page, double? perPage, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `page` — nullable, no default → **must pass explicitly**
   - `perPage` — nullable, no default → **must pass explicitly**
@@ -119,6 +128,7 @@ Accessor: `client.EmbedPresetsEssentials` · Source: `Api/EmbedPresetsEssentials
 
 ### GetEmbedPresetsAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetEmbedPresetsAlt1(double? page, double? perPage, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `page` — nullable, no default → **must pass explicitly**
   - `perPage` — nullable, no default → **must pass explicitly**

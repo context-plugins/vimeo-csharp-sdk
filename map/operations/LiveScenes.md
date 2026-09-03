@@ -8,6 +8,7 @@ Accessor: `client.LiveScenes` · Source: `Api/LiveScenes.cs` · 5 operations
 
 ### AttachGraphicItemToScene
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `AttachGraphicItemToScene(double liveEventId, string sceneId, LiveEventsComposerScenesGraphicsRequest body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `ComposerScenes`
 - **Error**: `SdkException<AttachGraphicItemToSceneError>` — **Case A (typed)**
@@ -22,6 +23,7 @@ Accessor: `client.LiveScenes` · Source: `Api/LiveScenes.cs` · 5 operations
 
 ### CreateComposerScene
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `CreateComposerScene(double liveEventId, LiveEventsComposerScenesRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `ComposerScenes`
@@ -37,6 +39,7 @@ Accessor: `client.LiveScenes` · Source: `Api/LiveScenes.cs` · 5 operations
 
 ### GetComposerScenes
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetComposerScenes(double liveEventId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `ComposerScenesConnection`
 - **Error**: `SdkException<GetComposerScenesError>` — **Case A (typed)**
@@ -50,6 +53,7 @@ Accessor: `client.LiveScenes` · Source: `Api/LiveScenes.cs` · 5 operations
 
 ### ResetComposerScenes
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `ResetComposerScenes(double liveEventId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `IReadOnlyList<ComposerScenes>`
 - **Error**: `SdkException<ResetComposerScenesError>` — **Case A (typed)**
@@ -63,6 +67,7 @@ Accessor: `client.LiveScenes` · Source: `Api/LiveScenes.cs` · 5 operations
 
 ### UpdateComposerScene
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `UpdateComposerScene(double liveEventId, string sceneId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `ComposerScenes`
 - **Error**: `SdkException<UpdateComposerSceneError>` — **Case A (typed)**

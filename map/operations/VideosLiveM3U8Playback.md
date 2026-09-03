@@ -8,6 +8,7 @@ Accessor: `client.VideosLiveM3U8Playback` · Source: `Api/VideosLiveM3U8Playback
 
 ### GetOneTimeEventM3U8Playback
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetOneTimeEventM3U8Playback(double userId, double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<GetOneTimeEventM3U8PlaybackError>` — **Case A (typed)**
@@ -20,6 +21,7 @@ Accessor: `client.VideosLiveM3U8Playback` · Source: `Api/VideosLiveM3U8Playback
 
 ### GetOneTimeEventM3U8PlaybackAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetOneTimeEventM3U8PlaybackAlt1(double videoId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<GetOneTimeEventM3U8PlaybackAlt1Error>` — **Case A (typed)**

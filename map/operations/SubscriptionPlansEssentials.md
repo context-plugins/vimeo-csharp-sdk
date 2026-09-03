@@ -8,6 +8,7 @@ Accessor: `client.SubscriptionPlansEssentials` · Source: `Api/SubscriptionPlans
 
 ### GetPlan
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetPlan(Tier1 tier, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `void` (Task)
 - **Error**: `SdkException<RawError>` — **Case B**

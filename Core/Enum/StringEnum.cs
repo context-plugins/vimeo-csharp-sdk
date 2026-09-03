@@ -3,7 +3,7 @@ using System.Collections.Concurrent;
 using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
 
-namespace Vimeo.Core.Enum;
+namespace VimeoApi.Core.Enum;
 
 public abstract record StringEnum<TEnum> : TypedEnum<string, TEnum> where TEnum : StringEnum<TEnum>
 {

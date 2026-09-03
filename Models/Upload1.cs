@@ -1,8 +1,8 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
-using Vimeo.Models.Enums;
+using VimeoApi.Core.Models;
+using VimeoApi.Models.Enums;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 /// <summary>
 /// The version's upload information.
@@ -96,7 +96,7 @@ public record Upload1
     /// </para>
     /// </summary>
     [JsonPropertyName("status")]
-    public required Status8 Status { get; init; }
+    public required Status7 Status { get; init; }
 
     /// <summary>
     /// The link for sending video file data.

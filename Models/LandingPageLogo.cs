@@ -1,8 +1,8 @@
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
-using Vimeo.Models.Enums;
+using VimeoApi.Core.Models;
+using VimeoApi.Models.Enums;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 /// <summary>
 /// The navbar logo configuration of the event landing page, or <c>null</c> when the event was never configured (default rendering).
@@ -19,7 +19,7 @@ public record LandingPageLogo
     /// </para>
     /// </summary>
     [JsonPropertyName("type")]
-    public required Type18 Type { get; init; }
+    public required Type14 Type { get; init; }
 
     /// <summary>
     /// Brand-kit logo resource URI (custom only).

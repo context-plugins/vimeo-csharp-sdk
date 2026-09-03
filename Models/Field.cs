@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
-using Vimeo.Core.Models;
-using Vimeo.Models.Enums;
+using VimeoApi.Core.Models;
+using VimeoApi.Models.Enums;
 
-namespace Vimeo.Models;
+namespace VimeoApi.Models;
 
 public record Field
 {
@@ -63,7 +63,7 @@ public record Field
     /// </summary>
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
     [JsonPropertyName("type")]
-    public Type43? Type { get; init; }
+    public Type39? Type { get; init; }
 
     /// <summary>
     /// The list of allowed values. Required for <c>select</c> and <c>multi-select</c> fields.

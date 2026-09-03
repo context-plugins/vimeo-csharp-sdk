@@ -8,6 +8,7 @@ Accessor: `client.UsersEssentials` · Source: `Api/UsersEssentials.cs` · 4 oper
 
 ### EditUser
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `EditUser(double userId, UsersRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `User`
@@ -23,6 +24,7 @@ Accessor: `client.UsersEssentials` · Source: `Api/UsersEssentials.cs` · 4 oper
 
 ### EditUserAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `EditUserAlt1(MeRequest? body, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `body` — nullable, no default → **must pass explicitly**
 - **Returns**: `User`
@@ -38,6 +40,7 @@ Accessor: `client.UsersEssentials` · Source: `Api/UsersEssentials.cs` · 4 oper
 
 ### GetUser
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetUser(double userId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `User`
 - **Error**: `SdkException<RawError>` — **Case B**
@@ -48,6 +51,7 @@ Accessor: `client.UsersEssentials` · Source: `Api/UsersEssentials.cs` · 4 oper
 
 ### GetUserAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetUserAlt1(RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `User`
 - **Error**: `SdkException<RawError>` — **Case B**

@@ -8,6 +8,7 @@ Accessor: `client.LiveEventM3U8Playback` · Source: `Api/LiveEventM3U8Playback.c
 
 ### GetLiveEventM3U8Playback
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetLiveEventM3U8Playback(double liveEventId, double userId, double? dvr, double? maxFpsFhd, double? ttl, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `dvr` — nullable, no default → **must pass explicitly**
   - `maxFpsFhd` — nullable, no default → **must pass explicitly**
@@ -24,6 +25,7 @@ Accessor: `client.LiveEventM3U8Playback` · Source: `Api/LiveEventM3U8Playback.c
 
 ### GetLiveEventM3U8PlaybackAlt1
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetLiveEventM3U8PlaybackAlt1(double liveEventId, double? dvr, double? maxFpsFhd, double? ttl, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - `dvr` — nullable, no default → **must pass explicitly**
   - `maxFpsFhd` — nullable, no default → **must pass explicitly**

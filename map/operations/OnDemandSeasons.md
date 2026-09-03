@@ -8,6 +8,7 @@ Accessor: `client.OnDemandSeasons` · Source: `Api/OnDemandSeasons.cs` · 3 oper
 
 ### GetVodSeason
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVodSeason(double ondemandId, double seasonId, RequestOptions? requestOptions = null, CancellationToken ct = default)`
 - **Returns**: `OnDemandSeason`
 - **Error**: `SdkException<GetVodSeasonError>` — **Case A (typed)**
@@ -21,6 +22,7 @@ Accessor: `client.OnDemandSeasons` · Source: `Api/OnDemandSeasons.cs` · 3 oper
 
 ### GetVodSeasonVideos
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVodSeasonVideos(double ondemandId, double seasonId, Filter27? filter, double? page, double? perPage, Sort44? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 4 params (`filter` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `filter` ← `filter`, `page` ← `page`, `per_page` ← `perPage`, `sort` ← `sort`
@@ -35,6 +37,7 @@ Accessor: `client.OnDemandSeasons` · Source: `Api/OnDemandSeasons.cs` · 3 oper
 
 ### GetVodSeasons
 
+- **Auth**: `options.Oauth2AuthorizationCode` OR `options.Oauth2ClientCredentials` OR `options.Bearer`
 - **Signature**: `GetVodSeasons(double ondemandId, Direction? direction, Filter27? filter, double? page, double? perPage, Sort43? sort, RequestOptions? requestOptions = null, CancellationToken ct = default)`
   - 5 params (`direction` … `sort`) — nullable, no default → **must pass explicitly** (pass `null` to skip)
 - **Query params (wire ← C#)**: `direction` ← `direction`, `filter` ← `filter`, `page` ← `page`, `per_page` ← `perPage`, `sort` ← `sort`

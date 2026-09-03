@@ -6,18 +6,18 @@ using System.Threading;
 using System.Threading.Tasks;
 using Polly;
 using Polly.Timeout;
-using Vimeo.Core.Authentication;
-using Vimeo.Core.ErrorResponse;
-using Vimeo.Core.Extensions;
-using Vimeo.Core.Hooks;
-using Vimeo.Core.Logging;
-using Vimeo.Core.Models;
-using Vimeo.Core.Pagination;
-using Vimeo.Core.Pagination.States;
-using Vimeo.Core.Request;
-using Vimeo.Core.Response;
+using VimeoApi.Core.Authentication;
+using VimeoApi.Core.ErrorResponse;
+using VimeoApi.Core.Extensions;
+using VimeoApi.Core.Hooks;
+using VimeoApi.Core.Logging;
+using VimeoApi.Core.Models;
+using VimeoApi.Core.Pagination;
+using VimeoApi.Core.Pagination.States;
+using VimeoApi.Core.Request;
+using VimeoApi.Core.Response;
 
-namespace Vimeo.Core;
+namespace VimeoApi.Core;
 
 internal sealed class RawClient
 {

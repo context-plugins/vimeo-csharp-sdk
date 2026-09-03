@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using Microsoft.Extensions.Logging;
 
-namespace Vimeo.Core.Configuration;
+namespace VimeoApi.Core.Configuration;
 
 public record LoggingOptions
 {
